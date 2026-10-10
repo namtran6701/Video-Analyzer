@@ -1,28 +1,28 @@
 # Motion Library
 
-Reusable moves from the reference. Each one is a component to build once and reuse.
+Reusable moves for this style. Each one is a component to build once and reuse.
 Tool column: **R** = Remotion, **H** = HyperFrames, **B** = Blender.
 
-| # | Move | Seen at | Tool |
-|---|---|---|---|
-| M1 | Word-by-word blur rise | everywhere | R / H |
-| M2 | Karaoke lighting (dim → bright per word) | 4 to 9s, 56 to 60s | R / H |
-| M3 | Inline icon in sentence | 24s, 57s, 62s, 67s | R / H |
-| M4 | Element morph (bar → pill → headline) | 0 to 3s | R |
-| M5 | Icon row pop-in + pop-out | 3 to 6s, 81 to 83s | R / H |
-| M6 | Motion-blur stack (duplicated element trail) | 7 to 8s | R |
-| M7 | Throw into trash (physics-ish arc) | 15 to 18s | R |
-| M8 | Logo reveal on light shafts | 19 to 21.5s | B (or R with shader) |
-| M9 | Progress thread (line + glowing dot) | 22 to 53s | R / H |
-| M10 | Typing prompt + cursor | 27 to 29s | R / H |
-| M11 | Agent step list with expand/collapse | 31 to 42s | R |
-| M12 | Branching sub-agents | 42 to 47s | R |
-| M13 | Benchmark bar race | 53 to 56s | R / H |
-| M14 | Vertical slot list | 61 to 66s | R / H |
-| M15 | Scramble/decode text | 73 to 75s | R / H |
-| M16 | Password toggle (visible → masked) | 75 to 78s | R / H |
-| M17 | Laptop prop open/close | 70 to 72s | B (render PNG seq) or R with images |
-| M18 | Words fall away to leave URL | 84 to 87s | R / H |
+| # | Move | Tool |
+|---|---|---|
+| M1 | Word-by-word blur rise | R / H |
+| M2 | Karaoke lighting (dim → bright per word) | R / H |
+| M3 | Inline icon in sentence | R / H |
+| M4 | Element morph (bar → pill → headline) | R |
+| M5 | Icon row pop-in + pop-out | R / H |
+| M6 | Motion-blur stack (duplicated element trail) | R |
+| M7 | Throw into trash (physics-ish arc) | R |
+| M8 | Logo reveal on light shafts | B (or R with shader) |
+| M9 | Progress thread (line + glowing dot) | R / H |
+| M10 | Typing prompt + cursor | R / H |
+| M11 | Agent step list with expand/collapse | R |
+| M12 | Branching sub-agents | R |
+| M13 | Benchmark bar race | R / H |
+| M14 | Vertical slot list | R / H |
+| M15 | Scramble/decode text | R / H |
+| M16 | Password toggle (visible → masked) | R / H |
+| M17 | Laptop prop open/close | B (render PNG seq) or R with images |
+| M18 | Words fall away to leave URL | R / H |
 
 ## Specs
 
@@ -33,7 +33,7 @@ Tool column: **R** = Remotion, **H** = HyperFrames, **B** = Blender.
 
 ### M2 Karaoke lighting
 - Line renders whole in `--dark-dim`. Each word tweens color to `--dark-text` on its beat.
-- Optional: one keyword ends in `--accent` (reference did this on "do").
+- Optional: one keyword ends in `--accent`.
 
 ### M3 Inline icon
 - Icon is an inline SVG at `height: 0.8em`, `vertical-align: -0.1em`, stroke = currentColor, stroke-width matched to type weight (≈1.75 at 500 weight).

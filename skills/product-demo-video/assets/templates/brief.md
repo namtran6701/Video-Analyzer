@@ -13,7 +13,7 @@
 - Dark bg / light bg / accent hex:
 - Logo files (SVG preferred):
 
-## Story (see playbook/04_story_template.md)
+## Story (see references/story_template.md in the skill)
 - Hook:
 - Problems (3):
 - Demo task (one real task, start to finish):

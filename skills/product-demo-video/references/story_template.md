@@ -17,6 +17,21 @@ The 7-act launch structure. Fill the brackets. Timings in % so it scales.
 
 For 30s cuts: merge 6+7 and drop 9.
 
+## How each act looks
+
+| Act | Visual approach | Motion IDs | Look frame (`assets/look/`) |
+|---|---|---|---|
+| Hook | A UI element (search bar, input) morphs into a pill holding the headline; neutral app icons slide in beside it | M4, M5, M1 | `hook-headline-pill.jpg` |
+| Problem | Each complaint is a centered line lit word by word, with a UI prop under it (dock, buttons, refusal chips) that gets stacked, blurred, then thrown away | M2, M6, M7 | `problem-motion-blur-stack.jpg`, `problem-throw-in-trash.jpg` |
+| Reveal | "Introducing" over the last prop, then logo wordmark on blue light shafts, washing out to white | M8 | `reveal-light-shafts.jpg` |
+| Positioning | Logo + one-line promise, then a line of nouns each led by an inline icon | M1, M3 | `positioning-inline-icons.jpg` |
+| Demo | Real product UI at real scale: prompt typed, agent/product steps appear one per beat, a section expands with zoom, parallel branches, result line. Thin progress thread with a blue dot runs through it | M9 to M12 | `demo-agent-steps.jpg` |
+| Proof | Starts tight on the hero bar glowing in the accent, pulls out to the full chart | M13 | `proof-benchmark-bars.jpg` |
+| Capabilities | "Anything you can do in a [icon] place" lit word by word, then "[logo] can do" with a vertical slot list of verbs | M2, M3, M14 | `capabilities-slot-list.jpg` |
+| Trust | Short lines with a lock/drive icon inline, a device prop, scrambled text resolving to "encrypted", a field toggling to masked | M15 to M17 | `trust-scramble-text.jpg`, `trust-password-toggle.jpg` |
+| Bonus | One line, then partner/model icons pop in a row and collapse into the logo | M5 | |
+| CTA | Logo + tagline, all words fall away except the URL | M18 | |
+
 ## Fill-in
 
 ```
@@ -45,4 +60,4 @@ TAGLINE + URL: "_______________"  ____.com
 - Max 5 words per line, max 3 lines per card.
 - Problem acts use "they" (the old way). Solution acts use the product name or "you".
 - One joke or human moment max, inside the demo.
-- Never name competitors in copy. Showing generic icons is the reference's trick; we use our own neutral props.
+- Never name competitors in copy. Use neutral, generic props for "the old way".

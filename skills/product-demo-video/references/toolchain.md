@@ -10,7 +10,7 @@ Pick per act, compose in one place. Default: **Remotion is the spine**, everythi
 | Fast HTML/CSS/GSAP scenes, quick iteration by Claude | **HyperFrames** | Plain HTML compositions, easy for Claude to write and preview. Good for text-only acts (1, 2, 7, 10) |
 | 3D props, volumetric light, logo reveal | **Blender** (via `mcp__blender__*`) | Light shafts, laptop, glass icons. Render to PNG sequence, import into Remotion as `<Img>` sequence or `<OffthreadVideo>` |
 | Deterministic HTML → H.264 with synthesized score + SFX | **`motion-studio` skill** | Already installed. Use when you want music/SFX generated and locked to the beat grid |
-| Probing, cutting, muxing, verification | **ffmpeg / ffprobe** | Final checks |
+| Muxing audio, final checks | **ffmpeg / ffprobe** | Verify duration, resolution, fps |
 
 Check current APIs with the context7 MCP before writing code (Remotion and HyperFrames both move fast).
 
@@ -31,14 +31,14 @@ Check current APIs with the context7 MCP before writing code (Remotion and Hyper
 ```
 <project>/
   brief.md
-  docs/style_guide.md        # copy of playbook/02, adjusted to brand
-  docs/shotlist.md           # from templates/shotlist.md
+  docs/style_guide.md        # copy of references/style_guide.md, adjusted to brand
+  docs/shotlist.md           # from assets/templates/shotlist.md
   assets/                    # logos, product screenshots, icons, fonts, music
   blender/                   # .blend files + renders/ (PNG seqs)
   remotion/
     src/
       tokens.ts              # palette, type, beat = 30*60/BPM frames
-      motion/                # M1..M18 components from 03_motion_library
+      motion/                # M1..M18 components from references/motion_library.md
       acts/                  # Act01Hook.tsx ... Act10CTA.tsx
       Root.tsx               # one <Composition>, <Sequence> per act
   out/                       # final renders
@@ -64,4 +64,4 @@ npx remotion render src/index.ts Main out/final.mp4 --codec h264 --crf 18
 ffprobe -v error -show_entries stream=width,height,r_frame_rate,duration -of default=nw=1 out/final.mp4
 ```
 
-The reference is 29.97fps. Use 30 unless delivering to broadcast.
+Render at 30fps unless the brief says otherwise.

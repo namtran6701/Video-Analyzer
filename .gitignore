@@ -22,5 +22,3 @@ Desktop.ini
 # Video files
 *.mp4
 
-# Extracted reference frames (regenerate from Video/ with ffmpeg)
-refs/

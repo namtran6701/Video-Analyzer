@@ -1,6 +1,6 @@
 # Style Guide
 
-Hex values sampled with Pillow from extracted frames, not eyeballed.
+Default values for this style. When the user supplies brand colors and fonts, swap them in by role and keep everything else.
 
 ## Palette
 
@@ -22,7 +22,7 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 ## Type
 
-- Family: neo-grotesk with tight apertures. Closest free options: **Inter Display**, **Geist**, **Neue Montreal**. (Reference looks like a Suisse/Neue Haas family.)
+- Family: neo-grotesk with tight apertures. Closest free options: **Inter Display**, **Geist**, **Neue Montreal**. Use the brand font when given.
 - Weight: Medium (500) for headlines, Regular (400) for UI.
 - Size: hero lines ~**3.5 to 4% of frame height** (≈40px at 1080p for multi-word lines, up to ~110px for the logo wordmark). UI text ~13 to 16px, shown at real scale.
 - Tracking: slightly negative on headlines (≈ -1%).
@@ -32,7 +32,7 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 ## Shot lengths
 
-- Hard cuts only at mode flips: 4.07, 53.02, 66.57, 71.77, 72.71, 79.28s.
+- Hard cuts only at light/dark mode flips (about 6 in a 90s film).
 - "Beats" (a new word/prop lands): every **0.5s** on the grid, bigger ideas every 1.5 to 2.5s.
 - Average text card dwell: ~2s. Demo screens dwell 3 to 5s.
 
