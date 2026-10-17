@@ -24,10 +24,10 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 - Family: neo-grotesk with tight apertures. Closest free options: **Inter Display**, **Geist**, **Neue Montreal**. Use the brand font when given.
 - Weight: Medium (500) for headlines, Regular (400) for UI.
-- Size: hero lines ~**3.5 to 4% of frame height** (≈40px at 1080p for multi-word lines, up to ~110px for the logo wordmark). UI text ~13 to 16px, shown at real scale.
+- Size: hero lines ~**3.9% of the short side** at 16:9 (≈42px at 1080p, up to ~110px for the logo wordmark), larger in square and vertical (see `layout()` in `tokens.ts`). UI text ~13 to 16px × `u`, shown at real scale.
 - Tracking: slightly negative on headlines (≈ -1%).
 - Case: sentence case always. No all-caps.
-- Layout: centered, 1 to 3 short lines, ragged. Max ~5 words per line.
+- Layout: centered, 1 to 3 short lines, ragged. Max ~5 words per line (4 in 1:1, 3 in 9:16).
 - **Inline icons**: line icons (globe, key, clock, lock, drive) sit in the text baseline at cap height, same color as text. This is the signature move.
 
 ## Shot lengths
@@ -55,8 +55,8 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 ## Texture
 
-- Clean, no grain, no vignette.
-- **Directional motion blur** on fast moves (stacked "Connect App" copies, flying chips). Blur trails, not a filter on the whole frame.
+- Clean, no grain, no vignette. One exception: light seeded grain over the reveal plate only, to hide 8-bit banding.
+- **Directional motion blur** on fast moves: the stylized echo trail (M6) for stacked props, `CameraMotionBlur` on flying elements (M7, chips). Never on type or the whole frame.
 - Soft drop shadows on light UI cards (large radius, ~6% opacity).
 - Glow only on the accent bar and the progress dot.
 
@@ -66,14 +66,30 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 - "Lighting": the line appears dim (`--dark-dim`) then words brighten left to right, like karaoke.
 - Out: words drop to dim and slide/blur away, or the next line pushes them.
 - Letter-level effects used rarely: per-letter wobble ("button**s**" letters falling), scramble text ("enc9,:GRP" → "encrypted").
-- Easing: ease-out cubic for entries, ease-in for exits. Springs (low bounce) for icons and pills.
+- Easing: GSAP `power3.out` for type entries, `power2.in` for exits. `motion.ts` springs for everything physical: `snappy` UI, `default` pills/cards/camera, `stagger` icon rows, `heavy` logo, bars and the laptop. No overshoot on type, never bouncy or elastic.
 
 ## Audio
 
-- Music: modern electronic/pop instrumental, **~114 to 118 BPM** (dominant onset interval 0.50 to 0.55s).
-- Energy curve (RMS per 5s): quiet intro 0 to 10s, builds 10 to 20s, full from the reveal (~20s) to the end, small dips at act changes.
-- No voiceover. Text carries the story.
-- SFX: soft UI ticks on word lands and clicks, whooshes on morphs, a riser into the reveal.
+Synthesized with motion-studio's `score.mjs` unless the user supplies a track.
+
+- Tempo: **112 to 120 BPM**, 116 if nothing else decides it. Each film gets its own BPM, key and seed (never reuse a seed across films).
+- Palette: `glass` for SaaS / AI products (default), `analog` for a bolder consumer launch, `tech` for dev tools and infra. `minor` scale (the story is problem-led).
+- Energy per act (0 to 3, one value per bar in `score.json`). Acts start on downbeats, so every step lands on a cut:
+
+| Act | Energy | Effect |
+|---|---|---|
+| Hook, Problem first half | 1 | pad only, tension |
+| Problem second half | 2 | the build |
+| Reveal → Positioning | 3 | step into 3 = automatic riser over the previous bar + impact on the reveal downbeat |
+| Demo | 2 | room for UI clicks and ticks |
+| Proof, Capabilities | 3 | impact on the dark flip |
+| Trust | 2 | |
+| Bonus | 3 | impact on the flip |
+| CTA | 1, then 0 under the URL hold | |
+
+- SFX via `sfx.mjs` with the score's seed and key. Cues: `click` on cursor clicks, `swish` on morphs (M4, M18), `pop` on icon rows (M5), `thump` on trash impact (M7), `tick` on agent steps and slot moves (sparingly, not every row), `glitch` on scramble lock (M15), `chime` when the progress dot hits 100% and on the URL land. No SFX on word lands. No riser or impact cues where the score already steps up.
+- Mix: score + SFX → `public/mix.wav` at -14 LUFS, true peak under -1 (motion-studio's ffmpeg line).
+- No voiceover. Text carries the story, so the film must read fully with sound off.
 - Sync: every word land and every hard cut sits on a beat.
 
 ## Do / Don't
@@ -85,4 +101,4 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 5. **Do** keep one accent color and use it for maybe 5% of pixels.
 6. **Don't** cut inside an act. Morph or push instead.
 7. **Don't** use more than ~5 words on screen at a time outside the demo.
-8. **Don't** add grain, gradients on backgrounds, or 3D unless it's the reveal.
+8. **Don't** add grain, gradients on backgrounds, or 3D outside the reveal plate and the trust laptop.

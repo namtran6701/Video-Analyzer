@@ -33,10 +33,10 @@ For each, simplest first:
 ## Data universe
 - Fictional company, people, period, key numbers (or real demo data the user provides):
 
-## Assets in `assets/`
-- Screens (before/after per chapter, at 3x):
+## Assets in `public/`
+- Screens in `public/screens/` (before/after per chapter, at 3x):
 - Panel empty state / menus:
-- Music (or "synthesize"), BPM if known:
+- Music: synthesize (palette glass / lofi) or licensed track file + BPM if known:
 
 ## Must not
 -

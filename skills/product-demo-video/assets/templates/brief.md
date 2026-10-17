@@ -4,7 +4,7 @@
 - One-line promise:
 - Audience:
 - Runtime (s): 30 / 60 / 90
-- Aspect ratio: 16:9 (1920x1080) / 9:16 (1080x1920) / 1:1
+- Formats (one or more): 16:9 (1920x1080) / 1:1 (1080x1080) / 9:16 (1080x1920)
 - Frame rate: 30
 - URL / CTA:
 
@@ -23,10 +23,12 @@
 - Bonus differentiator:
 - Tagline:
 
-## Assets in `assets/`
+## Assets in `public/brand/`
+- Product site / app URL to capture:
 - Product screenshots / UI specs:
 - Icons:
-- Music (or "synthesize"), BPM if known:
+- Laptop glTF (optional, else procedural):
+- Music: synthesize (palette glass / analog / tech) or licensed track file + BPM/key if known:
 
 ## Must not
 -

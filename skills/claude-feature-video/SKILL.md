@@ -1,11 +1,11 @@
 ---
 name: claude-feature-video
-description: Produce a calm, Claude-launch-style feature introduction video in one fixed style (warm ivory stage, the product's real UI in a floating browser window, a virtual camera that punches into details and pulls back to reveal results, an AI side panel with typed prompt, working state and streamed reply, an accent wipe that turns the "before" screen into the "after", serif opener and tagline cards, logo build) from the user's screenshots, brand and use cases. Ships the style spec, a 20-move motion library, a chapter template (one use case per chapter), brief/shotlist templates and Remotion tokens plus a camera helper; builds with Remotion and renders an MP4. Use whenever the user wants a feature intro, feature walkthrough video, in-app AI assistant demo, "Claude-style" / "Anthropic-style" product video, or a video "like the Claude for Workspace one", even if they don't name this skill. Not for kinetic-typography launch films (that's product-demo-video) or for studying a new reference video (that's video-study).
+description: Produce a calm, Claude-launch-style feature introduction video in one fixed style (warm ivory stage, the product's real UI in a floating browser window, a virtual camera that punches into details and pulls back to reveal results, an AI side panel with typed prompt, working state and streamed reply, an accent wipe that turns the "before" screen into the "after", serif opener and tagline cards, logo build) from the user's screenshots, brand and use cases. Ships the style spec, a 20-move motion library, a chapter template (one use case per chapter), brief/shotlist templates and Remotion tokens plus a camera helper; produces it on the motion-studio pipeline (Remotion, synthesized 90 BPM bed and UI SFX, scored critique loop) and renders an MP4. Use whenever the user wants a feature intro, feature walkthrough video, in-app AI assistant demo, "Claude-style" / "Anthropic-style" product video, or a video "like the Claude for Workspace one", even if they don't name this skill. Not for kinetic-typography launch films (that's product-demo-video) or for studying a new reference video (that's video-study).
 ---
 
 # Claude Feature Video
 
-Turn a feature, its use cases and the user's screenshots into a 30 to 90s intro film in one fixed style, ending in a rendered MP4. The style is fully specified in this skill's references, so there is nothing to analyze. Your job is chapters, shotlist, build, render.
+Turn a feature, its use cases and the user's screenshots into a 30 to 90s intro film in one fixed style, ending in a rendered MP4. The style is fully specified in this skill's references, so there is nothing to analyze. This skill owns the **style**; the **`motion-studio`** skill owns production (motion helpers, determinism rules, score, SFX, critique loop, delivery). Load motion-studio before step 6 and follow it wherever this file doesn't say otherwise.
 
 The style in one paragraph: no voiceover and almost no on-screen copy. The product's real UI tells the story. A browser window floats on a warm ivory stage and a virtual camera moves over it: hard cut into a close-up of where you invoke the feature, eased pull-back to show what happened. Each chapter is one use case with the same grammar (establish, invoke, ask, working, transform, hold), and each one shows a different way in (menu, file drop, tool toggle). One accent color appears only when the AI acts: the panel glow, the working spark, and a soft diagonal wipe that rewrites the screen. Serif cards bookend it: "Introducing ..." up front, one tagline and a logo build at the end. Mellow 90 BPM bed.
 
@@ -40,26 +40,30 @@ Fill `assets/templates/shotlist.md` into `docs/shotlist.md`. Times in beats and 
 
 Show the user the chapters, style mapping and shotlist, then **stop and wait for approval**. A wrong shotlist wastes every step after it.
 
-### 5. Screens
-Read `references/toolchain.md`. Get a "before" and "after" screenshot per chapter, plus anything static the close-ups show (menus, empty panel). If the app runs locally and the user agrees, capture them with Playwright at device scale factor 3; otherwise ask the user for them at the sizes in the toolchain. Never use screen recordings, they go soft in close-ups and can't be beat-timed.
+### 5. Screens (gate)
+Read `references/toolchain.md`. Get a "before" and "after" screenshot per chapter into `public/screens/`, plus anything static the close-ups show (menus, empty panel), and the logo and fonts into `public/brand/`. If the app runs locally and the user agrees, capture them with Playwright at device scale factor 3; otherwise ask the user for them at the sizes in the toolchain. Never redraw UI from memory and never use screen recordings, they go soft in close-ups and can't be beat-timed. List what you have and what's missing, and **wait for the OK**.
 
 ### 6. Scaffold
-Set up Remotion per `references/toolchain.md`. Check current Remotion APIs before writing framework code (context7 if available), since they change often. Copy `assets/remotion/tokens.ts` and `camera.ts`, set palette and fonts from step 3, load brand fonts locally from the user's files.
+Set up per `references/toolchain.md` (motion-studio setup, `motion.ts`, this skill's `tokens.ts` and `camera.ts`). Check current Remotion APIs with context7 before writing framework code. Set palette and fonts from step 3, load brand fonts locally via `staticFile`.
 
 ### 7. Build, one chapter at a time
 Build only the motion components the shotlist uses, then the opener, each chapter, and the close. After each section, render stills (`npx remotion still ... --frame=<f>`) at the wide shot, the close-up and mid-wipe, and check them against the geometry in the style guide: window size and position, close-up scale, card type size, accent coverage. Fix gaps before moving on and report progress per section.
 
-### 8. Audio
-If the `motion-studio` skill is available, use it to synthesize the bed at 90 BPM following the energy map in the style guide (soft intro, groove from chapter 1, drums drop for the last transform, outro under the logo, silent tail), plus quiet click and keystroke SFX on shotlist cues. If the user supplies a track, ask for its BPM and set it in `tokens.ts`.
+### 8. Sound
+Follow "Synthesizing it" in the style guide with motion-studio's `score.mjs` (try 2 or 3 seeds, keep the calmest one that still moves) and `sfx.mjs`, mix to `public/mix.wav`, add `<Audio src={staticFile('mix.wav')} />`. If the user supplies a track, measure it with `beats.py`, set its BPM in `tokens.ts`, and re-time the shotlist to it.
 
-### 9. Render and verify
-Render to `out/final.mp4` (h264, crf 18). Verify with:
+### 9. Critique loop
+Run motion-studio's critique loop (contact sheet of stills, half-scale drafts, phone test, sound-off test, determinism, loudness, 10 scores, fix the 3 worst, log in `docs/review_log.md`, minimum 3 rounds, every score 8+). Add these to its hunt list:
+- a cut between two wide shots, or any camera move that isn't eased (whip, overshoot, linear zoom)
+- accent on idle UI, text cards or the cursor
+- a transform that starts before the camera settles on the wide shot
+- an "after" screen that doesn't read as better from the wide shot
+- close-ups where the screenshot goes soft (captured below 3x), or no window edge visible
+- panel dead during a hold (reply not streaming)
+- clicks or keystrokes audible over the bed
 
-```bash
-ffprobe -v error -show_entries stream=width,height,r_frame_rate,duration -of default=nw=1 out/final.mp4
-```
-
-Duration, resolution and fps must match the brief exactly. Report what you checked, then send the file to the user.
+### 10. Render and deliver
+`npx remotion render Main out/final.mp4 --codec=h264 --crf=16`, verified with `ffprobe` (duration, resolution and fps must match the brief exactly) and loudness at about -14 LUFS. Also `out/poster.png` (a mid-wipe frame) and `out/contact.png`. Report what you checked, including the final scores, then send the files to the user.
 
 ## Rules that make it feel right
 

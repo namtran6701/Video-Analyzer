@@ -1,6 +1,10 @@
 # Toolchain
 
-Everything here is 2D, so **Remotion is the whole pipeline**. No Blender, no screen recordings.
+Everything here is 2D, so **Remotion is the whole pipeline**, all in motion-studio's 2D lane. No Blender, no R3F, no screen recordings. Production basics (setup, determinism rules, score, SFX, critique loop, delivery) follow the **`motion-studio`** skill; this file adds what's specific to this style.
+
+## Setup
+
+Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` → `src/lib/motion.ts`, and this skill's `tokens.ts` and `camera.ts` → `src/`. GSAP isn't needed: nothing in this style is per-character type animation.
 
 ## Who does what
 
@@ -17,7 +21,7 @@ Rule of thumb: static = screenshot, changing = React. The panel's empty state ca
 ## Screens
 
 - Window content area at rest is ~1418 x 790 (window minus ~110px of browser chrome). Capture the app at that CSS viewport with **device scale factor 3** so 3x close-ups stay sharp (≈ 4254 x 2370 px).
-- Per chapter: `chNN-before.png`, `chNN-after.png`, plus any static close-up state (`chNN-menu.png`, `chNN-panel-empty.png`).
+- Per chapter, in `public/screens/`: `chNN-before.png`, `chNN-after.png`, plus any static close-up state (`chNN-menu.png`, `chNN-panel-empty.png`).
 - Hide real user data, notifications and cookie banners. Use the fictional data universe from the brief.
 - Playwright sketch:
 
@@ -25,28 +29,33 @@ Rule of thumb: static = screenshot, changing = React. The panel's empty state ca
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1418, height: 790 }, deviceScaleFactor: 3 });
 await page.goto(url);
-await page.screenshot({ path: "assets/screens/ch01-before.png" });
+await page.screenshot({ path: "public/screens/ch01-before.png" });
 ```
 
 ## Project layout
+
+The project root is the Remotion project; everything loaded with `staticFile` lives in `public/`.
 
 ```
 <project>/
   brief.md
   docs/style_guide.md         # mapped from references/style_guide.md
   docs/shotlist.md            # from assets/templates/shotlist.md
-  assets/screens/             # chNN-before.png, chNN-after.png, close-up states
-  assets/brand/               # logo mark + wordmark (SVG), opener icons, fonts
-  assets/audio/               # score + SFX (or the user's track)
-  remotion/
-    src/
-      tokens.ts               # palette, type, beat helpers
-      camera.ts               # world camera (keys, cuts, eased moves)
-      stage/                  # Stage (ivory bg + camera world), Window (chrome, screenshot, shadow)
-      ui/                     # Cursor, Menu, Toggle, FileDrag, Panel, Prompt, Working, Stream
-      fx/                     # AccentWipe, AccentBloom, PanelGlow
-      cards/                  # Opener, Tagline, LogoBuild
-      Root.tsx                # one <Composition>, <Sequence> per section
+  docs/score.json  docs/sfx.json  docs/review_log.md
+  beats.json                  # motion-studio beats.py --bpm 90
+  public/
+    screens/                  # chNN-before.png, chNN-after.png, close-up states
+    brand/                    # logo mark + wordmark (SVG), opener icons, fonts
+    score.wav  mix.wav        # or the user's track
+  src/
+    tokens.ts                 # palette, type, beat helpers
+    camera.ts                 # world camera (keys, cuts, eased moves)
+    lib/motion.ts             # from motion-studio
+    stage/                    # Stage (ivory bg + camera world), Window (chrome, screenshot, shadow)
+    ui/                       # Cursor, Menu, Toggle, FileDrag, Panel, Prompt, Working, Stream
+    fx/                       # AccentWipe, AccentBloom, PanelGlow
+    cards/                    # Opener, Tagline, LogoBuild
+    Root.tsx                  # one <Composition>, <Sequence> per section, <Audio src={staticFile('mix.wav')} />
   out/
 ```
 
@@ -75,9 +84,13 @@ Shotlist times are written in beats and converted with `at()`. Change BPM and th
 
 ## Render and verify
 
+Draft at `--scale=0.5` during the critique loop. Final:
+
 ```bash
-npx remotion render src/index.ts Main out/final.mp4 --codec h264 --crf 18
+npx remotion render Main out/final.mp4 --codec=h264 --crf=16
 ffprobe -v error -show_entries stream=width,height,r_frame_rate,duration -of default=nw=1 out/final.mp4
 ```
+
+16:9 only: the floating window on a stage is the style, and it doesn't survive a vertical reframe. If the user needs 9:16, say so and suggest product-demo-video instead.
 
 Render at 24fps unless the brief says otherwise. If the brief demands 30fps, keep BPM 90 (BEAT becomes 20 frames) and scale every frame count in the motion library by 1.25.

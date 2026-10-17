@@ -83,9 +83,25 @@ Cuts happen only into a close-up (4 to 5 per 60s). Never cut between two wide sh
 
 - Music: mellow, warm instrumental at **~90 BPM** (measured onset interval 0.665s), soft kick, gentle hats on the beat, round bass, keys. Pitch content suggests A minor / C major (rough estimate).
 - Energy map (RMS per 2.5s): soft intro under the opener (-25 dB), full groove from the first window to ~45s (-15 to -17 dB), drums drop for the last transform (~47s), quiet outro under tagline and logo (-24 to -29 dB), silence for the last ~2.5s.
-- Mix: mean around -17.6 dB, peaks at -1 dBFS.
 - SFX: very quiet UI clicks on cursor clicks, light keystroke ticks while typing, optional soft air whoosh on the wipe. Tucked well under the music.
 - No voiceover.
+
+### Synthesizing it (motion-studio `score.mjs` + `sfx.mjs`)
+
+- `score.json`: `bpm` 90, palette `glass` (FM keys, light straight kit, sevenths; closest to the reference) or `lofi` if the brand is casual (swung, dustier). `minor` key for the A minor feel, `major` for C major. Fresh seed every film.
+- Energy per bar:
+
+| Section | Energy | Effect |
+|---|---|---|
+| Opener | 1 | pad only |
+| Chapter 1 to the last chapter's Ask | 3 | step into 3 = auto riser over the opener's last bar + impact on the first window |
+| Last chapter from Transform | 2 | drums drop out, bass and keys carry the payoff |
+| Tagline, logo build | 1 | |
+| Last ~2.5s | 0 | silent tail |
+
+- Energy steps sit on bars, cuts in this style don't have to. Put each step on the bar nearest its section start; if the opener → first window cut is within one beat of that bar, move the cut onto the downbeat and take the beat back from the logo hold.
+- `sfx.json` with the score's seed and key, every cue low (gain well under the music): `click` on cursor clicks, `tick` every 3 to 4 frames while typing (never per character), `swish` on each wipe or bloom, `pop` (soft, pitched down) on file chips landing. No impact or riser cues: the score's single step handles it.
+- Mix to `public/mix.wav` with motion-studio's ffmpeg line: -14 LUFS integrated, true peak under -1.
 
 ## Do / Don't
 

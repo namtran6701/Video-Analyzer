@@ -1,6 +1,8 @@
 # Motion Library
 
-Reusable moves for this style, each a component or a camera pattern to build once and reuse. Frame counts are at 24fps. All in Remotion.
+Reusable moves for this style, each a component or a camera pattern to build once and reuse. Frame counts are at 24fps. All in Remotion, 2D lane.
+
+Helpers: the camera uses `camera.ts` (eased cubic keys with geometric zoom, deliberately calm, not springs). UI elements that move as objects (panel, cursor, chips, bubble) use `motion.ts` from motion-studio with the `default` or `heavy` preset only: both are critically damped, so nothing overshoots. Never `snappy`, `title` or `playful` here. Seeded noise via Remotion `random(seed)`; no CSS transitions.
 
 | # | Move | Used in |
 |---|---|---|
@@ -55,7 +57,7 @@ Reusable moves for this style, each a component or a camera pattern to build onc
 
 ### M7 Cursor
 - macOS arrow; switches to pointing hand over clickable items. Black fill, white outline. It lives in the window (world space), so it scales with the camera: small in wide shots, big in close-ups.
-- Moves on eased curves (ease-in-out, slight arc), ~0.5 to 1 beat per move, pauses ~6 frames before clicking.
+- Moves on `track(t, keys, 'default')` for x and y (one key per target, slight arc from a mid key offset ~3% sideways), ~0.5 to 1 beat per move, pauses ~6 frames before clicking.
 - Click: item highlight appears on the click frame, quiet click SFX. No ripple, no scale bounce.
 
 ### M8 Menu and submenu
@@ -72,7 +74,7 @@ Reusable moves for this style, each a component or a camera pattern to build onc
 - On drop: overlay fades over 6 frames; file chips pop into the input (scale 0.92 → 1 and fade, 8 frames, 3-frame stagger).
 
 ### M11 Panel open with accent glow
-- Panel slides in from the window's right edge over 7 frames (ease-out cubic), overlapping the app content like a floating card.
+- Panel slides in from the window's right edge with `spring(t - tOpen, 'default')` (settles in ~9 frames), overlapping the app content like a floating card.
 - Glow: outer blur in `accentGlow` / `accentWipe`, ~60px spread (`box-shadow: 0 0 60px 14px rgba(232,140,120,.45)`). In over 8 frames, one gentle pulse over ~1 beat, out over 12 frames before the next punch-in.
 - Empty state: product icon, "How can I help ...", 4 to 6 suggestion chips, input at the bottom.
 
@@ -87,7 +89,7 @@ Reusable moves for this style, each a component or a camera pattern to build onc
 
 ### M14 Working state
 - Step line in `inkDim` under the bubble: comma list of actions, truncated with "...", trailing chevron.
-- Below it: the accent spark (or the user's AI mark) rotating ~1 turn per 1.5s, plus "Working on it..." with a shimmer: a lighter highlight band sweeps left to right across the text every ~24 frames.
+- Below it: the accent spark (or the user's AI mark) rotating ~1 turn per 1.5s (linear: `360 * t / 1.5`), plus "Working on it..." with a shimmer: a lighter highlight band sweeps left to right across the text every ~24 frames (`loopT(t, 1)` drives its position).
 - Lasts 1.5 to 3s, then the reply starts streaming. Never longer.
 
 ### M15 Streamed reply with autoscroll

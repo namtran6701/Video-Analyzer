@@ -17,6 +17,8 @@ The 7-act launch structure. Fill the brackets. Timings in % so it scales.
 
 For 30s cuts: merge 6+7 and drop 9.
 
+Round every act to whole bars (4 beats, ≈2.07s at 116 BPM) so acts start on downbeats and the score's energy steps land on the cuts. Minimum one bar per act. Absorb the rounding remainder in the Demo act, and trim the last bar of the CTA so the total equals the runtime exactly.
+
 ## How each act looks
 
 | Act | Visual approach | Motion IDs | Look frame (`assets/look/`) |
@@ -28,7 +30,7 @@ For 30s cuts: merge 6+7 and drop 9.
 | Demo | Real product UI at real scale: prompt typed, agent/product steps appear one per beat, a section expands with zoom, parallel branches, result line. Thin progress thread with a blue dot runs through it | M9 to M12 | `demo-agent-steps.jpg` |
 | Proof | Starts tight on the hero bar glowing in the accent, pulls out to the full chart | M13 | `proof-benchmark-bars.jpg` |
 | Capabilities | "Anything you can do in a [icon] place" lit word by word, then "[logo] can do" with a vertical slot list of verbs | M2, M3, M14 | `capabilities-slot-list.jpg` |
-| Trust | Short lines with a lock/drive icon inline, a device prop, scrambled text resolving to "encrypted", a field toggling to masked | M15 to M17 | `trust-scramble-text.jpg`, `trust-password-toggle.jpg` |
+| Trust | Short lines with a lock/drive icon inline, a 3D laptop with the product on screen closing its lid, scrambled text resolving to "encrypted", a field toggling to masked | M15 to M17 | `trust-scramble-text.jpg`, `trust-password-toggle.jpg` |
 | Bonus | One line, then partner/model icons pop in a row and collapse into the logo | M5 | |
 | CTA | Logo + tagline, all words fall away except the URL | M18 | |
 
