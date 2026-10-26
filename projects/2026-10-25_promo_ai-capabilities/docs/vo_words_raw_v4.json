@@ -1,0 +1,1231 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "Six months ago, a lot of our work lived in spreadsheets. Estimates priced from memory, store photos nobody could search, AI know-how stuck with a few people. So we stopped working around our tools and built our own. AI-powered apps, live data, and automations. SF Pricing turns a client brief into a good, better, best plan. We trained it on hundreds of our past estimates. It checks with the market charges and drafts a starting point. Our team reviews every number and a person makes the final call. Over $100,000 of work priced so far. Store Walk turns field photos into retail evidence. Every shelf shot gets tagged so anyone can search it in plain English. It drafts a pitch from what we actually saw and our team takes it from there. Every Store Walk searchable in one place. And AI training keeps the whole team current. Our AI team carefully designs each lesson around the tools that matter to each team's work. Lessons land in everyone's quarterly checklist. A learning track for every team. Automations handle the busy work. Hours of SEO work now done in minutes. Same playbook everywhere. Dashboards, pipelines, catalog audits. And we bring the same technical capabilities to our clients, building software for them too. The rule is simple. AI drafts, code does the math, people decide. Behind every app is months of work from our own team. Built by our team, powered by AI, getting smarter every quarter.",
+  "segments": [
+    {
+      "text": "Six months ago, a lot of our work lived in spreadsheets. Estimates priced from memory, store photos nobody could search, AI know-how stuck with a few people. So we stopped working around our tools and built our own. AI-powered apps, live data, and automations. SF Pricing turns a client brief into a good, better, best plan. We trained it on hundreds of our past estimates. It checks with the market charges and drafts a starting point. Our team reviews every number and a person makes the final call. Over $100,000 of work priced so far. Store Walk turns field photos into retail evidence. Every shelf shot gets tagged so anyone can search it in plain English. It drafts a pitch from what we actually saw and our team takes it from there. Every Store Walk searchable in one place. And AI training keeps the whole team current. Our AI team carefully designs each lesson around the tools that matter to each team's work. Lessons land in everyone's quarterly checklist. A learning track for every team. Automations handle the busy work. Hours of SEO work now done in minutes. Same playbook everywhere. Dashboards, pipelines, catalog audits. And we bring the same technical capabilities to our clients, building software for them too. The rule is simple. AI drafts, code does the math, people decide. Behind every app is months of work from our own team. Built by our team, powered by AI, getting smarter every quarter.",
+      "words": [
+        {
+          "word": "Six",
+          "start_offset": "0.400s",
+          "end_offset": "0.600s"
+        },
+        {
+          "word": "months",
+          "start_offset": "0.600s",
+          "end_offset": "0.800s"
+        },
+        {
+          "word": "ago,",
+          "start_offset": "0.800s",
+          "end_offset": "1.100s"
+        },
+        {
+          "word": "a",
+          "start_offset": "1.100s",
+          "end_offset": "1.200s"
+        },
+        {
+          "word": "lot",
+          "start_offset": "1.200s",
+          "end_offset": "1.500s"
+        },
+        {
+          "word": "of",
+          "start_offset": "1.500s",
+          "end_offset": "1.600s"
+        },
+        {
+          "word": "our",
+          "start_offset": "1.600s",
+          "end_offset": "1.700s"
+        },
+        {
+          "word": "work",
+          "start_offset": "1.700s",
+          "end_offset": "2s"
+        },
+        {
+          "word": "lived",
+          "start_offset": "2s",
+          "end_offset": "2.400s"
+        },
+        {
+          "word": "in",
+          "start_offset": "2.400s",
+          "end_offset": "2.500s"
+        },
+        {
+          "word": "spreadsheets.",
+          "start_offset": "2.500s",
+          "end_offset": "3.400s"
+        },
+        {
+          "word": "Estimates",
+          "start_offset": "3.700s",
+          "end_offset": "4.300s"
+        },
+        {
+          "word": "priced",
+          "start_offset": "4.300s",
+          "end_offset": "4.600s"
+        },
+        {
+          "word": "from",
+          "start_offset": "4.600s",
+          "end_offset": "4.700s"
+        },
+        {
+          "word": "memory,",
+          "start_offset": "4.700s",
+          "end_offset": "5.400s"
+        },
+        {
+          "word": "store",
+          "start_offset": "5.600s",
+          "end_offset": "6s"
+        },
+        {
+          "word": "photos",
+          "start_offset": "6s",
+          "end_offset": "6.400s"
+        },
+        {
+          "word": "nobody",
+          "start_offset": "6.400s",
+          "end_offset": "6.700s"
+        },
+        {
+          "word": "could",
+          "start_offset": "6.700s",
+          "end_offset": "6.900s"
+        },
+        {
+          "word": "search,",
+          "start_offset": "6.900s",
+          "end_offset": "7.500s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "7.900s",
+          "end_offset": "8.200s"
+        },
+        {
+          "word": "know-how",
+          "start_offset": "8.200s",
+          "end_offset": "8.700s"
+        },
+        {
+          "word": "stuck",
+          "start_offset": "8.700s",
+          "end_offset": "9.100s"
+        },
+        {
+          "word": "with",
+          "start_offset": "9.100s",
+          "end_offset": "9.200s"
+        },
+        {
+          "word": "a",
+          "start_offset": "9.200s",
+          "end_offset": "9.300s"
+        },
+        {
+          "word": "few",
+          "start_offset": "9.300s",
+          "end_offset": "9.500s"
+        },
+        {
+          "word": "people.",
+          "start_offset": "9.500s",
+          "end_offset": "10s"
+        },
+        {
+          "word": "So",
+          "start_offset": "12.600s",
+          "end_offset": "12.900s"
+        },
+        {
+          "word": "we",
+          "start_offset": "12.900s",
+          "end_offset": "13.100s"
+        },
+        {
+          "word": "stopped",
+          "start_offset": "13.100s",
+          "end_offset": "13.500s"
+        },
+        {
+          "word": "working",
+          "start_offset": "13.500s",
+          "end_offset": "13.800s"
+        },
+        {
+          "word": "around",
+          "start_offset": "13.800s",
+          "end_offset": "14.200s"
+        },
+        {
+          "word": "our",
+          "start_offset": "14.200s",
+          "end_offset": "14.300s"
+        },
+        {
+          "word": "tools",
+          "start_offset": "14.300s",
+          "end_offset": "14.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "14.800s",
+          "end_offset": "15s"
+        },
+        {
+          "word": "built",
+          "start_offset": "15s",
+          "end_offset": "15.300s"
+        },
+        {
+          "word": "our",
+          "start_offset": "15.300s",
+          "end_offset": "15.500s"
+        },
+        {
+          "word": "own.",
+          "start_offset": "15.500s",
+          "end_offset": "15.800s"
+        },
+        {
+          "word": "AI-powered",
+          "start_offset": "16.100s",
+          "end_offset": "16.800s"
+        },
+        {
+          "word": "apps,",
+          "start_offset": "16.800s",
+          "end_offset": "17.200s"
+        },
+        {
+          "word": "live",
+          "start_offset": "17.300s",
+          "end_offset": "17.600s"
+        },
+        {
+          "word": "data,",
+          "start_offset": "17.600s",
+          "end_offset": "18s"
+        },
+        {
+          "word": "and",
+          "start_offset": "18s",
+          "end_offset": "18.300s"
+        },
+        {
+          "word": "automations.",
+          "start_offset": "18.300s",
+          "end_offset": "19.100s"
+        },
+        {
+          "word": "SF",
+          "start_offset": "20.800s",
+          "end_offset": "21.200s"
+        },
+        {
+          "word": "Pricing",
+          "start_offset": "21.200s",
+          "end_offset": "21.600s"
+        },
+        {
+          "word": "turns",
+          "start_offset": "21.600s",
+          "end_offset": "21.800s"
+        },
+        {
+          "word": "a",
+          "start_offset": "21.800s",
+          "end_offset": "21.900s"
+        },
+        {
+          "word": "client",
+          "start_offset": "21.900s",
+          "end_offset": "22.400s"
+        },
+        {
+          "word": "brief",
+          "start_offset": "22.400s",
+          "end_offset": "22.700s"
+        },
+        {
+          "word": "into",
+          "start_offset": "22.700s",
+          "end_offset": "23s"
+        },
+        {
+          "word": "a",
+          "start_offset": "23s",
+          "end_offset": "23s"
+        },
+        {
+          "word": "good,",
+          "start_offset": "23s",
+          "end_offset": "23.400s"
+        },
+        {
+          "word": "better,",
+          "start_offset": "23.400s",
+          "end_offset": "23.700s"
+        },
+        {
+          "word": "best",
+          "start_offset": "23.700s",
+          "end_offset": "24.100s"
+        },
+        {
+          "word": "plan.",
+          "start_offset": "24.100s",
+          "end_offset": "24.600s"
+        },
+        {
+          "word": "We",
+          "start_offset": "24.900s",
+          "end_offset": "25s"
+        },
+        {
+          "word": "trained",
+          "start_offset": "25s",
+          "end_offset": "25.300s"
+        },
+        {
+          "word": "it",
+          "start_offset": "25.300s",
+          "end_offset": "25.400s"
+        },
+        {
+          "word": "on",
+          "start_offset": "25.400s",
+          "end_offset": "25.600s"
+        },
+        {
+          "word": "hundreds",
+          "start_offset": "25.600s",
+          "end_offset": "26.100s"
+        },
+        {
+          "word": "of",
+          "start_offset": "26.100s",
+          "end_offset": "26.200s"
+        },
+        {
+          "word": "our",
+          "start_offset": "26.200s",
+          "end_offset": "26.300s"
+        },
+        {
+          "word": "past",
+          "start_offset": "26.300s",
+          "end_offset": "26.600s"
+        },
+        {
+          "word": "estimates.",
+          "start_offset": "26.600s",
+          "end_offset": "27.200s"
+        },
+        {
+          "word": "It",
+          "start_offset": "27.500s",
+          "end_offset": "27.700s"
+        },
+        {
+          "word": "checks",
+          "start_offset": "27.700s",
+          "end_offset": "28s"
+        },
+        {
+          "word": "with",
+          "start_offset": "28s",
+          "end_offset": "28.100s"
+        },
+        {
+          "word": "the",
+          "start_offset": "28.100s",
+          "end_offset": "28.100s"
+        },
+        {
+          "word": "market",
+          "start_offset": "28.100s",
+          "end_offset": "28.400s"
+        },
+        {
+          "word": "charges",
+          "start_offset": "28.400s",
+          "end_offset": "29s"
+        },
+        {
+          "word": "and",
+          "start_offset": "29s",
+          "end_offset": "29.300s"
+        },
+        {
+          "word": "drafts",
+          "start_offset": "29.300s",
+          "end_offset": "29.600s"
+        },
+        {
+          "word": "a",
+          "start_offset": "29.600s",
+          "end_offset": "29.600s"
+        },
+        {
+          "word": "starting",
+          "start_offset": "29.600s",
+          "end_offset": "29.900s"
+        },
+        {
+          "word": "point.",
+          "start_offset": "29.900s",
+          "end_offset": "30.300s"
+        },
+        {
+          "word": "Our",
+          "start_offset": "30.700s",
+          "end_offset": "30.800s"
+        },
+        {
+          "word": "team",
+          "start_offset": "30.800s",
+          "end_offset": "31.100s"
+        },
+        {
+          "word": "reviews",
+          "start_offset": "31.100s",
+          "end_offset": "31.600s"
+        },
+        {
+          "word": "every",
+          "start_offset": "31.600s",
+          "end_offset": "31.900s"
+        },
+        {
+          "word": "number",
+          "start_offset": "31.900s",
+          "end_offset": "32.400s"
+        },
+        {
+          "word": "and",
+          "start_offset": "32.400s",
+          "end_offset": "32.600s"
+        },
+        {
+          "word": "a",
+          "start_offset": "32.600s",
+          "end_offset": "32.700s"
+        },
+        {
+          "word": "person",
+          "start_offset": "32.700s",
+          "end_offset": "33.100s"
+        },
+        {
+          "word": "makes",
+          "start_offset": "33.100s",
+          "end_offset": "33.300s"
+        },
+        {
+          "word": "the",
+          "start_offset": "33.300s",
+          "end_offset": "33.400s"
+        },
+        {
+          "word": "final",
+          "start_offset": "33.400s",
+          "end_offset": "33.800s"
+        },
+        {
+          "word": "call.",
+          "start_offset": "33.800s",
+          "end_offset": "34.200s"
+        },
+        {
+          "word": "Over",
+          "start_offset": "34.500s",
+          "end_offset": "34.800s"
+        },
+        {
+          "word": "$100,000",
+          "start_offset": "34.800s",
+          "end_offset": "35.900s"
+        },
+        {
+          "word": "of",
+          "start_offset": "35.900s",
+          "end_offset": "36.100s"
+        },
+        {
+          "word": "work",
+          "start_offset": "36.100s",
+          "end_offset": "36.400s"
+        },
+        {
+          "word": "priced",
+          "start_offset": "36.400s",
+          "end_offset": "36.800s"
+        },
+        {
+          "word": "so",
+          "start_offset": "36.800s",
+          "end_offset": "37s"
+        },
+        {
+          "word": "far.",
+          "start_offset": "37s",
+          "end_offset": "37.400s"
+        },
+        {
+          "word": "Store",
+          "start_offset": "39.300s",
+          "end_offset": "39.600s"
+        },
+        {
+          "word": "Walk",
+          "start_offset": "39.600s",
+          "end_offset": "40s"
+        },
+        {
+          "word": "turns",
+          "start_offset": "40s",
+          "end_offset": "40.300s"
+        },
+        {
+          "word": "field",
+          "start_offset": "40.300s",
+          "end_offset": "40.600s"
+        },
+        {
+          "word": "photos",
+          "start_offset": "40.600s",
+          "end_offset": "41s"
+        },
+        {
+          "word": "into",
+          "start_offset": "41s",
+          "end_offset": "41.300s"
+        },
+        {
+          "word": "retail",
+          "start_offset": "41.300s",
+          "end_offset": "41.800s"
+        },
+        {
+          "word": "evidence.",
+          "start_offset": "41.800s",
+          "end_offset": "42.400s"
+        },
+        {
+          "word": "Every",
+          "start_offset": "42.700s",
+          "end_offset": "43s"
+        },
+        {
+          "word": "shelf",
+          "start_offset": "43s",
+          "end_offset": "43.300s"
+        },
+        {
+          "word": "shot",
+          "start_offset": "43.300s",
+          "end_offset": "43.500s"
+        },
+        {
+          "word": "gets",
+          "start_offset": "43.500s",
+          "end_offset": "43.700s"
+        },
+        {
+          "word": "tagged",
+          "start_offset": "43.700s",
+          "end_offset": "44.200s"
+        },
+        {
+          "word": "so",
+          "start_offset": "44.200s",
+          "end_offset": "44.400s"
+        },
+        {
+          "word": "anyone",
+          "start_offset": "44.400s",
+          "end_offset": "44.900s"
+        },
+        {
+          "word": "can",
+          "start_offset": "44.900s",
+          "end_offset": "45s"
+        },
+        {
+          "word": "search",
+          "start_offset": "45s",
+          "end_offset": "45.300s"
+        },
+        {
+          "word": "it",
+          "start_offset": "45.300s",
+          "end_offset": "45.400s"
+        },
+        {
+          "word": "in",
+          "start_offset": "45.400s",
+          "end_offset": "45.600s"
+        },
+        {
+          "word": "plain",
+          "start_offset": "45.600s",
+          "end_offset": "45.900s"
+        },
+        {
+          "word": "English.",
+          "start_offset": "45.900s",
+          "end_offset": "46.400s"
+        },
+        {
+          "word": "It",
+          "start_offset": "46.700s",
+          "end_offset": "46.900s"
+        },
+        {
+          "word": "drafts",
+          "start_offset": "46.900s",
+          "end_offset": "47.200s"
+        },
+        {
+          "word": "a",
+          "start_offset": "47.200s",
+          "end_offset": "47.300s"
+        },
+        {
+          "word": "pitch",
+          "start_offset": "47.300s",
+          "end_offset": "47.600s"
+        },
+        {
+          "word": "from",
+          "start_offset": "47.600s",
+          "end_offset": "47.700s"
+        },
+        {
+          "word": "what",
+          "start_offset": "47.700s",
+          "end_offset": "47.800s"
+        },
+        {
+          "word": "we",
+          "start_offset": "47.800s",
+          "end_offset": "48s"
+        },
+        {
+          "word": "actually",
+          "start_offset": "48s",
+          "end_offset": "48.500s"
+        },
+        {
+          "word": "saw",
+          "start_offset": "48.500s",
+          "end_offset": "49s"
+        },
+        {
+          "word": "and",
+          "start_offset": "49.100s",
+          "end_offset": "49.400s"
+        },
+        {
+          "word": "our",
+          "start_offset": "49.400s",
+          "end_offset": "49.600s"
+        },
+        {
+          "word": "team",
+          "start_offset": "49.600s",
+          "end_offset": "49.900s"
+        },
+        {
+          "word": "takes",
+          "start_offset": "49.900s",
+          "end_offset": "50.100s"
+        },
+        {
+          "word": "it",
+          "start_offset": "50.100s",
+          "end_offset": "50.200s"
+        },
+        {
+          "word": "from",
+          "start_offset": "50.200s",
+          "end_offset": "50.300s"
+        },
+        {
+          "word": "there.",
+          "start_offset": "50.300s",
+          "end_offset": "50.600s"
+        },
+        {
+          "word": "Every",
+          "start_offset": "51s",
+          "end_offset": "51.300s"
+        },
+        {
+          "word": "Store",
+          "start_offset": "51.300s",
+          "end_offset": "51.500s"
+        },
+        {
+          "word": "Walk",
+          "start_offset": "51.500s",
+          "end_offset": "51.900s"
+        },
+        {
+          "word": "searchable",
+          "start_offset": "51.900s",
+          "end_offset": "52.500s"
+        },
+        {
+          "word": "in",
+          "start_offset": "52.500s",
+          "end_offset": "52.700s"
+        },
+        {
+          "word": "one",
+          "start_offset": "52.700s",
+          "end_offset": "52.900s"
+        },
+        {
+          "word": "place.",
+          "start_offset": "52.900s",
+          "end_offset": "53.400s"
+        },
+        {
+          "word": "And",
+          "start_offset": "55s",
+          "end_offset": "55.300s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "55.300s",
+          "end_offset": "55.600s"
+        },
+        {
+          "word": "training",
+          "start_offset": "55.600s",
+          "end_offset": "56s"
+        },
+        {
+          "word": "keeps",
+          "start_offset": "56s",
+          "end_offset": "56.300s"
+        },
+        {
+          "word": "the",
+          "start_offset": "56.300s",
+          "end_offset": "56.400s"
+        },
+        {
+          "word": "whole",
+          "start_offset": "56.400s",
+          "end_offset": "56.600s"
+        },
+        {
+          "word": "team",
+          "start_offset": "56.600s",
+          "end_offset": "56.900s"
+        },
+        {
+          "word": "current.",
+          "start_offset": "56.900s",
+          "end_offset": "57.400s"
+        },
+        {
+          "word": "Our",
+          "start_offset": "57.800s",
+          "end_offset": "58s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "58s",
+          "end_offset": "58.200s"
+        },
+        {
+          "word": "team",
+          "start_offset": "58.200s",
+          "end_offset": "58.500s"
+        },
+        {
+          "word": "carefully",
+          "start_offset": "58.500s",
+          "end_offset": "58.900s"
+        },
+        {
+          "word": "designs",
+          "start_offset": "58.900s",
+          "end_offset": "59.400s"
+        },
+        {
+          "word": "each",
+          "start_offset": "59.400s",
+          "end_offset": "59.700s"
+        },
+        {
+          "word": "lesson",
+          "start_offset": "59.700s",
+          "end_offset": "60s"
+        },
+        {
+          "word": "around",
+          "start_offset": "60s",
+          "end_offset": "60.300s"
+        },
+        {
+          "word": "the",
+          "start_offset": "60.300s",
+          "end_offset": "60.400s"
+        },
+        {
+          "word": "tools",
+          "start_offset": "60.400s",
+          "end_offset": "60.600s"
+        },
+        {
+          "word": "that",
+          "start_offset": "60.600s",
+          "end_offset": "60.800s"
+        },
+        {
+          "word": "matter",
+          "start_offset": "60.800s",
+          "end_offset": "61s"
+        },
+        {
+          "word": "to",
+          "start_offset": "61s",
+          "end_offset": "61.300s"
+        },
+        {
+          "word": "each",
+          "start_offset": "61.300s",
+          "end_offset": "61.500s"
+        },
+        {
+          "word": "team's",
+          "start_offset": "61.500s",
+          "end_offset": "61.900s"
+        },
+        {
+          "word": "work.",
+          "start_offset": "61.900s",
+          "end_offset": "62.400s"
+        },
+        {
+          "word": "Lessons",
+          "start_offset": "62.700s",
+          "end_offset": "63s"
+        },
+        {
+          "word": "land",
+          "start_offset": "63s",
+          "end_offset": "63.300s"
+        },
+        {
+          "word": "in",
+          "start_offset": "63.300s",
+          "end_offset": "63.500s"
+        },
+        {
+          "word": "everyone's",
+          "start_offset": "63.500s",
+          "end_offset": "64s"
+        },
+        {
+          "word": "quarterly",
+          "start_offset": "64s",
+          "end_offset": "64.400s"
+        },
+        {
+          "word": "checklist.",
+          "start_offset": "64.400s",
+          "end_offset": "65s"
+        },
+        {
+          "word": "A",
+          "start_offset": "65.200s",
+          "end_offset": "65.200s"
+        },
+        {
+          "word": "learning",
+          "start_offset": "65.200s",
+          "end_offset": "65.600s"
+        },
+        {
+          "word": "track",
+          "start_offset": "65.600s",
+          "end_offset": "65.900s"
+        },
+        {
+          "word": "for",
+          "start_offset": "65.900s",
+          "end_offset": "66.200s"
+        },
+        {
+          "word": "every",
+          "start_offset": "66.200s",
+          "end_offset": "66.500s"
+        },
+        {
+          "word": "team.",
+          "start_offset": "66.500s",
+          "end_offset": "66.800s"
+        },
+        {
+          "word": "Automations",
+          "start_offset": "67.800s",
+          "end_offset": "68.500s"
+        },
+        {
+          "word": "handle",
+          "start_offset": "68.500s",
+          "end_offset": "68.700s"
+        },
+        {
+          "word": "the",
+          "start_offset": "68.700s",
+          "end_offset": "68.800s"
+        },
+        {
+          "word": "busy",
+          "start_offset": "68.800s",
+          "end_offset": "69.100s"
+        },
+        {
+          "word": "work.",
+          "start_offset": "69.100s",
+          "end_offset": "69.600s"
+        },
+        {
+          "word": "Hours",
+          "start_offset": "69.800s",
+          "end_offset": "70.100s"
+        },
+        {
+          "word": "of",
+          "start_offset": "70.100s",
+          "end_offset": "70.200s"
+        },
+        {
+          "word": "SEO",
+          "start_offset": "70.200s",
+          "end_offset": "70.600s"
+        },
+        {
+          "word": "work",
+          "start_offset": "70.600s",
+          "end_offset": "71s"
+        },
+        {
+          "word": "now",
+          "start_offset": "71s",
+          "end_offset": "71.200s"
+        },
+        {
+          "word": "done",
+          "start_offset": "71.200s",
+          "end_offset": "71.400s"
+        },
+        {
+          "word": "in",
+          "start_offset": "71.400s",
+          "end_offset": "71.600s"
+        },
+        {
+          "word": "minutes.",
+          "start_offset": "71.600s",
+          "end_offset": "72.100s"
+        },
+        {
+          "word": "Same",
+          "start_offset": "74.100s",
+          "end_offset": "74.400s"
+        },
+        {
+          "word": "playbook",
+          "start_offset": "74.400s",
+          "end_offset": "74.700s"
+        },
+        {
+          "word": "everywhere.",
+          "start_offset": "74.700s",
+          "end_offset": "75.300s"
+        },
+        {
+          "word": "Dashboards,",
+          "start_offset": "75.600s",
+          "end_offset": "76.300s"
+        },
+        {
+          "word": "pipelines,",
+          "start_offset": "76.300s",
+          "end_offset": "77s"
+        },
+        {
+          "word": "catalog",
+          "start_offset": "77s",
+          "end_offset": "77.500s"
+        },
+        {
+          "word": "audits.",
+          "start_offset": "77.500s",
+          "end_offset": "78s"
+        },
+        {
+          "word": "And",
+          "start_offset": "78.200s",
+          "end_offset": "78.400s"
+        },
+        {
+          "word": "we",
+          "start_offset": "78.400s",
+          "end_offset": "78.600s"
+        },
+        {
+          "word": "bring",
+          "start_offset": "78.600s",
+          "end_offset": "78.700s"
+        },
+        {
+          "word": "the",
+          "start_offset": "78.700s",
+          "end_offset": "78.800s"
+        },
+        {
+          "word": "same",
+          "start_offset": "78.800s",
+          "end_offset": "79.200s"
+        },
+        {
+          "word": "technical",
+          "start_offset": "79.200s",
+          "end_offset": "79.600s"
+        },
+        {
+          "word": "capabilities",
+          "start_offset": "79.600s",
+          "end_offset": "80.200s"
+        },
+        {
+          "word": "to",
+          "start_offset": "80.200s",
+          "end_offset": "80.400s"
+        },
+        {
+          "word": "our",
+          "start_offset": "80.400s",
+          "end_offset": "80.500s"
+        },
+        {
+          "word": "clients,",
+          "start_offset": "80.500s",
+          "end_offset": "81.100s"
+        },
+        {
+          "word": "building",
+          "start_offset": "81.100s",
+          "end_offset": "81.400s"
+        },
+        {
+          "word": "software",
+          "start_offset": "81.400s",
+          "end_offset": "81.800s"
+        },
+        {
+          "word": "for",
+          "start_offset": "81.800s",
+          "end_offset": "82s"
+        },
+        {
+          "word": "them",
+          "start_offset": "82s",
+          "end_offset": "82.200s"
+        },
+        {
+          "word": "too.",
+          "start_offset": "82.200s",
+          "end_offset": "82.500s"
+        },
+        {
+          "word": "The",
+          "start_offset": "83.900s",
+          "end_offset": "84.100s"
+        },
+        {
+          "word": "rule",
+          "start_offset": "84.100s",
+          "end_offset": "84.400s"
+        },
+        {
+          "word": "is",
+          "start_offset": "84.400s",
+          "end_offset": "84.600s"
+        },
+        {
+          "word": "simple.",
+          "start_offset": "84.600s",
+          "end_offset": "85.100s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "85.300s",
+          "end_offset": "85.600s"
+        },
+        {
+          "word": "drafts,",
+          "start_offset": "85.600s",
+          "end_offset": "86.200s"
+        },
+        {
+          "word": "code",
+          "start_offset": "86.200s",
+          "end_offset": "86.500s"
+        },
+        {
+          "word": "does",
+          "start_offset": "86.500s",
+          "end_offset": "86.600s"
+        },
+        {
+          "word": "the",
+          "start_offset": "86.600s",
+          "end_offset": "86.700s"
+        },
+        {
+          "word": "math,",
+          "start_offset": "86.700s",
+          "end_offset": "87.200s"
+        },
+        {
+          "word": "people",
+          "start_offset": "87.300s",
+          "end_offset": "87.600s"
+        },
+        {
+          "word": "decide.",
+          "start_offset": "87.600s",
+          "end_offset": "88.200s"
+        },
+        {
+          "word": "Behind",
+          "start_offset": "88.600s",
+          "end_offset": "89s"
+        },
+        {
+          "word": "every",
+          "start_offset": "89s",
+          "end_offset": "89.300s"
+        },
+        {
+          "word": "app",
+          "start_offset": "89.300s",
+          "end_offset": "89.600s"
+        },
+        {
+          "word": "is",
+          "start_offset": "89.600s",
+          "end_offset": "89.800s"
+        },
+        {
+          "word": "months",
+          "start_offset": "89.800s",
+          "end_offset": "90.200s"
+        },
+        {
+          "word": "of",
+          "start_offset": "90.200s",
+          "end_offset": "90.300s"
+        },
+        {
+          "word": "work",
+          "start_offset": "90.300s",
+          "end_offset": "90.500s"
+        },
+        {
+          "word": "from",
+          "start_offset": "90.500s",
+          "end_offset": "90.700s"
+        },
+        {
+          "word": "our",
+          "start_offset": "90.700s",
+          "end_offset": "90.800s"
+        },
+        {
+          "word": "own",
+          "start_offset": "90.800s",
+          "end_offset": "91s"
+        },
+        {
+          "word": "team.",
+          "start_offset": "91s",
+          "end_offset": "91.500s"
+        },
+        {
+          "word": "Built",
+          "start_offset": "92.400s",
+          "end_offset": "92.600s"
+        },
+        {
+          "word": "by",
+          "start_offset": "92.600s",
+          "end_offset": "92.700s"
+        },
+        {
+          "word": "our",
+          "start_offset": "92.700s",
+          "end_offset": "92.800s"
+        },
+        {
+          "word": "team,",
+          "start_offset": "92.800s",
+          "end_offset": "93.300s"
+        },
+        {
+          "word": "powered",
+          "start_offset": "93.400s",
+          "end_offset": "93.800s"
+        },
+        {
+          "word": "by",
+          "start_offset": "93.800s",
+          "end_offset": "94s"
+        },
+        {
+          "word": "AI,",
+          "start_offset": "94s",
+          "end_offset": "94.500s"
+        },
+        {
+          "word": "getting",
+          "start_offset": "94.600s",
+          "end_offset": "94.800s"
+        },
+        {
+          "word": "smarter",
+          "start_offset": "94.800s",
+          "end_offset": "95.400s"
+        },
+        {
+          "word": "every",
+          "start_offset": "95.400s",
+          "end_offset": "95.700s"
+        },
+        {
+          "word": "quarter.",
+          "start_offset": "95.700s",
+          "end_offset": "96.100s"
+        }
+      ]
+    }
+  ]
+}

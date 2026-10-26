@@ -1,0 +1,2490 @@
+[
+{
+"i": 0,
+"row": 1,
+"word": "Amazon",
+"start": 0.2,
+"end": 0.5,
+"stress": false
+},
+{
+"i": 1,
+"row": 1,
+"word": "is",
+"start": 0.5,
+"end": 0.7,
+"stress": false
+},
+{
+"i": 2,
+"row": 1,
+"word": "kicking",
+"start": 0.7,
+"end": 1.0,
+"stress": false
+},
+{
+"i": 3,
+"row": 1,
+"word": "AI",
+"start": 1.0,
+"end": 1.3,
+"stress": false
+},
+{
+"i": 4,
+"row": 1,
+"word": "shopping",
+"start": 1.3,
+"end": 1.8,
+"stress": false
+},
+{
+"i": 5,
+"row": 1,
+"word": "agents",
+"start": 1.8,
+"end": 2.2,
+"stress": false
+},
+{
+"i": 6,
+"row": 1,
+"word": "out",
+"start": 2.2,
+"end": 2.4,
+"stress": false
+},
+{
+"i": 7,
+"row": 1,
+"word": "of",
+"start": 2.4,
+"end": 2.5,
+"stress": false
+},
+{
+"i": 8,
+"row": 1,
+"word": "its",
+"start": 2.5,
+"end": 2.6,
+"stress": false
+},
+{
+"i": 9,
+"row": 1,
+"word": "store.",
+"start": 2.6,
+"end": 3.0,
+"stress": true
+},
+{
+"i": 10,
+"row": 2,
+"word": "Walmart",
+"start": 3.1,
+"end": 3.5,
+"stress": false
+},
+{
+"i": 11,
+"row": 2,
+"word": "just",
+"start": 3.5,
+"end": 3.7,
+"stress": false
+},
+{
+"i": 12,
+"row": 2,
+"word": "built",
+"start": 3.7,
+"end": 3.9,
+"stress": false
+},
+{
+"i": 13,
+"row": 2,
+"word": "them",
+"start": 3.9,
+"end": 4.1,
+"stress": false
+},
+{
+"i": 14,
+"row": 2,
+"word": "a",
+"start": 4.1,
+"end": 4.15,
+"stress": false
+},
+{
+"i": 15,
+"row": 2,
+"word": "private",
+"start": 4.11,
+"end": 4.5,
+"stress": false
+},
+{
+"i": 16,
+"row": 2,
+"word": "entrance,",
+"start": 4.5,
+"end": 5.1,
+"stress": false
+},
+{
+"i": 17,
+"row": 2,
+"word": "with",
+"start": 5.2,
+"end": 5.4,
+"stress": false
+},
+{
+"i": 18,
+"row": 2,
+"word": "a",
+"start": 5.4,
+"end": 5.5,
+"stress": false
+},
+{
+"i": 19,
+"row": 2,
+"word": "spending",
+"start": 5.5,
+"end": 5.8,
+"stress": false
+},
+{
+"i": 20,
+"row": 2,
+"word": "limit.",
+"start": 5.8,
+"end": 6.0,
+"stress": true
+},
+{
+"i": 21,
+"row": 4,
+"word": "On",
+"start": 8.05,
+"end": 8.15,
+"stress": false
+},
+{
+"i": 22,
+"row": 4,
+"word": "October",
+"start": 8.15,
+"end": 8.45,
+"stress": false
+},
+{
+"i": 23,
+"row": 4,
+"word": "twenty-first,",
+"start": 8.45,
+"end": 9.05,
+"stress": false
+},
+{
+"i": 24,
+"row": 4,
+"word": "Walmart",
+"start": 9.05,
+"end": 9.55,
+"stress": false
+},
+{
+"i": 25,
+"row": 4,
+"word": "announced",
+"start": 9.55,
+"end": 9.95,
+"stress": false
+},
+{
+"i": 26,
+"row": 4,
+"word": "the",
+"start": 9.95,
+"end": 10.25,
+"stress": false
+},
+{
+"i": 27,
+"row": 4,
+"word": "Agent",
+"start": 10.25,
+"end": 10.65,
+"stress": false
+},
+{
+"i": 28,
+"row": 4,
+"word": "Gateway.",
+"start": 10.65,
+"end": 11.35,
+"stress": true
+},
+{
+"i": 29,
+"row": 5,
+"word": "AI",
+"start": 11.45,
+"end": 11.75,
+"stress": false
+},
+{
+"i": 30,
+"row": 5,
+"word": "agents",
+"start": 11.75,
+"end": 12.15,
+"stress": false
+},
+{
+"i": 31,
+"row": 5,
+"word": "can",
+"start": 12.15,
+"end": 12.25,
+"stress": false
+},
+{
+"i": 32,
+"row": 5,
+"word": "search",
+"start": 12.25,
+"end": 12.55,
+"stress": false
+},
+{
+"i": 33,
+"row": 5,
+"word": "Walmart",
+"start": 12.55,
+"end": 13.05,
+"stress": false
+},
+{
+"i": 34,
+"row": 5,
+"word": "and",
+"start": 13.05,
+"end": 13.25,
+"stress": false
+},
+{
+"i": 35,
+"row": 5,
+"word": "Sam's",
+"start": 13.25,
+"end": 13.55,
+"stress": false
+},
+{
+"i": 36,
+"row": 5,
+"word": "Club",
+"start": 13.55,
+"end": 13.85,
+"stress": false
+},
+{
+"i": 37,
+"row": 5,
+"word": "and",
+"start": 13.85,
+"end": 14.15,
+"stress": false
+},
+{
+"i": 38,
+"row": 5,
+"word": "check",
+"start": 14.15,
+"end": 14.35,
+"stress": false
+},
+{
+"i": 39,
+"row": 5,
+"word": "out",
+"start": 14.35,
+"end": 14.55,
+"stress": false
+},
+{
+"i": 40,
+"row": 5,
+"word": "for",
+"start": 14.55,
+"end": 14.75,
+"stress": false
+},
+{
+"i": 41,
+"row": 5,
+"word": "you.",
+"start": 14.75,
+"end": 15.05,
+"stress": true
+},
+{
+"i": 42,
+"row": 6,
+"word": "Walmart",
+"start": 15.05,
+"end": 15.35,
+"stress": false
+},
+{
+"i": 43,
+"row": 6,
+"word": "says",
+"start": 15.35,
+"end": 15.55,
+"stress": false
+},
+{
+"i": 44,
+"row": 6,
+"word": "it",
+"start": 15.55,
+"end": 15.65,
+"stress": false
+},
+{
+"i": 45,
+"row": 6,
+"word": "already",
+"start": 15.65,
+"end": 15.85,
+"stress": false
+},
+{
+"i": 46,
+"row": 6,
+"word": "works",
+"start": 15.85,
+"end": 16.15,
+"stress": false
+},
+{
+"i": 47,
+"row": 6,
+"word": "with",
+"start": 16.15,
+"end": 16.25,
+"stress": false
+},
+{
+"i": 48,
+"row": 6,
+"word": "ChatGPT,",
+"start": 16.25,
+"end": 17.25,
+"stress": false
+},
+{
+"i": 49,
+"row": 6,
+"word": "Gemini",
+"start": 17.25,
+"end": 17.85,
+"stress": false
+},
+{
+"i": 50,
+"row": 6,
+"word": "and",
+"start": 17.85,
+"end": 18.15,
+"stress": false
+},
+{
+"i": 51,
+"row": 6,
+"word": "Meta's",
+"start": 18.15,
+"end": 18.45,
+"stress": false
+},
+{
+"i": 52,
+"row": 6,
+"word": "Muse.",
+"start": 18.45,
+"end": 18.95,
+"stress": true
+},
+{
+"i": 53,
+"row": 7,
+"word": "Next",
+"start": 19.15,
+"end": 19.35,
+"stress": false
+},
+{
+"i": 54,
+"row": 7,
+"word": "month,",
+"start": 19.35,
+"end": 19.75,
+"stress": false
+},
+{
+"i": 55,
+"row": 7,
+"word": "every",
+"start": 19.75,
+"end": 19.95,
+"stress": false
+},
+{
+"i": 56,
+"row": 7,
+"word": "bot",
+"start": 19.95,
+"end": 20.25,
+"stress": false
+},
+{
+"i": 57,
+"row": 7,
+"word": "gets",
+"start": 20.25,
+"end": 20.45,
+"stress": false
+},
+{
+"i": 58,
+"row": 7,
+"word": "its",
+"start": 20.45,
+"end": 20.55,
+"stress": false
+},
+{
+"i": 59,
+"row": 7,
+"word": "own",
+"start": 20.55,
+"end": 20.65,
+"stress": false
+},
+{
+"i": 60,
+"row": 7,
+"word": "profile",
+"start": 20.65,
+"end": 21.25,
+"stress": false
+},
+{
+"i": 61,
+"row": 7,
+"word": "inside",
+"start": 21.25,
+"end": 21.85,
+"stress": false
+},
+{
+"i": 62,
+"row": 7,
+"word": "your",
+"start": 21.85,
+"end": 21.95,
+"stress": false
+},
+{
+"i": 63,
+"row": 7,
+"word": "account.",
+"start": 21.95,
+"end": 22.45,
+"stress": true
+},
+{
+"i": 64,
+"row": 8,
+"word": "Right",
+"start": 22.45,
+"end": 22.75,
+"stress": false
+},
+{
+"i": 65,
+"row": 8,
+"word": "now,",
+"start": 22.75,
+"end": 23.05,
+"stress": false
+},
+{
+"i": 66,
+"row": 8,
+"word": "an",
+"start": 23.05,
+"end": 23.25,
+"stress": false
+},
+{
+"i": 67,
+"row": 8,
+"word": "AI",
+"start": 23.25,
+"end": 23.55,
+"stress": false
+},
+{
+"i": 68,
+"row": 8,
+"word": "agent",
+"start": 23.55,
+"end": 23.85,
+"stress": false
+},
+{
+"i": 69,
+"row": 8,
+"word": "shops",
+"start": 23.85,
+"end": 24.15,
+"stress": false
+},
+{
+"i": 70,
+"row": 8,
+"word": "like",
+"start": 24.15,
+"end": 24.25,
+"stress": false
+},
+{
+"i": 71,
+"row": 8,
+"word": "a",
+"start": 24.25,
+"end": 24.35,
+"stress": false
+},
+{
+"i": 72,
+"row": 8,
+"word": "very",
+"start": 24.35,
+"end": 24.55,
+"stress": false
+},
+{
+"i": 73,
+"row": 8,
+"word": "fast",
+"start": 24.55,
+"end": 24.95,
+"stress": false
+},
+{
+"i": 74,
+"row": 8,
+"word": "intern.",
+"start": 24.95,
+"end": 25.45,
+"stress": true
+},
+{
+"i": 75,
+"row": 9,
+"word": "It",
+"start": 25.45,
+"end": 25.55,
+"stress": false
+},
+{
+"i": 76,
+"row": 9,
+"word": "opens",
+"start": 25.55,
+"end": 25.75,
+"stress": false
+},
+{
+"i": 77,
+"row": 9,
+"word": "the",
+"start": 25.75,
+"end": 25.8,
+"stress": false
+},
+{
+"i": 78,
+"row": 9,
+"word": "website,",
+"start": 25.76,
+"end": 26.45,
+"stress": false
+},
+{
+"i": 79,
+"row": 9,
+"word": "reads",
+"start": 26.55,
+"end": 26.85,
+"stress": false
+},
+{
+"i": 80,
+"row": 9,
+"word": "the",
+"start": 26.85,
+"end": 26.9,
+"stress": false
+},
+{
+"i": 81,
+"row": 9,
+"word": "page,",
+"start": 26.86,
+"end": 27.35,
+"stress": false
+},
+{
+"i": 82,
+"row": 9,
+"word": "and",
+"start": 27.35,
+"end": 27.55,
+"stress": false
+},
+{
+"i": 83,
+"row": 9,
+"word": "clicks",
+"start": 27.55,
+"end": 27.85,
+"stress": false
+},
+{
+"i": 84,
+"row": 9,
+"word": "buttons",
+"start": 27.85,
+"end": 28.25,
+"stress": false
+},
+{
+"i": 85,
+"row": 9,
+"word": "built",
+"start": 28.25,
+"end": 28.45,
+"stress": false
+},
+{
+"i": 86,
+"row": 9,
+"word": "for",
+"start": 28.45,
+"end": 28.55,
+"stress": false
+},
+{
+"i": 87,
+"row": 9,
+"word": "humans.",
+"start": 28.55,
+"end": 29.15,
+"stress": true
+},
+{
+"i": 88,
+"row": 10,
+"word": "That's",
+"start": 29.25,
+"end": 29.65,
+"stress": false
+},
+{
+"i": 89,
+"row": 10,
+"word": "slow,",
+"start": 29.65,
+"end": 30.25,
+"stress": false
+},
+{
+"i": 90,
+"row": 10,
+"word": "and",
+"start": 30.25,
+"end": 30.35,
+"stress": false
+},
+{
+"i": 91,
+"row": 10,
+"word": "it",
+"start": 30.35,
+"end": 30.45,
+"stress": false
+},
+{
+"i": 92,
+"row": 10,
+"word": "breaks",
+"start": 30.45,
+"end": 30.75,
+"stress": false
+},
+{
+"i": 93,
+"row": 10,
+"word": "every",
+"start": 30.75,
+"end": 30.95,
+"stress": false
+},
+{
+"i": 94,
+"row": 10,
+"word": "time",
+"start": 30.95,
+"end": 31.25,
+"stress": false
+},
+{
+"i": 95,
+"row": 10,
+"word": "someone",
+"start": 31.25,
+"end": 31.65,
+"stress": false
+},
+{
+"i": 96,
+"row": 10,
+"word": "moves",
+"start": 31.65,
+"end": 31.85,
+"stress": false
+},
+{
+"i": 97,
+"row": 10,
+"word": "a",
+"start": 31.85,
+"end": 31.95,
+"stress": false
+},
+{
+"i": 98,
+"row": 10,
+"word": "button.",
+"start": 31.95,
+"end": 32.35,
+"stress": true
+},
+{
+"i": 99,
+"row": 11,
+"word": "The",
+"start": 32.45,
+"end": 32.5,
+"stress": false
+},
+{
+"i": 100,
+"row": 11,
+"word": "gateway",
+"start": 32.46,
+"end": 32.85,
+"stress": false
+},
+{
+"i": 101,
+"row": 11,
+"word": "skips",
+"start": 32.85,
+"end": 33.25,
+"stress": false
+},
+{
+"i": 102,
+"row": 11,
+"word": "the",
+"start": 33.25,
+"end": 33.3,
+"stress": false
+},
+{
+"i": 103,
+"row": 11,
+"word": "website.",
+"start": 33.26,
+"end": 33.85,
+"stress": true
+},
+{
+"i": 104,
+"row": 12,
+"word": "Agents",
+"start": 33.95,
+"end": 34.25,
+"stress": false
+},
+{
+"i": 105,
+"row": 12,
+"word": "plug",
+"start": 34.25,
+"end": 34.55,
+"stress": false
+},
+{
+"i": 106,
+"row": 12,
+"word": "in",
+"start": 34.55,
+"end": 34.65,
+"stress": false
+},
+{
+"i": 107,
+"row": 12,
+"word": "over",
+"start": 34.65,
+"end": 34.95,
+"stress": false
+},
+{
+"i": 108,
+"row": 12,
+"word": "MCP,",
+"start": 34.95,
+"end": 35.65,
+"stress": false
+},
+{
+"i": 109,
+"row": 12,
+"word": "a",
+"start": 35.65,
+"end": 35.75,
+"stress": false
+},
+{
+"i": 110,
+"row": 12,
+"word": "standard",
+"start": 35.75,
+"end": 36.05,
+"stress": false
+},
+{
+"i": 111,
+"row": 12,
+"word": "connector",
+"start": 36.05,
+"end": 36.45,
+"stress": false
+},
+{
+"i": 112,
+"row": 12,
+"word": "for",
+"start": 36.45,
+"end": 36.55,
+"stress": false
+},
+{
+"i": 113,
+"row": 12,
+"word": "AI",
+"start": 36.55,
+"end": 36.85,
+"stress": false
+},
+{
+"i": 114,
+"row": 12,
+"word": "tools,",
+"start": 36.85,
+"end": 37.35,
+"stress": false
+},
+{
+"i": 115,
+"row": 12,
+"word": "and",
+"start": 37.45,
+"end": 37.55,
+"stress": false
+},
+{
+"i": 116,
+"row": 12,
+"word": "get",
+"start": 37.55,
+"end": 37.75,
+"stress": false
+},
+{
+"i": 117,
+"row": 12,
+"word": "product,",
+"start": 37.75,
+"end": 38.25,
+"stress": false
+},
+{
+"i": 118,
+"row": 12,
+"word": "price",
+"start": 38.25,
+"end": 38.65,
+"stress": false
+},
+{
+"i": 119,
+"row": 12,
+"word": "and",
+"start": 38.65,
+"end": 38.85,
+"stress": false
+},
+{
+"i": 120,
+"row": 12,
+"word": "stock",
+"start": 38.85,
+"end": 39.25,
+"stress": false
+},
+{
+"i": 121,
+"row": 12,
+"word": "straight",
+"start": 39.25,
+"end": 39.55,
+"stress": false
+},
+{
+"i": 122,
+"row": 12,
+"word": "from",
+"start": 39.55,
+"end": 39.75,
+"stress": false
+},
+{
+"i": 123,
+"row": 12,
+"word": "Walmart.",
+"start": 39.75,
+"end": 40.25,
+"stress": true
+},
+{
+"i": 124,
+"row": 13,
+"word": "Your",
+"start": 40.35,
+"end": 40.45,
+"stress": false
+},
+{
+"i": 125,
+"row": 13,
+"word": "profile",
+"start": 40.45,
+"end": 40.95,
+"stress": false
+},
+{
+"i": 126,
+"row": 13,
+"word": "sets",
+"start": 40.95,
+"end": 41.15,
+"stress": false
+},
+{
+"i": 127,
+"row": 13,
+"word": "the",
+"start": 41.15,
+"end": 41.25,
+"stress": false
+},
+{
+"i": 128,
+"row": 13,
+"word": "rules.",
+"start": 41.25,
+"end": 41.65,
+"stress": true
+},
+{
+"i": 129,
+"row": 14,
+"word": "Approve",
+"start": 41.85,
+"end": 42.15,
+"stress": false
+},
+{
+"i": 130,
+"row": 14,
+"word": "every",
+"start": 42.15,
+"end": 42.35,
+"stress": false
+},
+{
+"i": 131,
+"row": 14,
+"word": "purchase,",
+"start": 42.35,
+"end": 42.85,
+"stress": false
+},
+{
+"i": 132,
+"row": 14,
+"word": "the",
+"start": 43.05,
+"end": 43.15,
+"stress": false
+},
+{
+"i": 133,
+"row": 14,
+"word": "default,",
+"start": 43.15,
+"end": 43.65,
+"stress": false
+},
+{
+"i": 134,
+"row": 14,
+"word": "or",
+"start": 43.75,
+"end": 43.95,
+"stress": false
+},
+{
+"i": 135,
+"row": 14,
+"word": "let",
+"start": 43.95,
+"end": 44.05,
+"stress": false
+},
+{
+"i": 136,
+"row": 14,
+"word": "the",
+"start": 44.05,
+"end": 44.15,
+"stress": false
+},
+{
+"i": 137,
+"row": 14,
+"word": "bot",
+"start": 44.15,
+"end": 44.35,
+"stress": false
+},
+{
+"i": 138,
+"row": 14,
+"word": "spend",
+"start": 44.35,
+"end": 44.65,
+"stress": false
+},
+{
+"i": 139,
+"row": 14,
+"word": "up",
+"start": 44.65,
+"end": 44.85,
+"stress": false
+},
+{
+"i": 140,
+"row": 14,
+"word": "to",
+"start": 44.85,
+"end": 44.95,
+"stress": false
+},
+{
+"i": 141,
+"row": 14,
+"word": "a",
+"start": 44.95,
+"end": 45.0,
+"stress": false
+},
+{
+"i": 142,
+"row": 14,
+"word": "limit.",
+"start": 44.96,
+"end": 45.35,
+"stress": true
+},
+{
+"i": 143,
+"row": 15,
+"word": "Fifty",
+"start": 45.45,
+"end": 45.65,
+"stress": false
+},
+{
+"i": 144,
+"row": 15,
+"word": "bucks",
+"start": 45.65,
+"end": 45.85,
+"stress": false
+},
+{
+"i": 145,
+"row": 15,
+"word": "of",
+"start": 45.85,
+"end": 45.9,
+"stress": false
+},
+{
+"i": 146,
+"row": 15,
+"word": "paper",
+"start": 45.86,
+"end": 46.05,
+"stress": false
+},
+{
+"i": 147,
+"row": 15,
+"word": "towels,",
+"start": 46.05,
+"end": 46.65,
+"stress": false
+},
+{
+"i": 148,
+"row": 15,
+"word": "sure.",
+"start": 46.65,
+"end": 47.15,
+"stress": false
+},
+{
+"i": 149,
+"row": 15,
+"word": "Two",
+"start": 47.25,
+"end": 47.4,
+"stress": false
+},
+{
+"i": 150,
+"row": 15,
+"word": "hundred",
+"start": 47.4,
+"end": 47.55,
+"stress": false
+},
+{
+"i": 151,
+"row": 15,
+"word": "bucks",
+"start": 47.55,
+"end": 47.75,
+"stress": false
+},
+{
+"i": 152,
+"row": 15,
+"word": "of",
+"start": 47.75,
+"end": 47.8,
+"stress": false
+},
+{
+"i": 153,
+"row": 15,
+"word": "TV,",
+"start": 47.76,
+"end": 48.35,
+"stress": false
+},
+{
+"i": 154,
+"row": 15,
+"word": "maybe",
+"start": 48.55,
+"end": 48.75,
+"stress": false
+},
+{
+"i": 155,
+"row": 15,
+"word": "not.",
+"start": 48.75,
+"end": 49.15,
+"stress": true
+},
+{
+"i": 156,
+"row": 16,
+"word": "Now,",
+"start": 49.25,
+"end": 49.55,
+"stress": false
+},
+{
+"i": 157,
+"row": 16,
+"word": "Amazon.",
+"start": 49.65,
+"end": 50.25,
+"stress": true
+},
+{
+"i": 158,
+"row": 17,
+"word": "In",
+"start": 50.45,
+"end": 50.5,
+"stress": false
+},
+{
+"i": 159,
+"row": 17,
+"word": "September",
+"start": 50.46,
+"end": 50.95,
+"stress": false
+},
+{
+"i": 160,
+"row": 17,
+"word": "it",
+"start": 50.95,
+"end": 51.05,
+"stress": false
+},
+{
+"i": 161,
+"row": 17,
+"word": "blocked",
+"start": 51.05,
+"end": 51.35,
+"stress": false
+},
+{
+"i": 162,
+"row": 17,
+"word": "Meta's",
+"start": 51.35,
+"end": 51.65,
+"stress": false
+},
+{
+"i": 163,
+"row": 17,
+"word": "Muse",
+"start": 51.65,
+"end": 52.05,
+"stress": false
+},
+{
+"i": 164,
+"row": 17,
+"word": "for",
+"start": 52.05,
+"end": 52.15,
+"stress": false
+},
+{
+"i": 165,
+"row": 17,
+"word": "never",
+"start": 52.15,
+"end": 52.45,
+"stress": false
+},
+{
+"i": 166,
+"row": 17,
+"word": "identifying",
+"start": 52.45,
+"end": 53.05,
+"stress": false
+},
+{
+"i": 167,
+"row": 17,
+"word": "itself",
+"start": 53.05,
+"end": 53.45,
+"stress": false
+},
+{
+"i": 168,
+"row": 17,
+"word": "or",
+"start": 53.45,
+"end": 53.65,
+"stress": false
+},
+{
+"i": 169,
+"row": 17,
+"word": "asking",
+"start": 53.65,
+"end": 53.95,
+"stress": false
+},
+{
+"i": 170,
+"row": 17,
+"word": "permission.",
+"start": 53.95,
+"end": 54.55,
+"stress": true
+},
+{
+"i": 171,
+"row": 18,
+"word": "Here's",
+"start": 54.65,
+"end": 54.75,
+"stress": false
+},
+{
+"i": 172,
+"row": 18,
+"word": "the",
+"start": 54.75,
+"end": 54.85,
+"stress": false
+},
+{
+"i": 173,
+"row": 18,
+"word": "part",
+"start": 54.85,
+"end": 55.05,
+"stress": false
+},
+{
+"i": 174,
+"row": 18,
+"word": "nobody",
+"start": 55.05,
+"end": 55.25,
+"stress": false
+},
+{
+"i": 175,
+"row": 18,
+"word": "says",
+"start": 55.25,
+"end": 55.45,
+"stress": false
+},
+{
+"i": 176,
+"row": 18,
+"word": "out",
+"start": 55.45,
+"end": 55.65,
+"stress": false
+},
+{
+"i": 177,
+"row": 18,
+"word": "loud:",
+"start": 55.65,
+"end": 56.05,
+"stress": false
+},
+{
+"i": 178,
+"row": 18,
+"word": "an",
+"start": 56.15,
+"end": 56.35,
+"stress": false
+},
+{
+"i": 179,
+"row": 18,
+"word": "agent",
+"start": 56.35,
+"end": 56.75,
+"stress": false
+},
+{
+"i": 180,
+"row": 18,
+"word": "never",
+"start": 56.75,
+"end": 57.05,
+"stress": false
+},
+{
+"i": 181,
+"row": 18,
+"word": "sees",
+"start": 57.05,
+"end": 57.25,
+"stress": false
+},
+{
+"i": 182,
+"row": 18,
+"word": "an",
+"start": 57.25,
+"end": 57.45,
+"stress": false
+},
+{
+"i": 183,
+"row": 18,
+"word": "ad.",
+"start": 57.45,
+"end": 57.95,
+"stress": true
+},
+{
+"i": 184,
+"row": 19,
+"word": "No",
+"start": 58.05,
+"end": 58.1,
+"stress": false
+},
+{
+"i": 185,
+"row": 19,
+"word": "sponsored",
+"start": 58.06,
+"end": 58.55,
+"stress": false
+},
+{
+"i": 186,
+"row": 19,
+"word": "products,",
+"start": 58.55,
+"end": 59.15,
+"stress": false
+},
+{
+"i": 187,
+"row": 19,
+"word": "no",
+"start": 59.15,
+"end": 59.25,
+"stress": false
+},
+{
+"i": 188,
+"row": 19,
+"word": "impulse",
+"start": 59.25,
+"end": 59.75,
+"stress": false
+},
+{
+"i": 189,
+"row": 19,
+"word": "add-to-cart,",
+"start": 59.75,
+"end": 60.55,
+"stress": false
+},
+{
+"i": 190,
+"row": 19,
+"word": "no",
+"start": 60.55,
+"end": 60.65,
+"stress": false
+},
+{
+"i": 191,
+"row": 19,
+"word": "Prime",
+"start": 60.65,
+"end": 61.05,
+"stress": false
+},
+{
+"i": 192,
+"row": 19,
+"word": "upsell.",
+"start": 61.05,
+"end": 61.55,
+"stress": true
+},
+{
+"i": 193,
+"row": 20,
+"word": "For",
+"start": 61.65,
+"end": 61.75,
+"stress": false
+},
+{
+"i": 194,
+"row": 20,
+"word": "Amazon,",
+"start": 61.75,
+"end": 62.25,
+"stress": false
+},
+{
+"i": 195,
+"row": 20,
+"word": "every",
+"start": 62.25,
+"end": 62.65,
+"stress": false
+},
+{
+"i": 196,
+"row": 20,
+"word": "agent",
+"start": 62.65,
+"end": 63.05,
+"stress": false
+},
+{
+"i": 197,
+"row": 20,
+"word": "order",
+"start": 63.05,
+"end": 63.35,
+"stress": false
+},
+{
+"i": 198,
+"row": 20,
+"word": "is",
+"start": 63.35,
+"end": 63.45,
+"stress": false
+},
+{
+"i": 199,
+"row": 20,
+"word": "an",
+"start": 63.45,
+"end": 63.55,
+"stress": false
+},
+{
+"i": 200,
+"row": 20,
+"word": "ad",
+"start": 63.55,
+"end": 63.85,
+"stress": false
+},
+{
+"i": 201,
+"row": 20,
+"word": "nobody",
+"start": 63.85,
+"end": 64.15,
+"stress": false
+},
+{
+"i": 202,
+"row": 20,
+"word": "saw.",
+"start": 64.15,
+"end": 64.65,
+"stress": true
+},
+{
+"i": 203,
+"row": 21,
+"word": "Walmart",
+"start": 64.75,
+"end": 65.05,
+"stress": false
+},
+{
+"i": 204,
+"row": 21,
+"word": "is",
+"start": 65.05,
+"end": 65.15,
+"stress": false
+},
+{
+"i": 205,
+"row": 21,
+"word": "betting",
+"start": 65.15,
+"end": 65.35,
+"stress": false
+},
+{
+"i": 206,
+"row": 21,
+"word": "the",
+"start": 65.35,
+"end": 65.55,
+"stress": false
+},
+{
+"i": 207,
+"row": 21,
+"word": "other",
+"start": 65.55,
+"end": 65.65,
+"stress": false
+},
+{
+"i": 208,
+"row": 21,
+"word": "way:",
+"start": 65.65,
+"end": 65.95,
+"stress": false
+},
+{
+"i": 209,
+"row": 21,
+"word": "lose",
+"start": 66.05,
+"end": 66.25,
+"stress": false
+},
+{
+"i": 210,
+"row": 21,
+"word": "the",
+"start": 66.25,
+"end": 66.45,
+"stress": false
+},
+{
+"i": 211,
+"row": 21,
+"word": "ad",
+"start": 66.45,
+"end": 66.55,
+"stress": false
+},
+{
+"i": 212,
+"row": 21,
+"word": "view,",
+"start": 66.55,
+"end": 66.95,
+"stress": false
+},
+{
+"i": 213,
+"row": 21,
+"word": "win",
+"start": 67.15,
+"end": 67.35,
+"stress": false
+},
+{
+"i": 214,
+"row": 21,
+"word": "the",
+"start": 67.35,
+"end": 67.45,
+"stress": false
+},
+{
+"i": 215,
+"row": 21,
+"word": "order.",
+"start": 67.45,
+"end": 67.75,
+"stress": true
+},
+{
+"i": 216,
+"row": 22,
+"word": "The",
+"start": 67.75,
+"end": 67.85,
+"stress": false
+},
+{
+"i": 217,
+"row": 22,
+"word": "catch:",
+"start": 67.85,
+"end": 68.25,
+"stress": false
+},
+{
+"i": 218,
+"row": 22,
+"word": "the",
+"start": 68.45,
+"end": 68.55,
+"stress": false
+},
+{
+"i": 219,
+"row": 22,
+"word": "gateway",
+"start": 68.55,
+"end": 68.85,
+"stress": false
+},
+{
+"i": 220,
+"row": 22,
+"word": "is",
+"start": 68.85,
+"end": 68.95,
+"stress": false
+},
+{
+"i": 221,
+"row": 22,
+"word": "an",
+"start": 68.95,
+"end": 69.05,
+"stress": false
+},
+{
+"i": 222,
+"row": 22,
+"word": "invite-only",
+"start": 69.05,
+"end": 69.75,
+"stress": false
+},
+{
+"i": 223,
+"row": 22,
+"word": "beta,",
+"start": 69.75,
+"end": 70.15,
+"stress": false
+},
+{
+"i": 224,
+"row": 22,
+"word": "and",
+"start": 70.25,
+"end": 70.35,
+"stress": false
+},
+{
+"i": 225,
+"row": 22,
+"word": "Walmart",
+"start": 70.35,
+"end": 70.75,
+"stress": false
+},
+{
+"i": 226,
+"row": 22,
+"word": "picks",
+"start": 70.75,
+"end": 71.05,
+"stress": false
+},
+{
+"i": 227,
+"row": 22,
+"word": "who",
+"start": 71.05,
+"end": 71.15,
+"stress": false
+},
+{
+"i": 228,
+"row": 22,
+"word": "gets",
+"start": 71.15,
+"end": 71.45,
+"stress": false
+},
+{
+"i": 229,
+"row": 22,
+"word": "in.",
+"start": 71.45,
+"end": 71.65,
+"stress": true
+},
+{
+"i": 230,
+"row": 23,
+"word": "Open",
+"start": 71.75,
+"end": 72.05,
+"stress": false
+},
+{
+"i": 231,
+"row": 23,
+"word": "door,",
+"start": 72.05,
+"end": 72.45,
+"stress": false
+},
+{
+"i": 232,
+"row": 23,
+"word": "with",
+"start": 72.65,
+"end": 72.75,
+"stress": false
+},
+{
+"i": 233,
+"row": 23,
+"word": "a",
+"start": 72.75,
+"end": 72.8,
+"stress": false
+},
+{
+"i": 234,
+"row": 23,
+"word": "bouncer.",
+"start": 72.76,
+"end": 73.15,
+"stress": true
+},
+{
+"i": 235,
+"row": 24,
+"word": "Here's",
+"start": 73.25,
+"end": 73.45,
+"stress": false
+},
+{
+"i": 236,
+"row": 24,
+"word": "the",
+"start": 73.45,
+"end": 73.55,
+"stress": false
+},
+{
+"i": 237,
+"row": 24,
+"word": "test",
+"start": 73.55,
+"end": 73.75,
+"stress": false
+},
+{
+"i": 238,
+"row": 24,
+"word": "I'd",
+"start": 73.75,
+"end": 73.95,
+"stress": false
+},
+{
+"i": 239,
+"row": 24,
+"word": "run",
+"start": 73.95,
+"end": 74.15,
+"stress": false
+},
+{
+"i": 240,
+"row": 24,
+"word": "before",
+"start": 74.15,
+"end": 74.35,
+"stress": false
+},
+{
+"i": 241,
+"row": 24,
+"word": "trusting",
+"start": 74.35,
+"end": 74.85,
+"stress": false
+},
+{
+"i": 242,
+"row": 24,
+"word": "any",
+"start": 74.85,
+"end": 75.05,
+"stress": false
+},
+{
+"i": 243,
+"row": 24,
+"word": "of",
+"start": 75.05,
+"end": 75.15,
+"stress": false
+},
+{
+"i": 244,
+"row": 24,
+"word": "this.",
+"start": 75.15,
+"end": 75.55,
+"stress": true
+},
+{
+"i": 245,
+"row": 25,
+"word": "Ask",
+"start": 75.65,
+"end": 75.95,
+"stress": false
+},
+{
+"i": 246,
+"row": 25,
+"word": "three",
+"start": 75.95,
+"end": 76.25,
+"stress": false
+},
+{
+"i": 247,
+"row": 25,
+"word": "agents",
+"start": 76.25,
+"end": 76.65,
+"stress": false
+},
+{
+"i": 248,
+"row": 25,
+"word": "to",
+"start": 76.65,
+"end": 76.75,
+"stress": false
+},
+{
+"i": 249,
+"row": 25,
+"word": "reorder",
+"start": 76.75,
+"end": 77.05,
+"stress": false
+},
+{
+"i": 250,
+"row": 25,
+"word": "the",
+"start": 77.05,
+"end": 77.15,
+"stress": false
+},
+{
+"i": 251,
+"row": 25,
+"word": "same",
+"start": 77.15,
+"end": 77.65,
+"stress": false
+},
+{
+"i": 252,
+"row": 25,
+"word": "paper",
+"start": 77.65,
+"end": 77.85,
+"stress": false
+},
+{
+"i": 253,
+"row": 25,
+"word": "towels.",
+"start": 77.85,
+"end": 78.35,
+"stress": true
+},
+{
+"i": 254,
+"row": 26,
+"word": "Log",
+"start": 78.65,
+"end": 78.85,
+"stress": false
+},
+{
+"i": 255,
+"row": 26,
+"word": "where",
+"start": 78.85,
+"end": 79.05,
+"stress": false
+},
+{
+"i": 256,
+"row": 26,
+"word": "each",
+"start": 79.05,
+"end": 79.25,
+"stress": false
+},
+{
+"i": 257,
+"row": 26,
+"word": "one",
+"start": 79.25,
+"end": 79.45,
+"stress": false
+},
+{
+"i": 258,
+"row": 26,
+"word": "buys,",
+"start": 79.45,
+"end": 79.95,
+"stress": false
+},
+{
+"i": 259,
+"row": 26,
+"word": "what",
+"start": 79.95,
+"end": 80.05,
+"stress": false
+},
+{
+"i": 260,
+"row": 26,
+"word": "it",
+"start": 80.05,
+"end": 80.15,
+"stress": false
+},
+{
+"i": 261,
+"row": 26,
+"word": "pays,",
+"start": 80.15,
+"end": 80.55,
+"stress": false
+},
+{
+"i": 262,
+"row": 26,
+"word": "and",
+"start": 80.55,
+"end": 80.75,
+"stress": false
+},
+{
+"i": 263,
+"row": 26,
+"word": "whether",
+"start": 80.75,
+"end": 80.95,
+"stress": false
+},
+{
+"i": 264,
+"row": 26,
+"word": "it",
+"start": 80.95,
+"end": 81.05,
+"stress": false
+},
+{
+"i": 265,
+"row": 26,
+"word": "keeps",
+"start": 81.05,
+"end": 81.35,
+"stress": false
+},
+{
+"i": 266,
+"row": 26,
+"word": "your",
+"start": 81.35,
+"end": 81.45,
+"stress": false
+},
+{
+"i": 267,
+"row": 26,
+"word": "usual",
+"start": 81.45,
+"end": 81.85,
+"stress": false
+},
+{
+"i": 268,
+"row": 26,
+"word": "brand.",
+"start": 81.85,
+"end": 82.35,
+"stress": true
+},
+{
+"i": 269,
+"row": 27,
+"word": "If",
+"start": 82.45,
+"end": 82.5,
+"stress": false
+},
+{
+"i": 270,
+"row": 27,
+"word": "it",
+"start": 82.46,
+"end": 82.65,
+"stress": false
+},
+{
+"i": 271,
+"row": 27,
+"word": "switches",
+"start": 82.65,
+"end": 83.05,
+"stress": false
+},
+{
+"i": 272,
+"row": 27,
+"word": "brands,",
+"start": 83.05,
+"end": 83.45,
+"stress": false
+},
+{
+"i": 273,
+"row": 27,
+"word": "your",
+"start": 83.45,
+"end": 83.65,
+"stress": false
+},
+{
+"i": 274,
+"row": 27,
+"word": "loyalty",
+"start": 83.65,
+"end": 84.05,
+"stress": false
+},
+{
+"i": 275,
+"row": 27,
+"word": "program",
+"start": 84.05,
+"end": 84.45,
+"stress": false
+},
+{
+"i": 276,
+"row": 27,
+"word": "just",
+"start": 84.45,
+"end": 84.75,
+"stress": false
+},
+{
+"i": 277,
+"row": 27,
+"word": "lost",
+"start": 84.75,
+"end": 85.05,
+"stress": false
+},
+{
+"i": 278,
+"row": 27,
+"word": "to",
+"start": 85.05,
+"end": 85.15,
+"stress": false
+},
+{
+"i": 279,
+"row": 27,
+"word": "a",
+"start": 85.15,
+"end": 85.25,
+"stress": false
+},
+{
+"i": 280,
+"row": 27,
+"word": "spreadsheet.",
+"start": 85.25,
+"end": 85.85,
+"stress": true
+},
+{
+"i": 281,
+"row": 28,
+"word": "Amazon",
+"start": 85.95,
+"end": 86.25,
+"stress": false
+},
+{
+"i": 282,
+"row": 28,
+"word": "can",
+"start": 86.25,
+"end": 86.35,
+"stress": false
+},
+{
+"i": 283,
+"row": 28,
+"word": "lock",
+"start": 86.35,
+"end": 86.55,
+"stress": false
+},
+{
+"i": 284,
+"row": 28,
+"word": "the",
+"start": 86.55,
+"end": 86.65,
+"stress": false
+},
+{
+"i": 285,
+"row": 28,
+"word": "door,",
+"start": 86.65,
+"end": 87.05,
+"stress": false
+},
+{
+"i": 286,
+"row": 28,
+"word": "but",
+"start": 87.15,
+"end": 87.25,
+"stress": false
+},
+{
+"i": 287,
+"row": 28,
+"word": "your",
+"start": 87.25,
+"end": 87.35,
+"stress": false
+},
+{
+"i": 288,
+"row": 28,
+"word": "customers'",
+"start": 87.35,
+"end": 87.75,
+"stress": false
+},
+{
+"i": 289,
+"row": 28,
+"word": "bots",
+"start": 87.75,
+"end": 88.05,
+"stress": false
+},
+{
+"i": 290,
+"row": 28,
+"word": "will",
+"start": 88.05,
+"end": 88.15,
+"stress": false
+},
+{
+"i": 291,
+"row": 28,
+"word": "just",
+"start": 88.15,
+"end": 88.35,
+"stress": false
+},
+{
+"i": 292,
+"row": 28,
+"word": "shop",
+"start": 88.35,
+"end": 88.65,
+"stress": false
+},
+{
+"i": 293,
+"row": 28,
+"word": "where",
+"start": 88.65,
+"end": 88.75,
+"stress": false
+},
+{
+"i": 294,
+"row": 28,
+"word": "they're",
+"start": 88.75,
+"end": 88.85,
+"stress": false
+},
+{
+"i": 295,
+"row": 28,
+"word": "welcome.",
+"start": 88.85,
+"end": 89.25,
+"stress": true
+},
+{
+"i": 296,
+"row": 29,
+"word": "So",
+"start": 89.45,
+"end": 89.65,
+"stress": false
+},
+{
+"i": 297,
+"row": 29,
+"word": "treat",
+"start": 89.65,
+"end": 89.95,
+"stress": false
+},
+{
+"i": 298,
+"row": 29,
+"word": "your",
+"start": 89.95,
+"end": 90.05,
+"stress": false
+},
+{
+"i": 299,
+"row": 29,
+"word": "product",
+"start": 90.05,
+"end": 90.45,
+"stress": false
+},
+{
+"i": 300,
+"row": 29,
+"word": "feed",
+"start": 90.45,
+"end": 90.75,
+"stress": false
+},
+{
+"i": 301,
+"row": 29,
+"word": "like",
+"start": 90.75,
+"end": 90.85,
+"stress": false
+},
+{
+"i": 302,
+"row": 29,
+"word": "a",
+"start": 90.85,
+"end": 90.95,
+"stress": false
+},
+{
+"i": 303,
+"row": 29,
+"word": "storefront.",
+"start": 90.95,
+"end": 91.65,
+"stress": false
+},
+{
+"i": 304,
+"row": 29,
+"word": "The",
+"start": 91.75,
+"end": 91.85,
+"stress": false
+},
+{
+"i": 305,
+"row": 29,
+"word": "next",
+"start": 91.85,
+"end": 92.05,
+"stress": false
+},
+{
+"i": 306,
+"row": 29,
+"word": "shopper",
+"start": 92.05,
+"end": 92.45,
+"stress": false
+},
+{
+"i": 307,
+"row": 29,
+"word": "might",
+"start": 92.45,
+"end": 92.65,
+"stress": false
+},
+{
+"i": 308,
+"row": 29,
+"word": "not",
+"start": 92.65,
+"end": 92.85,
+"stress": false
+},
+{
+"i": 309,
+"row": 29,
+"word": "have",
+"start": 92.85,
+"end": 93.05,
+"stress": false
+},
+{
+"i": 310,
+"row": 29,
+"word": "eyes.",
+"start": 93.05,
+"end": 93.35,
+"stress": true
+}
+]

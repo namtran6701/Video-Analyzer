@@ -1,13 +1,13 @@
 ---
 name: product-demo-video
-description: Produce a polished product launch / demo video in one fixed, proven kinetic-typography style (dark problem acts, light solution acts, word-by-word type on a beat grid, inline icons in sentences, real product UI demo, benchmark proof, privacy beats, URL close) from the user's brand assets, fonts, colors and copy. Ships the full style spec, an 18-move motion library, a 7-act story template, brief/shotlist templates and format-aware Remotion tokens; produces it on the motion-studio pipeline (Remotion with 2D GSAP, an R3F laptop and a Blender light-shaft plate, synthesized beat-locked score and SFX, scored critique loop) and renders MP4s in 16:9, 1:1 and 9:16. Use whenever the user wants a product demo video, launch video, SaaS/AI product promo, feature announcement film, or a text-driven promo "in our usual style" / "like the last demo video", even if they don't name this skill. Not for analyzing or copying the style of a new reference video (that's video-study).
+description: Produce a polished product launch / demo video in one fixed, proven kinetic-typography style (dark problem acts, light solution acts, word-by-word type on a beat grid, inline icons in sentences, real product UI demo, benchmark proof, privacy beats, URL close) from the user's brand assets, fonts, colors and copy. Ships the full style spec, an 18-move motion library, a 7-act story template, brief/shotlist templates and format-aware Remotion tokens; produces it on the motion-studio pipeline (Remotion with 2D GSAP, an R3F laptop and a Blender light-shaft plate, Lyria score conformed to the beat grid (synthesized for drafts) and SFX, scored critique loop) and renders MP4s in 16:9, 1:1 and 9:16. Use whenever the user wants a product demo video, launch video, SaaS/AI product promo, feature announcement film, or a text-driven promo "in our usual style" / "like the last demo video", even if they don't name this skill. Not for analyzing or copying the style of a new reference video (that's video-study).
 ---
 
 # Product Demo Video
 
 Turn the user's brand inputs (logo, font, colors, copy, product site or screenshots) into a 30 to 90s launch film in one fixed style, ending in rendered MP4s. The style is fully specified here, so there is nothing to analyze. This skill owns the **style**; the **`motion-studio`** skill owns production (lanes, motion helpers, score, SFX, critique loop, delivery). Load motion-studio before step 5 and follow it wherever this file doesn't say otherwise.
 
-The style in one paragraph: no voiceover, text carries the story. Short centered sentences (max ~5 words per line) build word by word on a ~116 BPM beat grid. Acts alternate dark (problem, proof, close) and light (solution, trust), and the only hard cuts are at those flips, always on a downbeat. Inside an act, things morph, push and blur instead of cutting. Line icons sit inside sentences ("across 🌐 websites 🔑 accounts"). One accent color, used sparingly. The middle third is a real product UI demo with a cursor and a thin progress thread. Two moments get real depth: the logo on volumetric light shafts, and a laptop closing its lid.
+The style in one paragraph: no voiceover by default (ask; see the brief), text carries the story. Short centered sentences (max ~5 words per line) build word by word on a ~116 BPM beat grid. Acts alternate dark (problem, proof, close) and light (solution, trust), and the only hard cuts are at those flips, always on a downbeat. Inside an act, things morph, push and blur instead of cutting. Line icons sit inside sentences ("across 🌐 websites 🔑 accounts"). One accent color, used sparingly. The middle third is a real product UI demo with a cursor and a thin progress thread. Two moments get real depth: the logo on volumetric light shafts, and a laptop closing its lid.
 
 ## Files and when to read them
 
@@ -26,12 +26,12 @@ The style in one paragraph: no voiceover, text carries the story. Short centered
 Steps 1 to 5 are cheap planning with two approval gates. Steps 6 onward cost real tokens and render time.
 
 ### 1. Brief
-Copy `assets/templates/brief.md` into the project as `brief.md` and fill it from what the user gave you. If runtime, formats, product/promise, demo task, or brand basics are missing, ask once for all of them together. Defaults if they shrug: 60s, 16:9 only, 30fps, style-guide palette, Inter Display, synthesized `glass` score.
+Copy `assets/templates/brief.md` into the project as `brief.md` and fill it from what the user gave you. If runtime, formats, product/promise, demo task, or brand basics are missing, ask once for all of them together, and always ask whether this film gets a voiceover (never assume). Defaults if they shrug: 60s, 16:9 only, 30fps, style-guide palette, Inter Display, `glass` palette (Lyria final, synthesized drafts), no voiceover.
 
 The user's copy wins. Use their text verbatim and fit it to the acts; only write copy for acts they left empty, and flag which lines you wrote.
 
 ### 2. Brand capture (gate 1)
-Capture the real product into `public/brand/`: site and app screenshots (Playwright at device scale factor 2+ if it runs and the user agrees), logo SVG, colors, font files. The demo act is rebuilt in React from these, so never redraw product UI from memory. List what you found and what's missing, and **wait for the OK**.
+Capture the real product into `public/brand/`: site and app screenshots (Chrome DevTools MCP at device scale factor 2+ if it runs, per motion-studio gate 1), logo SVG, colors, font files. The demo act is rebuilt in React from these, so never redraw product UI from memory. List what you found and what's missing, and **wait for the OK**.
 
 ### 3. Script
 Read `references/story_template.md`. Fill the 7-act template, scaled by its percentages to the runtime and rounded to whole bars. For 30s, merge proof+capabilities and drop the bonus act. Keep the copy rules: ≤5 words/line (fewer in 1:1 and 9:16), "they" for the old way, product name or "you" for the new way, one human moment max.
@@ -45,13 +45,13 @@ Run motion-studio's `beats.py --bpm <bpm> --dur <runtime>` to `beats.json` (or m
 Show the user the script, style mapping and shotlist, then **stop and wait for approval**. A wrong shotlist wastes every step after it.
 
 ### 6. Scaffold
-Read `references/toolchain.md` and set up per it: motion-studio setup, lane packages, `motion.ts` from motion-studio, this skill's `tokens.ts` with BPM, palette and fonts from step 4, one `<Composition>` per format. Fonts local via `staticFile`. If the shotlist uses the Blender plate, call `mcp__blender__get_addon_status`; if it can't connect, ask the user to open Blender, and use the 2D fallback if they'd rather not. Fetch the HDRI for M17 with `polyhaven.mjs`.
+Read `references/toolchain.md` and set up per it: motion-studio setup, lane packages, `motion.ts` from motion-studio, this skill's `tokens.ts` with BPM, palette and fonts from step 4, one `<Composition>` per format. Fonts local via `staticFile`. If the shotlist uses the Blender plate, call `mcp__blender__get_addon_status`; if it can't connect, render the plate headless per motion-studio's Blender plates section (no need to open Blender). Use the 2D fallback only when Blender isn't installed. Fetch the HDRI for M17 with `polyhaven.mjs`.
 
 ### 7. Build, one act at a time
 Build only the motion components the shotlist uses, then the acts in order. Render the Blender plate early (it's the slowest asset) per motion-studio's plate rules. After each act, render a still at its key beat (`npx remotion still Main-16x9 --frame=<f>`) and compare it with the matching image in `assets/look/` for scale, spacing and density (not color or content, those come from the brand). In multi-format films, also still the 9:16 frame and check the safe zone. Fix gaps before moving on, and report progress per act.
 
 ### 8. Sound
-Per motion-studio's Sound section: `docs/score.json` from the shotlist's energy column (see the energy map in the style guide), `score.mjs` (try 2 or 3 seeds, keep the best), `docs/sfx.json` from the SFX column, `sfx.mjs` with the score's seed and key, mix to `public/mix.wav`, and add `<Audio src={staticFile('mix.wav')} />`. With a supplied track, cut to its measured beats and skip the score.
+Per motion-studio's Sound section. Drafts: `docs/score.json` from the shotlist's energy column (see the energy map in the style guide), `score.mjs` (try 2 or 3 seeds, keep the best). Final: 2 Lyria takes (the user picks one) prompted from the style guide's Audio section, conformed to the film's BPM with motion-studio's conform steps (Sound section) (confirm the generation first). Then `docs/sfx.json` from the SFX column, `sfx.mjs` with the score's seed and key, mix to `public/mix.wav`, and add `<Audio src={staticFile('mix.wav')} />`. With a supplied track, cut to its measured beats and skip both.
 
 ### 9. Critique loop
 Run motion-studio's critique loop (beat contact sheet, half-scale drafts, phone test, sound-off test, determinism, loudness, 10 scores, fix the 3 worst, log in `docs/review_log.md`, minimum 3 rounds, every score 8+). Add these to its hunt list:

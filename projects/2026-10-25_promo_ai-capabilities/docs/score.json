@@ -1,0 +1,46 @@
+{
+ "bpm": 116,
+ "dur": 107.58,
+ "key": "D",
+ "scale": "minor",
+ "palette": "glass",
+ "seed": 4127,
+ "sections": [
+  {
+   "bar": 0,
+   "energy": 1
+  },
+  {
+   "bar": 5,
+   "energy": 2
+  },
+  {
+   "bar": 6,
+   "energy": 3
+  },
+  {
+   "bar": 10,
+   "energy": 2
+  },
+  {
+   "bar": 36,
+   "energy": 3
+  },
+  {
+   "bar": 44,
+   "energy": 2
+  },
+  {
+   "bar": 47,
+   "energy": 3
+  },
+  {
+   "bar": 49,
+   "energy": 1
+  },
+  {
+   "bar": 51,
+   "energy": 0
+  }
+ ]
+}

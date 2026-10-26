@@ -36,8 +36,8 @@ export const layout = (width: number, height: number) => {
   return {
     u,
     format,
-    headline: 42 * u * typeScale,
-    wordmark: 110 * u * typeScale,
+    headline: 72 * u * typeScale,
+    wordmark: 170 * u * typeScale,
     ui: 14 * u,
     cursor: 48 * u,
     wordsPerLine: { "16x9": 5, "1x1": 4, "9x16": 3 }[format],

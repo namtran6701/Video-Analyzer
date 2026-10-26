@@ -1,0 +1,7 @@
+{
+  "name": "video-analyzer",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "hundreds of thousands of dollars of projects priced so far.",
+  "segments": [
+    {
+      "text": "hundreds of thousands of dollars of projects priced so far.",
+      "words": [
+        {
+          "word": "hundreds",
+          "start_offset": "0.300s",
+          "end_offset": "0.800s"
+        },
+        {
+          "word": "of",
+          "start_offset": "0.800s",
+          "end_offset": "1s"
+        },
+        {
+          "word": "thousands",
+          "start_offset": "1s",
+          "end_offset": "1.400s"
+        },
+        {
+          "word": "of",
+          "start_offset": "1.400s",
+          "end_offset": "1.500s"
+        },
+        {
+          "word": "dollars",
+          "start_offset": "1.500s",
+          "end_offset": "1.800s"
+        },
+        {
+          "word": "of",
+          "start_offset": "1.800s",
+          "end_offset": "1.900s"
+        },
+        {
+          "word": "projects",
+          "start_offset": "1.900s",
+          "end_offset": "2.400s"
+        },
+        {
+          "word": "priced",
+          "start_offset": "2.400s",
+          "end_offset": "2.800s"
+        },
+        {
+          "word": "so",
+          "start_offset": "2.800s",
+          "end_offset": "3s"
+        },
+        {
+          "word": "far.",
+          "start_offset": "3s",
+          "end_offset": "3.400s"
+        }
+      ]
+    }
+  ]
+}

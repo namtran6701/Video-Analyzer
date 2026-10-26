@@ -24,7 +24,7 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 - Family: neo-grotesk with tight apertures. Closest free options: **Inter Display**, **Geist**, **Neue Montreal**. Use the brand font when given.
 - Weight: Medium (500) for headlines, Regular (400) for UI.
-- Size: hero lines ~**3.9% of the short side** at 16:9 (≈42px at 1080p, up to ~110px for the logo wordmark), larger in square and vertical (see `layout()` in `tokens.ts`). UI text ~13 to 16px × `u`, shown at real scale.
+- Size: hero lines ~**6.5% of the short side** at 16:9 (≈70px at 1080p, ~170px for the logo wordmark), as measured on the look stills; smaller reads as a slide at phone size, larger in square and vertical (see `layout()` in `tokens.ts`). UI text ~13 to 16px × `u`, shown at real scale.
 - Tracking: slightly negative on headlines (≈ -1%).
 - Case: sentence case always. No all-caps.
 - Layout: centered, 1 to 3 short lines, ragged. Max ~5 words per line (4 in 1:1, 3 in 9:16).
@@ -70,7 +70,10 @@ Rule: **two neutrals + one blue**. Third-party brand colors appear only inside t
 
 ## Audio
 
-Synthesized with motion-studio's `score.mjs` unless the user supplies a track.
+Final cut: a Lyria track, conformed to the film's BPM (motion-studio's conform steps (Sound section)). Drafts: motion-studio's `score.mjs`. A track the user supplies replaces both.
+
+- Lyria prompt: the palette's character in words (`glass`: airy FM bells and soft synths, light clean drums; `analog`: warm analog synths, four-on-the-floor; `tech`: dry square-wave synths, rolling 16th hats, offbeat bass), the film's BPM and minor key, `instrumental`, and the energy table below as a story with times in seconds: tense pad-only open, a build, a big drop at the reveal, lighter under the demo, full again for proof, settling to a quiet end. `negative_prompt: vocals, singing, lyrics`.
+- With Lyria, the riser and impact the score adds on each step into 2+ become `riser` and `impact` SFX cues on those downbeats. The shotlist never moves to fit the track (motion-studio: timing wins).
 
 - Tempo: **112 to 120 BPM**, 116 if nothing else decides it. Each film gets its own BPM, key and seed (never reuse a seed across films).
 - Palette: `glass` for SaaS / AI products (default), `analog` for a bolder consumer launch, `tech` for dev tools and infra. `minor` scale (the story is problem-led).
@@ -89,7 +92,7 @@ Synthesized with motion-studio's `score.mjs` unless the user supplies a track.
 
 - SFX via `sfx.mjs` with the score's seed and key. Cues: `click` on cursor clicks, `swish` on morphs (M4, M18), `pop` on icon rows (M5), `thump` on trash impact (M7), `tick` on agent steps and slot moves (sparingly, not every row), `glitch` on scramble lock (M15), `chime` when the progress dot hits 100% and on the URL land. No SFX on word lands. No riser or impact cues where the score already steps up.
 - Mix: score + SFX → `public/mix.wav` at -14 LUFS, true peak under -1 (motion-studio's ffmpeg line).
-- No voiceover. Text carries the story, so the film must read fully with sound off.
+- Voiceover only if the user said yes (default no). Text carries the story either way, so the film must read fully with sound off. With a voiceover, follow motion-studio's Voiceover and captions section; most VO lines duplicate on-screen type here, so their caption column is `off`, and captions show only where the voice says something the type doesn't.
 - Sync: every word land and every hard cut sits on a beat.
 
 ## Do / Don't

@@ -1,0 +1,28 @@
+Amazon is kicking AI shopping agents out of its store.
+Walmart just built them a private entrance, with a spending limit.
+On October twenty-first, Walmart announced the Agent Gateway.
+AI agents can search Walmart and Sam's Club and check out for you.
+Walmart says it already works with ChatGPT, Gemini and Meta's Muse.
+Next month, every bot gets its own profile inside your account.
+Right now, an AI agent shops like a very fast intern.
+It opens the website, reads the page, and clicks buttons built for humans.
+That's slow, and it breaks every time someone moves a button.
+The gateway skips the website.
+Agents plug in over MCP, a standard connector for AI tools, and get product, price and stock straight from Walmart.
+Your profile sets the rules.
+Approve every purchase, the default, or let the bot spend up to a limit.
+Fifty bucks of paper towels, sure. Two hundred bucks of TV, maybe not.
+Now, Amazon.
+In September it blocked Meta's Muse for never identifying itself or asking permission.
+Here's the part nobody says out loud: an agent never sees an ad.
+No sponsored products, no impulse add-to-cart, no Prime upsell.
+For Amazon, every agent order is an ad nobody saw.
+Walmart is betting the other way: lose the ad view, win the order.
+The catch: the gateway is an invite-only beta, and Walmart picks who gets in.
+Open door, with a bouncer.
+Here's the test I'd run before trusting any of this.
+Ask three agents to reorder the same paper towels.
+Log where each one buys, what it pays, and whether it keeps your usual brand.
+If it switches brands, your loyalty program just lost to a spreadsheet.
+Amazon can lock the door, but your customers' bots will just shop where they're welcome.
+So treat your product feed like a storefront. The next shopper might not have eyes.

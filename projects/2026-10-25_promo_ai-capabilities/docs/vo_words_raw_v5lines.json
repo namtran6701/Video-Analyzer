@@ -1,0 +1,336 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "Even in early 2026, a lot of our work still lived in spreadsheets. So, we built our own tools to make every team more efficient. Smart apps, live data, and automations. Automations clear the repetitive steps so our team can focus on the work that matters. SEO work that took hours now takes minutes. Built by our team, sharpened by AI, more productive every quarter.",
+  "segments": [
+    {
+      "text": "Even in early 2026, a lot of our work still lived in spreadsheets. So, we built our own tools to make every team more efficient. Smart apps, live data, and automations. Automations clear the repetitive steps so our team can focus on the work that matters. SEO work that took hours now takes minutes. Built by our team, sharpened by AI, more productive every quarter.",
+      "words": [
+        {
+          "word": "Even",
+          "start_offset": "0.400s",
+          "end_offset": "0.700s"
+        },
+        {
+          "word": "in",
+          "start_offset": "0.700s",
+          "end_offset": "0.800s"
+        },
+        {
+          "word": "early",
+          "start_offset": "0.800s",
+          "end_offset": "1.200s"
+        },
+        {
+          "word": "2026,",
+          "start_offset": "1.200s",
+          "end_offset": "2.300s"
+        },
+        {
+          "word": "a",
+          "start_offset": "2.300s",
+          "end_offset": "2.400s"
+        },
+        {
+          "word": "lot",
+          "start_offset": "2.400s",
+          "end_offset": "2.600s"
+        },
+        {
+          "word": "of",
+          "start_offset": "2.600s",
+          "end_offset": "2.700s"
+        },
+        {
+          "word": "our",
+          "start_offset": "2.700s",
+          "end_offset": "2.800s"
+        },
+        {
+          "word": "work",
+          "start_offset": "2.800s",
+          "end_offset": "3.100s"
+        },
+        {
+          "word": "still",
+          "start_offset": "3.100s",
+          "end_offset": "3.400s"
+        },
+        {
+          "word": "lived",
+          "start_offset": "3.400s",
+          "end_offset": "3.700s"
+        },
+        {
+          "word": "in",
+          "start_offset": "3.700s",
+          "end_offset": "3.800s"
+        },
+        {
+          "word": "spreadsheets.",
+          "start_offset": "3.800s",
+          "end_offset": "4.600s"
+        },
+        {
+          "word": "So,",
+          "start_offset": "5.700s",
+          "end_offset": "6.100s"
+        },
+        {
+          "word": "we",
+          "start_offset": "6.100s",
+          "end_offset": "6.200s"
+        },
+        {
+          "word": "built",
+          "start_offset": "6.200s",
+          "end_offset": "6.500s"
+        },
+        {
+          "word": "our",
+          "start_offset": "6.500s",
+          "end_offset": "6.600s"
+        },
+        {
+          "word": "own",
+          "start_offset": "6.700s",
+          "end_offset": "6.900s"
+        },
+        {
+          "word": "tools",
+          "start_offset": "6.900s",
+          "end_offset": "7.400s"
+        },
+        {
+          "word": "to",
+          "start_offset": "7.500s",
+          "end_offset": "7.600s"
+        },
+        {
+          "word": "make",
+          "start_offset": "7.600s",
+          "end_offset": "7.800s"
+        },
+        {
+          "word": "every",
+          "start_offset": "7.800s",
+          "end_offset": "8.100s"
+        },
+        {
+          "word": "team",
+          "start_offset": "8.100s",
+          "end_offset": "8.500s"
+        },
+        {
+          "word": "more",
+          "start_offset": "8.500s",
+          "end_offset": "8.600s"
+        },
+        {
+          "word": "efficient.",
+          "start_offset": "8.600s",
+          "end_offset": "9.200s"
+        },
+        {
+          "word": "Smart",
+          "start_offset": "9.300s",
+          "end_offset": "9.700s"
+        },
+        {
+          "word": "apps,",
+          "start_offset": "9.700s",
+          "end_offset": "10.100s"
+        },
+        {
+          "word": "live",
+          "start_offset": "10.200s",
+          "end_offset": "10.500s"
+        },
+        {
+          "word": "data,",
+          "start_offset": "10.500s",
+          "end_offset": "10.900s"
+        },
+        {
+          "word": "and",
+          "start_offset": "11s",
+          "end_offset": "11.100s"
+        },
+        {
+          "word": "automations.",
+          "start_offset": "11.100s",
+          "end_offset": "11.800s"
+        },
+        {
+          "word": "Automations",
+          "start_offset": "13s",
+          "end_offset": "13.600s"
+        },
+        {
+          "word": "clear",
+          "start_offset": "13.600s",
+          "end_offset": "13.900s"
+        },
+        {
+          "word": "the",
+          "start_offset": "13.900s",
+          "end_offset": "14.100s"
+        },
+        {
+          "word": "repetitive",
+          "start_offset": "14.100s",
+          "end_offset": "14.600s"
+        },
+        {
+          "word": "steps",
+          "start_offset": "14.600s",
+          "end_offset": "15s"
+        },
+        {
+          "word": "so",
+          "start_offset": "15.100s",
+          "end_offset": "15.300s"
+        },
+        {
+          "word": "our",
+          "start_offset": "15.300s",
+          "end_offset": "15.400s"
+        },
+        {
+          "word": "team",
+          "start_offset": "15.400s",
+          "end_offset": "15.700s"
+        },
+        {
+          "word": "can",
+          "start_offset": "15.700s",
+          "end_offset": "15.800s"
+        },
+        {
+          "word": "focus",
+          "start_offset": "15.800s",
+          "end_offset": "16.200s"
+        },
+        {
+          "word": "on",
+          "start_offset": "16.200s",
+          "end_offset": "16.300s"
+        },
+        {
+          "word": "the",
+          "start_offset": "16.300s",
+          "end_offset": "16.400s"
+        },
+        {
+          "word": "work",
+          "start_offset": "16.400s",
+          "end_offset": "16.600s"
+        },
+        {
+          "word": "that",
+          "start_offset": "16.600s",
+          "end_offset": "16.800s"
+        },
+        {
+          "word": "matters.",
+          "start_offset": "16.800s",
+          "end_offset": "17.300s"
+        },
+        {
+          "word": "SEO",
+          "start_offset": "18.100s",
+          "end_offset": "18.500s"
+        },
+        {
+          "word": "work",
+          "start_offset": "18.500s",
+          "end_offset": "18.800s"
+        },
+        {
+          "word": "that",
+          "start_offset": "18.800s",
+          "end_offset": "18.900s"
+        },
+        {
+          "word": "took",
+          "start_offset": "18.900s",
+          "end_offset": "19.200s"
+        },
+        {
+          "word": "hours",
+          "start_offset": "19.300s",
+          "end_offset": "19.700s"
+        },
+        {
+          "word": "now",
+          "start_offset": "19.700s",
+          "end_offset": "20s"
+        },
+        {
+          "word": "takes",
+          "start_offset": "20s",
+          "end_offset": "20.300s"
+        },
+        {
+          "word": "minutes.",
+          "start_offset": "20.300s",
+          "end_offset": "20.800s"
+        },
+        {
+          "word": "Built",
+          "start_offset": "21.900s",
+          "end_offset": "22.100s"
+        },
+        {
+          "word": "by",
+          "start_offset": "22.100s",
+          "end_offset": "22.200s"
+        },
+        {
+          "word": "our",
+          "start_offset": "22.200s",
+          "end_offset": "22.400s"
+        },
+        {
+          "word": "team,",
+          "start_offset": "22.400s",
+          "end_offset": "22.800s"
+        },
+        {
+          "word": "sharpened",
+          "start_offset": "22.900s",
+          "end_offset": "23.300s"
+        },
+        {
+          "word": "by",
+          "start_offset": "23.300s",
+          "end_offset": "23.600s"
+        },
+        {
+          "word": "AI,",
+          "start_offset": "23.600s",
+          "end_offset": "24.100s"
+        },
+        {
+          "word": "more",
+          "start_offset": "24.200s",
+          "end_offset": "24.500s"
+        },
+        {
+          "word": "productive",
+          "start_offset": "24.500s",
+          "end_offset": "25.100s"
+        },
+        {
+          "word": "every",
+          "start_offset": "25.100s",
+          "end_offset": "25.400s"
+        },
+        {
+          "word": "quarter.",
+          "start_offset": "25.400s",
+          "end_offset": "25.900s"
+        }
+      ]
+    }
+  ]
+}

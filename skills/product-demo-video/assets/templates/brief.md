@@ -28,7 +28,8 @@
 - Product screenshots / UI specs:
 - Icons:
 - Laptop glTF (optional, else procedural):
-- Music: synthesize (palette glass / analog / tech) or licensed track file + BPM/key if known:
+- Music: Lyria final, synthesized drafts (palette glass / analog / tech), or licensed track file + BPM/key if known:
+- Voiceover (ask the user; default no, the style reads without one): no / yes, Gemini TTS with captions:
 
 ## Must not
 -

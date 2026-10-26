@@ -1,0 +1,1556 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "Amazon is kicking AI shopping agents out of its store. Walmart just built them a private entrance with a spending limit. On October 21st, Walmart announced the agent gateway. AI agents can search Walmart and Sam's Club and check out for you. Walmart says it already works with ChatGPT, Gemini, and Meta's Muse. Next month, every bot gets its own profile inside your account. Right now, an AI agent shops like a very fast intern. It opens the website, reads the page, and clicks buttons built for humans. Slow, and it breaks every time someone moves a button. The gateway skips the website. Agents plug in over MCP, a standard connector for AI tools, and get product, price, and stock straight from Walmart. Your profile sets the rules. Approve every purchase, the default, or let the bot spend up to a limit. 50 bucks of paper towels, sure. 200 bucks of TV, maybe not. Now, Amazon. In September, it blocked Meta's Muse for never identifying itself or asking permission. Here's the part nobody says out loud. An agent never sees an ad. No sponsored products, no impulse add-to-cart, no prime upsell. For Amazon, every agent order is an ad nobody saw. Walmart is betting the other way. Lose the ad view, win the order. The catch. The gateway is an invite-only beta, and Walmart picks who gets in. Open door with a bouncer. Here's the test I'd run before trusting any of this. Ask three agents to reorder the same paper towels, log where each one buys, what it pays, and whether it keeps your usual brand. If it switches brands, your loyalty program just lost to a spreadsheet. Amazon can lock the door, but your customers' bots will just shop where they're welcome. Don't treat your product feed like a storefront. The next shopper might not have eyes.",
+  "segments": [
+    {
+      "text": "Amazon is kicking AI shopping agents out of its store. Walmart just built them a private entrance with a spending limit. On October 21st, Walmart announced the agent gateway. AI agents can search Walmart and Sam's Club and check out for you. Walmart says it already works with ChatGPT, Gemini, and Meta's Muse. Next month, every bot gets its own profile inside your account. Right now, an AI agent shops like a very fast intern. It opens the website, reads the page, and clicks buttons built for humans. Slow, and it breaks every time someone moves a button. The gateway skips the website. Agents plug in over MCP, a standard connector for AI tools, and get product, price, and stock straight from Walmart. Your profile sets the rules. Approve every purchase, the default, or let the bot spend up to a limit. 50 bucks of paper towels, sure. 200 bucks of TV, maybe not. Now, Amazon. In September, it blocked Meta's Muse for never identifying itself or asking permission. Here's the part nobody says out loud. An agent never sees an ad. No sponsored products, no impulse add-to-cart, no prime upsell. For Amazon, every agent order is an ad nobody saw. Walmart is betting the other way. Lose the ad view, win the order. The catch. The gateway is an invite-only beta, and Walmart picks who gets in. Open door with a bouncer. Here's the test I'd run before trusting any of this. Ask three agents to reorder the same paper towels, log where each one buys, what it pays, and whether it keeps your usual brand. If it switches brands, your loyalty program just lost to a spreadsheet. Amazon can lock the door, but your customers' bots will just shop where they're welcome. Don't treat your product feed like a storefront. The next shopper might not have eyes.",
+      "words": [
+        {
+          "word": "Amazon",
+          "start_offset": "0.200s",
+          "end_offset": "0.500s"
+        },
+        {
+          "word": "is",
+          "start_offset": "0.500s",
+          "end_offset": "0.700s"
+        },
+        {
+          "word": "kicking",
+          "start_offset": "0.700s",
+          "end_offset": "1s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "1s",
+          "end_offset": "1.300s"
+        },
+        {
+          "word": "shopping",
+          "start_offset": "1.300s",
+          "end_offset": "1.800s"
+        },
+        {
+          "word": "agents",
+          "start_offset": "1.800s",
+          "end_offset": "2.200s"
+        },
+        {
+          "word": "out",
+          "start_offset": "2.200s",
+          "end_offset": "2.400s"
+        },
+        {
+          "word": "of",
+          "start_offset": "2.400s",
+          "end_offset": "2.500s"
+        },
+        {
+          "word": "its",
+          "start_offset": "2.500s",
+          "end_offset": "2.600s"
+        },
+        {
+          "word": "store.",
+          "start_offset": "2.600s",
+          "end_offset": "3s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "3.100s",
+          "end_offset": "3.500s"
+        },
+        {
+          "word": "just",
+          "start_offset": "3.500s",
+          "end_offset": "3.700s"
+        },
+        {
+          "word": "built",
+          "start_offset": "3.700s",
+          "end_offset": "3.900s"
+        },
+        {
+          "word": "them",
+          "start_offset": "3.900s",
+          "end_offset": "4.100s"
+        },
+        {
+          "word": "a",
+          "start_offset": "4.100s",
+          "end_offset": "4.100s"
+        },
+        {
+          "word": "private",
+          "start_offset": "4.100s",
+          "end_offset": "4.400s"
+        },
+        {
+          "word": "entrance",
+          "start_offset": "4.400s",
+          "end_offset": "5.100s"
+        },
+        {
+          "word": "with",
+          "start_offset": "5.200s",
+          "end_offset": "5.400s"
+        },
+        {
+          "word": "a",
+          "start_offset": "5.400s",
+          "end_offset": "5.500s"
+        },
+        {
+          "word": "spending",
+          "start_offset": "5.500s",
+          "end_offset": "5.800s"
+        },
+        {
+          "word": "limit.",
+          "start_offset": "5.800s",
+          "end_offset": "6s"
+        },
+        {
+          "word": "On",
+          "start_offset": "6s",
+          "end_offset": "6.100s"
+        },
+        {
+          "word": "October",
+          "start_offset": "6.100s",
+          "end_offset": "6.400s"
+        },
+        {
+          "word": "21st,",
+          "start_offset": "6.400s",
+          "end_offset": "7.100s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "7.100s",
+          "end_offset": "7.500s"
+        },
+        {
+          "word": "announced",
+          "start_offset": "7.500s",
+          "end_offset": "7.900s"
+        },
+        {
+          "word": "the",
+          "start_offset": "7.900s",
+          "end_offset": "8.200s"
+        },
+        {
+          "word": "agent",
+          "start_offset": "8.200s",
+          "end_offset": "8.600s"
+        },
+        {
+          "word": "gateway.",
+          "start_offset": "8.600s",
+          "end_offset": "9.400s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "9.400s",
+          "end_offset": "9.700s"
+        },
+        {
+          "word": "agents",
+          "start_offset": "9.700s",
+          "end_offset": "10.100s"
+        },
+        {
+          "word": "can",
+          "start_offset": "10.100s",
+          "end_offset": "10.200s"
+        },
+        {
+          "word": "search",
+          "start_offset": "10.200s",
+          "end_offset": "10.500s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "10.500s",
+          "end_offset": "11s"
+        },
+        {
+          "word": "and",
+          "start_offset": "11s",
+          "end_offset": "11.200s"
+        },
+        {
+          "word": "Sam's",
+          "start_offset": "11.200s",
+          "end_offset": "11.500s"
+        },
+        {
+          "word": "Club",
+          "start_offset": "11.500s",
+          "end_offset": "11.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "11.800s",
+          "end_offset": "12s"
+        },
+        {
+          "word": "check",
+          "start_offset": "12s",
+          "end_offset": "12.300s"
+        },
+        {
+          "word": "out",
+          "start_offset": "12.300s",
+          "end_offset": "12.500s"
+        },
+        {
+          "word": "for",
+          "start_offset": "12.500s",
+          "end_offset": "12.700s"
+        },
+        {
+          "word": "you.",
+          "start_offset": "12.700s",
+          "end_offset": "13s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "13s",
+          "end_offset": "13.300s"
+        },
+        {
+          "word": "says",
+          "start_offset": "13.300s",
+          "end_offset": "13.500s"
+        },
+        {
+          "word": "it",
+          "start_offset": "13.500s",
+          "end_offset": "13.600s"
+        },
+        {
+          "word": "already",
+          "start_offset": "13.600s",
+          "end_offset": "13.800s"
+        },
+        {
+          "word": "works",
+          "start_offset": "13.800s",
+          "end_offset": "14.100s"
+        },
+        {
+          "word": "with",
+          "start_offset": "14.100s",
+          "end_offset": "14.200s"
+        },
+        {
+          "word": "ChatGPT,",
+          "start_offset": "14.200s",
+          "end_offset": "15.200s"
+        },
+        {
+          "word": "Gemini,",
+          "start_offset": "15.200s",
+          "end_offset": "15.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "15.800s",
+          "end_offset": "16.100s"
+        },
+        {
+          "word": "Meta's",
+          "start_offset": "16.100s",
+          "end_offset": "16.400s"
+        },
+        {
+          "word": "Muse.",
+          "start_offset": "16.400s",
+          "end_offset": "16.900s"
+        },
+        {
+          "word": "Next",
+          "start_offset": "17.100s",
+          "end_offset": "17.300s"
+        },
+        {
+          "word": "month,",
+          "start_offset": "17.300s",
+          "end_offset": "17.700s"
+        },
+        {
+          "word": "every",
+          "start_offset": "17.700s",
+          "end_offset": "17.900s"
+        },
+        {
+          "word": "bot",
+          "start_offset": "17.900s",
+          "end_offset": "18.200s"
+        },
+        {
+          "word": "gets",
+          "start_offset": "18.200s",
+          "end_offset": "18.400s"
+        },
+        {
+          "word": "its",
+          "start_offset": "18.400s",
+          "end_offset": "18.500s"
+        },
+        {
+          "word": "own",
+          "start_offset": "18.500s",
+          "end_offset": "18.600s"
+        },
+        {
+          "word": "profile",
+          "start_offset": "18.600s",
+          "end_offset": "19.200s"
+        },
+        {
+          "word": "inside",
+          "start_offset": "19.200s",
+          "end_offset": "19.700s"
+        },
+        {
+          "word": "your",
+          "start_offset": "19.700s",
+          "end_offset": "19.900s"
+        },
+        {
+          "word": "account.",
+          "start_offset": "19.900s",
+          "end_offset": "20.400s"
+        },
+        {
+          "word": "Right",
+          "start_offset": "20.500s",
+          "end_offset": "20.700s"
+        },
+        {
+          "word": "now,",
+          "start_offset": "20.700s",
+          "end_offset": "21s"
+        },
+        {
+          "word": "an",
+          "start_offset": "21s",
+          "end_offset": "21.200s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "21.200s",
+          "end_offset": "21.500s"
+        },
+        {
+          "word": "agent",
+          "start_offset": "21.500s",
+          "end_offset": "21.800s"
+        },
+        {
+          "word": "shops",
+          "start_offset": "21.800s",
+          "end_offset": "22.100s"
+        },
+        {
+          "word": "like",
+          "start_offset": "22.100s",
+          "end_offset": "22.200s"
+        },
+        {
+          "word": "a",
+          "start_offset": "22.200s",
+          "end_offset": "22.300s"
+        },
+        {
+          "word": "very",
+          "start_offset": "22.300s",
+          "end_offset": "22.500s"
+        },
+        {
+          "word": "fast",
+          "start_offset": "22.500s",
+          "end_offset": "22.900s"
+        },
+        {
+          "word": "intern.",
+          "start_offset": "22.900s",
+          "end_offset": "23.400s"
+        },
+        {
+          "word": "It",
+          "start_offset": "23.400s",
+          "end_offset": "23.500s"
+        },
+        {
+          "word": "opens",
+          "start_offset": "23.500s",
+          "end_offset": "23.700s"
+        },
+        {
+          "word": "the",
+          "start_offset": "23.700s",
+          "end_offset": "23.700s"
+        },
+        {
+          "word": "website,",
+          "start_offset": "23.700s",
+          "end_offset": "24.400s"
+        },
+        {
+          "word": "reads",
+          "start_offset": "24.500s",
+          "end_offset": "24.800s"
+        },
+        {
+          "word": "the",
+          "start_offset": "24.800s",
+          "end_offset": "24.800s"
+        },
+        {
+          "word": "page,",
+          "start_offset": "24.800s",
+          "end_offset": "25.300s"
+        },
+        {
+          "word": "and",
+          "start_offset": "25.300s",
+          "end_offset": "25.500s"
+        },
+        {
+          "word": "clicks",
+          "start_offset": "25.500s",
+          "end_offset": "25.800s"
+        },
+        {
+          "word": "buttons",
+          "start_offset": "25.800s",
+          "end_offset": "26.200s"
+        },
+        {
+          "word": "built",
+          "start_offset": "26.200s",
+          "end_offset": "26.400s"
+        },
+        {
+          "word": "for",
+          "start_offset": "26.400s",
+          "end_offset": "26.500s"
+        },
+        {
+          "word": "humans.",
+          "start_offset": "26.500s",
+          "end_offset": "27.100s"
+        },
+        {
+          "word": "Slow,",
+          "start_offset": "27.300s",
+          "end_offset": "27.700s"
+        },
+        {
+          "word": "and",
+          "start_offset": "27.800s",
+          "end_offset": "27.900s"
+        },
+        {
+          "word": "it",
+          "start_offset": "27.900s",
+          "end_offset": "28s"
+        },
+        {
+          "word": "breaks",
+          "start_offset": "28s",
+          "end_offset": "28.400s"
+        },
+        {
+          "word": "every",
+          "start_offset": "28.400s",
+          "end_offset": "28.500s"
+        },
+        {
+          "word": "time",
+          "start_offset": "28.500s",
+          "end_offset": "28.700s"
+        },
+        {
+          "word": "someone",
+          "start_offset": "28.700s",
+          "end_offset": "28.900s"
+        },
+        {
+          "word": "moves",
+          "start_offset": "28.900s",
+          "end_offset": "29.200s"
+        },
+        {
+          "word": "a",
+          "start_offset": "29.200s",
+          "end_offset": "29.200s"
+        },
+        {
+          "word": "button.",
+          "start_offset": "29.200s",
+          "end_offset": "29.600s"
+        },
+        {
+          "word": "The",
+          "start_offset": "29.700s",
+          "end_offset": "29.800s"
+        },
+        {
+          "word": "gateway",
+          "start_offset": "29.800s",
+          "end_offset": "30.100s"
+        },
+        {
+          "word": "skips",
+          "start_offset": "30.100s",
+          "end_offset": "30.500s"
+        },
+        {
+          "word": "the",
+          "start_offset": "30.500s",
+          "end_offset": "30.600s"
+        },
+        {
+          "word": "website.",
+          "start_offset": "30.600s",
+          "end_offset": "31.100s"
+        },
+        {
+          "word": "Agents",
+          "start_offset": "31.200s",
+          "end_offset": "31.500s"
+        },
+        {
+          "word": "plug",
+          "start_offset": "31.500s",
+          "end_offset": "31.800s"
+        },
+        {
+          "word": "in",
+          "start_offset": "31.800s",
+          "end_offset": "31.900s"
+        },
+        {
+          "word": "over",
+          "start_offset": "31.900s",
+          "end_offset": "32.200s"
+        },
+        {
+          "word": "MCP,",
+          "start_offset": "32.200s",
+          "end_offset": "32.900s"
+        },
+        {
+          "word": "a",
+          "start_offset": "32.900s",
+          "end_offset": "33s"
+        },
+        {
+          "word": "standard",
+          "start_offset": "33s",
+          "end_offset": "33.300s"
+        },
+        {
+          "word": "connector",
+          "start_offset": "33.300s",
+          "end_offset": "33.700s"
+        },
+        {
+          "word": "for",
+          "start_offset": "33.700s",
+          "end_offset": "33.900s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "33.900s",
+          "end_offset": "34.100s"
+        },
+        {
+          "word": "tools,",
+          "start_offset": "34.100s",
+          "end_offset": "34.600s"
+        },
+        {
+          "word": "and",
+          "start_offset": "34.800s",
+          "end_offset": "34.800s"
+        },
+        {
+          "word": "get",
+          "start_offset": "34.800s",
+          "end_offset": "35s"
+        },
+        {
+          "word": "product,",
+          "start_offset": "35s",
+          "end_offset": "35.500s"
+        },
+        {
+          "word": "price,",
+          "start_offset": "35.500s",
+          "end_offset": "35.900s"
+        },
+        {
+          "word": "and",
+          "start_offset": "35.900s",
+          "end_offset": "36.100s"
+        },
+        {
+          "word": "stock",
+          "start_offset": "36.100s",
+          "end_offset": "36.500s"
+        },
+        {
+          "word": "straight",
+          "start_offset": "36.500s",
+          "end_offset": "36.800s"
+        },
+        {
+          "word": "from",
+          "start_offset": "36.800s",
+          "end_offset": "37s"
+        },
+        {
+          "word": "Walmart.",
+          "start_offset": "37s",
+          "end_offset": "37.500s"
+        },
+        {
+          "word": "Your",
+          "start_offset": "37.500s",
+          "end_offset": "37.600s"
+        },
+        {
+          "word": "profile",
+          "start_offset": "37.600s",
+          "end_offset": "38.200s"
+        },
+        {
+          "word": "sets",
+          "start_offset": "38.200s",
+          "end_offset": "38.400s"
+        },
+        {
+          "word": "the",
+          "start_offset": "38.400s",
+          "end_offset": "38.500s"
+        },
+        {
+          "word": "rules.",
+          "start_offset": "38.500s",
+          "end_offset": "38.900s"
+        },
+        {
+          "word": "Approve",
+          "start_offset": "39.100s",
+          "end_offset": "39.400s"
+        },
+        {
+          "word": "every",
+          "start_offset": "39.400s",
+          "end_offset": "39.600s"
+        },
+        {
+          "word": "purchase,",
+          "start_offset": "39.600s",
+          "end_offset": "40.100s"
+        },
+        {
+          "word": "the",
+          "start_offset": "40.300s",
+          "end_offset": "40.400s"
+        },
+        {
+          "word": "default,",
+          "start_offset": "40.400s",
+          "end_offset": "41s"
+        },
+        {
+          "word": "or",
+          "start_offset": "41s",
+          "end_offset": "41.200s"
+        },
+        {
+          "word": "let",
+          "start_offset": "41.200s",
+          "end_offset": "41.300s"
+        },
+        {
+          "word": "the",
+          "start_offset": "41.300s",
+          "end_offset": "41.400s"
+        },
+        {
+          "word": "bot",
+          "start_offset": "41.400s",
+          "end_offset": "41.600s"
+        },
+        {
+          "word": "spend",
+          "start_offset": "41.600s",
+          "end_offset": "41.900s"
+        },
+        {
+          "word": "up",
+          "start_offset": "41.900s",
+          "end_offset": "42s"
+        },
+        {
+          "word": "to",
+          "start_offset": "42s",
+          "end_offset": "42.200s"
+        },
+        {
+          "word": "a",
+          "start_offset": "42.200s",
+          "end_offset": "42.200s"
+        },
+        {
+          "word": "limit.",
+          "start_offset": "42.200s",
+          "end_offset": "42.600s"
+        },
+        {
+          "word": "50",
+          "start_offset": "42.700s",
+          "end_offset": "42.900s"
+        },
+        {
+          "word": "bucks",
+          "start_offset": "42.900s",
+          "end_offset": "43.100s"
+        },
+        {
+          "word": "of",
+          "start_offset": "43.100s",
+          "end_offset": "43.200s"
+        },
+        {
+          "word": "paper",
+          "start_offset": "43.200s",
+          "end_offset": "43.400s"
+        },
+        {
+          "word": "towels,",
+          "start_offset": "43.400s",
+          "end_offset": "43.900s"
+        },
+        {
+          "word": "sure.",
+          "start_offset": "44s",
+          "end_offset": "44.400s"
+        },
+        {
+          "word": "200",
+          "start_offset": "44.500s",
+          "end_offset": "44.800s"
+        },
+        {
+          "word": "bucks",
+          "start_offset": "44.800s",
+          "end_offset": "45s"
+        },
+        {
+          "word": "of",
+          "start_offset": "45s",
+          "end_offset": "45s"
+        },
+        {
+          "word": "TV,",
+          "start_offset": "45s",
+          "end_offset": "45.600s"
+        },
+        {
+          "word": "maybe",
+          "start_offset": "45.800s",
+          "end_offset": "46s"
+        },
+        {
+          "word": "not.",
+          "start_offset": "46s",
+          "end_offset": "46.400s"
+        },
+        {
+          "word": "Now,",
+          "start_offset": "46.500s",
+          "end_offset": "46.800s"
+        },
+        {
+          "word": "Amazon.",
+          "start_offset": "46.900s",
+          "end_offset": "47.500s"
+        },
+        {
+          "word": "In",
+          "start_offset": "47.600s",
+          "end_offset": "47.700s"
+        },
+        {
+          "word": "September,",
+          "start_offset": "47.700s",
+          "end_offset": "48.200s"
+        },
+        {
+          "word": "it",
+          "start_offset": "48.200s",
+          "end_offset": "48.300s"
+        },
+        {
+          "word": "blocked",
+          "start_offset": "48.300s",
+          "end_offset": "48.600s"
+        },
+        {
+          "word": "Meta's",
+          "start_offset": "48.600s",
+          "end_offset": "48.800s"
+        },
+        {
+          "word": "Muse",
+          "start_offset": "48.800s",
+          "end_offset": "49.200s"
+        },
+        {
+          "word": "for",
+          "start_offset": "49.200s",
+          "end_offset": "49.400s"
+        },
+        {
+          "word": "never",
+          "start_offset": "49.400s",
+          "end_offset": "49.700s"
+        },
+        {
+          "word": "identifying",
+          "start_offset": "49.700s",
+          "end_offset": "50.300s"
+        },
+        {
+          "word": "itself",
+          "start_offset": "50.300s",
+          "end_offset": "50.700s"
+        },
+        {
+          "word": "or",
+          "start_offset": "50.700s",
+          "end_offset": "50.900s"
+        },
+        {
+          "word": "asking",
+          "start_offset": "50.900s",
+          "end_offset": "51.200s"
+        },
+        {
+          "word": "permission.",
+          "start_offset": "51.200s",
+          "end_offset": "51.800s"
+        },
+        {
+          "word": "Here's",
+          "start_offset": "51.800s",
+          "end_offset": "52s"
+        },
+        {
+          "word": "the",
+          "start_offset": "52s",
+          "end_offset": "52s"
+        },
+        {
+          "word": "part",
+          "start_offset": "52s",
+          "end_offset": "52.300s"
+        },
+        {
+          "word": "nobody",
+          "start_offset": "52.300s",
+          "end_offset": "52.500s"
+        },
+        {
+          "word": "says",
+          "start_offset": "52.500s",
+          "end_offset": "52.700s"
+        },
+        {
+          "word": "out",
+          "start_offset": "52.700s",
+          "end_offset": "52.900s"
+        },
+        {
+          "word": "loud.",
+          "start_offset": "52.900s",
+          "end_offset": "53.300s"
+        },
+        {
+          "word": "An",
+          "start_offset": "53.400s",
+          "end_offset": "53.600s"
+        },
+        {
+          "word": "agent",
+          "start_offset": "53.600s",
+          "end_offset": "54s"
+        },
+        {
+          "word": "never",
+          "start_offset": "54s",
+          "end_offset": "54.200s"
+        },
+        {
+          "word": "sees",
+          "start_offset": "54.200s",
+          "end_offset": "54.500s"
+        },
+        {
+          "word": "an",
+          "start_offset": "54.500s",
+          "end_offset": "54.700s"
+        },
+        {
+          "word": "ad.",
+          "start_offset": "54.700s",
+          "end_offset": "55.100s"
+        },
+        {
+          "word": "No",
+          "start_offset": "55.200s",
+          "end_offset": "55.300s"
+        },
+        {
+          "word": "sponsored",
+          "start_offset": "55.300s",
+          "end_offset": "55.700s"
+        },
+        {
+          "word": "products,",
+          "start_offset": "55.700s",
+          "end_offset": "56.300s"
+        },
+        {
+          "word": "no",
+          "start_offset": "56.300s",
+          "end_offset": "56.500s"
+        },
+        {
+          "word": "impulse",
+          "start_offset": "56.500s",
+          "end_offset": "57s"
+        },
+        {
+          "word": "add-to-cart,",
+          "start_offset": "57s",
+          "end_offset": "57.700s"
+        },
+        {
+          "word": "no",
+          "start_offset": "57.800s",
+          "end_offset": "57.900s"
+        },
+        {
+          "word": "prime",
+          "start_offset": "57.900s",
+          "end_offset": "58.300s"
+        },
+        {
+          "word": "upsell.",
+          "start_offset": "58.300s",
+          "end_offset": "58.800s"
+        },
+        {
+          "word": "For",
+          "start_offset": "58.900s",
+          "end_offset": "59s"
+        },
+        {
+          "word": "Amazon,",
+          "start_offset": "59s",
+          "end_offset": "59.500s"
+        },
+        {
+          "word": "every",
+          "start_offset": "59.500s",
+          "end_offset": "59.900s"
+        },
+        {
+          "word": "agent",
+          "start_offset": "59.900s",
+          "end_offset": "60.300s"
+        },
+        {
+          "word": "order",
+          "start_offset": "60.300s",
+          "end_offset": "60.600s"
+        },
+        {
+          "word": "is",
+          "start_offset": "60.600s",
+          "end_offset": "60.700s"
+        },
+        {
+          "word": "an",
+          "start_offset": "60.700s",
+          "end_offset": "60.800s"
+        },
+        {
+          "word": "ad",
+          "start_offset": "60.800s",
+          "end_offset": "61.100s"
+        },
+        {
+          "word": "nobody",
+          "start_offset": "61.100s",
+          "end_offset": "61.400s"
+        },
+        {
+          "word": "saw.",
+          "start_offset": "61.400s",
+          "end_offset": "61.800s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "62s",
+          "end_offset": "62.300s"
+        },
+        {
+          "word": "is",
+          "start_offset": "62.300s",
+          "end_offset": "62.400s"
+        },
+        {
+          "word": "betting",
+          "start_offset": "62.400s",
+          "end_offset": "62.600s"
+        },
+        {
+          "word": "the",
+          "start_offset": "62.600s",
+          "end_offset": "62.800s"
+        },
+        {
+          "word": "other",
+          "start_offset": "62.800s",
+          "end_offset": "62.900s"
+        },
+        {
+          "word": "way.",
+          "start_offset": "62.900s",
+          "end_offset": "63.200s"
+        },
+        {
+          "word": "Lose",
+          "start_offset": "63.300s",
+          "end_offset": "63.500s"
+        },
+        {
+          "word": "the",
+          "start_offset": "63.500s",
+          "end_offset": "63.600s"
+        },
+        {
+          "word": "ad",
+          "start_offset": "63.600s",
+          "end_offset": "63.800s"
+        },
+        {
+          "word": "view,",
+          "start_offset": "63.800s",
+          "end_offset": "64.200s"
+        },
+        {
+          "word": "win",
+          "start_offset": "64.400s",
+          "end_offset": "64.600s"
+        },
+        {
+          "word": "the",
+          "start_offset": "64.600s",
+          "end_offset": "64.700s"
+        },
+        {
+          "word": "order.",
+          "start_offset": "64.700s",
+          "end_offset": "65s"
+        },
+        {
+          "word": "The",
+          "start_offset": "65s",
+          "end_offset": "65s"
+        },
+        {
+          "word": "catch.",
+          "start_offset": "65s",
+          "end_offset": "65.500s"
+        },
+        {
+          "word": "The",
+          "start_offset": "65.700s",
+          "end_offset": "65.700s"
+        },
+        {
+          "word": "gateway",
+          "start_offset": "65.700s",
+          "end_offset": "66.100s"
+        },
+        {
+          "word": "is",
+          "start_offset": "66.100s",
+          "end_offset": "66.200s"
+        },
+        {
+          "word": "an",
+          "start_offset": "66.200s",
+          "end_offset": "66.300s"
+        },
+        {
+          "word": "invite-only",
+          "start_offset": "66.300s",
+          "end_offset": "67s"
+        },
+        {
+          "word": "beta,",
+          "start_offset": "67s",
+          "end_offset": "67.400s"
+        },
+        {
+          "word": "and",
+          "start_offset": "67.500s",
+          "end_offset": "67.600s"
+        },
+        {
+          "word": "Walmart",
+          "start_offset": "67.600s",
+          "end_offset": "68s"
+        },
+        {
+          "word": "picks",
+          "start_offset": "68s",
+          "end_offset": "68.300s"
+        },
+        {
+          "word": "who",
+          "start_offset": "68.300s",
+          "end_offset": "68.400s"
+        },
+        {
+          "word": "gets",
+          "start_offset": "68.400s",
+          "end_offset": "68.700s"
+        },
+        {
+          "word": "in.",
+          "start_offset": "68.700s",
+          "end_offset": "68.900s"
+        },
+        {
+          "word": "Open",
+          "start_offset": "69s",
+          "end_offset": "69.200s"
+        },
+        {
+          "word": "door",
+          "start_offset": "69.200s",
+          "end_offset": "69.600s"
+        },
+        {
+          "word": "with",
+          "start_offset": "69.800s",
+          "end_offset": "69.900s"
+        },
+        {
+          "word": "a",
+          "start_offset": "69.900s",
+          "end_offset": "70s"
+        },
+        {
+          "word": "bouncer.",
+          "start_offset": "70s",
+          "end_offset": "70.400s"
+        },
+        {
+          "word": "Here's",
+          "start_offset": "70.500s",
+          "end_offset": "70.700s"
+        },
+        {
+          "word": "the",
+          "start_offset": "70.700s",
+          "end_offset": "70.800s"
+        },
+        {
+          "word": "test",
+          "start_offset": "70.800s",
+          "end_offset": "71s"
+        },
+        {
+          "word": "I'd",
+          "start_offset": "71s",
+          "end_offset": "71.200s"
+        },
+        {
+          "word": "run",
+          "start_offset": "71.200s",
+          "end_offset": "71.400s"
+        },
+        {
+          "word": "before",
+          "start_offset": "71.400s",
+          "end_offset": "71.600s"
+        },
+        {
+          "word": "trusting",
+          "start_offset": "71.600s",
+          "end_offset": "72s"
+        },
+        {
+          "word": "any",
+          "start_offset": "72s",
+          "end_offset": "72.300s"
+        },
+        {
+          "word": "of",
+          "start_offset": "72.300s",
+          "end_offset": "72.400s"
+        },
+        {
+          "word": "this.",
+          "start_offset": "72.400s",
+          "end_offset": "72.800s"
+        },
+        {
+          "word": "Ask",
+          "start_offset": "72.900s",
+          "end_offset": "73.200s"
+        },
+        {
+          "word": "three",
+          "start_offset": "73.200s",
+          "end_offset": "73.500s"
+        },
+        {
+          "word": "agents",
+          "start_offset": "73.500s",
+          "end_offset": "73.900s"
+        },
+        {
+          "word": "to",
+          "start_offset": "73.900s",
+          "end_offset": "74s"
+        },
+        {
+          "word": "reorder",
+          "start_offset": "74s",
+          "end_offset": "74.400s"
+        },
+        {
+          "word": "the",
+          "start_offset": "74.400s",
+          "end_offset": "74.400s"
+        },
+        {
+          "word": "same",
+          "start_offset": "74.400s",
+          "end_offset": "74.900s"
+        },
+        {
+          "word": "paper",
+          "start_offset": "74.900s",
+          "end_offset": "75.100s"
+        },
+        {
+          "word": "towels,",
+          "start_offset": "75.100s",
+          "end_offset": "75.700s"
+        },
+        {
+          "word": "log",
+          "start_offset": "75.800s",
+          "end_offset": "76.100s"
+        },
+        {
+          "word": "where",
+          "start_offset": "76.100s",
+          "end_offset": "76.300s"
+        },
+        {
+          "word": "each",
+          "start_offset": "76.300s",
+          "end_offset": "76.500s"
+        },
+        {
+          "word": "one",
+          "start_offset": "76.500s",
+          "end_offset": "76.700s"
+        },
+        {
+          "word": "buys,",
+          "start_offset": "76.700s",
+          "end_offset": "77.200s"
+        },
+        {
+          "word": "what",
+          "start_offset": "77.200s",
+          "end_offset": "77.300s"
+        },
+        {
+          "word": "it",
+          "start_offset": "77.300s",
+          "end_offset": "77.400s"
+        },
+        {
+          "word": "pays,",
+          "start_offset": "77.400s",
+          "end_offset": "77.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "77.800s",
+          "end_offset": "78s"
+        },
+        {
+          "word": "whether",
+          "start_offset": "78s",
+          "end_offset": "78.200s"
+        },
+        {
+          "word": "it",
+          "start_offset": "78.200s",
+          "end_offset": "78.300s"
+        },
+        {
+          "word": "keeps",
+          "start_offset": "78.300s",
+          "end_offset": "78.600s"
+        },
+        {
+          "word": "your",
+          "start_offset": "78.600s",
+          "end_offset": "78.700s"
+        },
+        {
+          "word": "usual",
+          "start_offset": "78.700s",
+          "end_offset": "79.100s"
+        },
+        {
+          "word": "brand.",
+          "start_offset": "79.100s",
+          "end_offset": "79.600s"
+        },
+        {
+          "word": "If",
+          "start_offset": "79.600s",
+          "end_offset": "79.700s"
+        },
+        {
+          "word": "it",
+          "start_offset": "79.700s",
+          "end_offset": "79.800s"
+        },
+        {
+          "word": "switches",
+          "start_offset": "79.800s",
+          "end_offset": "80.300s"
+        },
+        {
+          "word": "brands,",
+          "start_offset": "80.300s",
+          "end_offset": "80.700s"
+        },
+        {
+          "word": "your",
+          "start_offset": "80.700s",
+          "end_offset": "80.900s"
+        },
+        {
+          "word": "loyalty",
+          "start_offset": "80.900s",
+          "end_offset": "81.300s"
+        },
+        {
+          "word": "program",
+          "start_offset": "81.300s",
+          "end_offset": "81.700s"
+        },
+        {
+          "word": "just",
+          "start_offset": "81.700s",
+          "end_offset": "82s"
+        },
+        {
+          "word": "lost",
+          "start_offset": "82s",
+          "end_offset": "82.300s"
+        },
+        {
+          "word": "to",
+          "start_offset": "82.300s",
+          "end_offset": "82.400s"
+        },
+        {
+          "word": "a",
+          "start_offset": "82.400s",
+          "end_offset": "82.400s"
+        },
+        {
+          "word": "spreadsheet.",
+          "start_offset": "82.400s",
+          "end_offset": "83.100s"
+        },
+        {
+          "word": "Amazon",
+          "start_offset": "83.200s",
+          "end_offset": "83.500s"
+        },
+        {
+          "word": "can",
+          "start_offset": "83.500s",
+          "end_offset": "83.600s"
+        },
+        {
+          "word": "lock",
+          "start_offset": "83.600s",
+          "end_offset": "83.800s"
+        },
+        {
+          "word": "the",
+          "start_offset": "83.800s",
+          "end_offset": "83.900s"
+        },
+        {
+          "word": "door,",
+          "start_offset": "83.900s",
+          "end_offset": "84.300s"
+        },
+        {
+          "word": "but",
+          "start_offset": "84.400s",
+          "end_offset": "84.500s"
+        },
+        {
+          "word": "your",
+          "start_offset": "84.500s",
+          "end_offset": "84.600s"
+        },
+        {
+          "word": "customers'",
+          "start_offset": "84.600s",
+          "end_offset": "85s"
+        },
+        {
+          "word": "bots",
+          "start_offset": "85s",
+          "end_offset": "85.300s"
+        },
+        {
+          "word": "will",
+          "start_offset": "85.300s",
+          "end_offset": "85.400s"
+        },
+        {
+          "word": "just",
+          "start_offset": "85.400s",
+          "end_offset": "85.600s"
+        },
+        {
+          "word": "shop",
+          "start_offset": "85.600s",
+          "end_offset": "85.900s"
+        },
+        {
+          "word": "where",
+          "start_offset": "85.900s",
+          "end_offset": "86s"
+        },
+        {
+          "word": "they're",
+          "start_offset": "86s",
+          "end_offset": "86.100s"
+        },
+        {
+          "word": "welcome.",
+          "start_offset": "86.100s",
+          "end_offset": "86.600s"
+        },
+        {
+          "word": "Don't",
+          "start_offset": "86.700s",
+          "end_offset": "86.800s"
+        },
+        {
+          "word": "treat",
+          "start_offset": "86.800s",
+          "end_offset": "87s"
+        },
+        {
+          "word": "your",
+          "start_offset": "87s",
+          "end_offset": "87.100s"
+        },
+        {
+          "word": "product",
+          "start_offset": "87.100s",
+          "end_offset": "87.400s"
+        },
+        {
+          "word": "feed",
+          "start_offset": "87.400s",
+          "end_offset": "87.600s"
+        },
+        {
+          "word": "like",
+          "start_offset": "87.600s",
+          "end_offset": "87.700s"
+        },
+        {
+          "word": "a",
+          "start_offset": "87.700s",
+          "end_offset": "87.800s"
+        },
+        {
+          "word": "storefront.",
+          "start_offset": "87.800s",
+          "end_offset": "88.400s"
+        },
+        {
+          "word": "The",
+          "start_offset": "88.400s",
+          "end_offset": "88.500s"
+        },
+        {
+          "word": "next",
+          "start_offset": "88.500s",
+          "end_offset": "88.700s"
+        },
+        {
+          "word": "shopper",
+          "start_offset": "88.700s",
+          "end_offset": "89s"
+        },
+        {
+          "word": "might",
+          "start_offset": "89s",
+          "end_offset": "89.200s"
+        },
+        {
+          "word": "not",
+          "start_offset": "89.200s",
+          "end_offset": "89.400s"
+        },
+        {
+          "word": "have",
+          "start_offset": "89.400s",
+          "end_offset": "89.600s"
+        },
+        {
+          "word": "eyes.",
+          "start_offset": "89.600s",
+          "end_offset": "89.800s"
+        }
+      ]
+    }
+  ]
+}

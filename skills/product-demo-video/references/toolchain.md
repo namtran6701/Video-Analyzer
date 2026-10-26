@@ -15,7 +15,7 @@ Production runs on the **`motion-studio`** skill: Remotion is the only engine an
 
 Expected: 1 Blender plate and 1 R3F shot per film. Anything else in 3D needs a one-line reason in the shotlist's lane column.
 
-**Reveal fallback** when the Blender MCP isn't connected (and the user doesn't want to open Blender): 2D vertical stripes from `repeating-linear-gradient`, animated `background-position`, 40px blur, plus light seeded grain to hide banding. Say in the progress report that it's the fallback.
+**Reveal fallback** only when Blender isn't installed (without the MCP, the plate still renders headless per motion-studio): 2D vertical stripes from `repeating-linear-gradient`, animated `background-position`, 40px blur, plus light seeded grain to hide banding. Say in the progress report that it's the fallback.
 
 ## Setup
 

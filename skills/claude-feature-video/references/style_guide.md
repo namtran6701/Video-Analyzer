@@ -84,9 +84,15 @@ Cuts happen only into a close-up (4 to 5 per 60s). Never cut between two wide sh
 - Music: mellow, warm instrumental at **~90 BPM** (measured onset interval 0.665s), soft kick, gentle hats on the beat, round bass, keys. Pitch content suggests A minor / C major (rough estimate).
 - Energy map (RMS per 2.5s): soft intro under the opener (-25 dB), full groove from the first window to ~45s (-15 to -17 dB), drums drop for the last transform (~47s), quiet outro under tagline and logo (-24 to -29 dB), silence for the last ~2.5s.
 - SFX: very quiet UI clicks on cursor clicks, light keystroke ticks while typing, optional soft air whoosh on the wipe. Tucked well under the music.
-- No voiceover.
+- Voiceover only if the user said yes (default no). Then follow motion-studio's Voiceover and captions section: bottom band, kept clear of the window (place the wide pose so the window ends above it, and in close-ups the band covers only stage or idle UI).
 
-### Synthesizing it (motion-studio `score.mjs` + `sfx.mjs`)
+### Lyria final
+
+- Prompt: `mellow, warm instrumental, 90 BPM, soft kick, gentle hats, round bass, warm electric keys with seventh chords, calm and optimistic`, A minor (or C major), plus the energy table below as a story with times in seconds: soft keys-only open, the groove comes in with the first window, drums drop out for the final payoff, gentle ending. `negative_prompt: vocals, singing, lyrics, big drops, risers`.
+- Conform to exactly 90 BPM (16 frames per beat at 24fps) with motion-studio's conform steps (Sound section), then `afade` out so the last ~2.5s are silent.
+- The SFX below stay the same; the score's one riser and impact become SFX cues on the opener → first window step.
+
+### Synthesizing it (motion-studio `score.mjs` + `sfx.mjs`, drafts)
 
 - `score.json`: `bpm` 90, palette `glass` (FM keys, light straight kit, sevenths; closest to the reference) or `lofi` if the brand is casual (swung, dustier). `minor` key for the A minor feel, `major` for C major. Fresh seed every film.
 - Energy per bar:
@@ -110,6 +116,6 @@ Cuts happen only into a close-up (4 to 5 per 60s). Never cut between two wide sh
 3. **Do** reserve the accent for the AI acting.
 4. **Do** cut only into close-ups and move the camera for everything else.
 5. **Do** give every chapter a different way in, in order of increasing power.
-6. **Don't** add captions, callouts, arrows, zoom circles, highlight boxes or feature lists.
+6. **Don't** add callouts, arrows, zoom circles, highlight boxes or feature lists.
 7. **Don't** show real waiting. "Working" lasts 1.5 to 3s, then the result.
 8. **Don't** use dark mode, gradients on the stage, or bouncy springs.

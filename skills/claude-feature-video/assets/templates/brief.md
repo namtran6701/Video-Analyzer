@@ -36,7 +36,8 @@ For each, simplest first:
 ## Assets in `public/`
 - Screens in `public/screens/` (before/after per chapter, at 3x):
 - Panel empty state / menus:
-- Music: synthesize (palette glass / lofi) or licensed track file + BPM if known:
+- Music: Lyria final, synthesized drafts (palette glass / lofi), or licensed track file + BPM if known:
+- Voiceover (ask the user; default no, the style reads without one): no / yes, Gemini TTS with captions:
 
 ## Must not
 -

@@ -23,11 +23,11 @@ Round every act to whole bars (4 beats, ≈2.07s at 116 BPM) so acts start on do
 
 | Act | Visual approach | Motion IDs | Look frame (`assets/look/`) |
 |---|---|---|---|
-| Hook | A UI element (search bar, input) morphs into a pill holding the headline; neutral app icons slide in beside it | M4, M5, M1 | `hook-headline-pill.jpg` |
+| Hook | A UI element (search bar, input) morphs into a pill holding the headline; neutral app icons slide in beside it | M4, M5, M1 | `hook-app-icons.jpg` (the neutral icon row) |
 | Problem | Each complaint is a centered line lit word by word, with a UI prop under it (dock, buttons, refusal chips) that gets stacked, blurred, then thrown away | M2, M6, M7 | `problem-motion-blur-stack.jpg`, `problem-throw-in-trash.jpg` |
 | Reveal | "Introducing" over the last prop, then logo wordmark on blue light shafts, washing out to white | M8 | `reveal-light-shafts.jpg` |
 | Positioning | Logo + one-line promise, then a line of nouns each led by an inline icon | M1, M3 | `positioning-inline-icons.jpg` |
-| Demo | Real product UI at real scale: prompt typed, agent/product steps appear one per beat, a section expands with zoom, parallel branches, result line. Thin progress thread with a blue dot runs through it | M9 to M12 | `demo-agent-steps.jpg` |
+| Demo | Real product UI at real scale: prompt typed, agent/product steps appear one per beat, a section expands with zoom, parallel branches, result line. Thin progress thread with a blue dot runs through it | M9 to M12 | `demo-ui-field.jpg` (UI type at demo scale) |
 | Proof | Starts tight on the hero bar glowing in the accent, pulls out to the full chart | M13 | `proof-benchmark-bars.jpg` |
 | Capabilities | "Anything you can do in a [icon] place" lit word by word, then "[logo] can do" with a vertical slot list of verbs | M2, M3, M14 | `capabilities-slot-list.jpg` |
 | Trust | Short lines with a lock/drive icon inline, a 3D laptop with the product on screen closing its lid, scrambled text resolving to "encrypted", a field toggling to masked | M15 to M17 | `trust-scramble-text.jpg`, `trust-password-toggle.jpg` |

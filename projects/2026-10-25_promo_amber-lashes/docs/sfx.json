@@ -1,0 +1,7 @@
+[
+  { "t": 2.95, "type": "swish", "gain": 0.35, "len": 0.9 },
+  { "t": 10.85, "type": "swish", "gain": 0.3, "len": 0.6 },
+  { "t": 23.0, "type": "swish", "gain": 0.25, "len": 0.7 },
+  { "t": 27.9, "type": "swish", "gain": 0.3, "len": 0.9 },
+  { "t": 30.0, "type": "chime", "gain": 0.25, "pitch": 0 }
+]

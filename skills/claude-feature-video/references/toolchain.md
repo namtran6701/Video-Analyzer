@@ -11,9 +11,9 @@ Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx ski
 | Need | Tool | Why |
 |---|---|---|
 | Camera, window, cards, wipe, cursor, panel, timeline | **Remotion** | Frame-exact React, `interpolate`/`Easing`, `<Sequence>` maps 1:1 to the shotlist, renders H.264 directly |
-| "Before" / "after" app screens | **Screenshots** (Playwright if the app runs locally and the user agrees, otherwise supplied by the user) | Pixel-sharp at 3x close-ups, trivially swappable, and the wipe between two screenshots is exactly how the transform reads |
+| "Before" / "after" app screens | **Screenshots** (Chrome DevTools MCP if the app runs, otherwise supplied by the user) | Pixel-sharp at 3x close-ups, trivially swappable, and the wipe between two screenshots is exactly how the transform reads |
 | Anything that animates inside the UI | **React components** in Remotion | Typing, streaming, menus, toggles, file chips, working state can't be faked with a crossfade |
-| Music + SFX | **`motion-studio` skill** if available, or a licensed ~90 BPM track | Synthesized bed locked to the beat grid |
+| Music + SFX | **Lyria** final, conformed to 90 BPM, via the **`motion-studio`** skill (synthesized bed for drafts), or a licensed ~90 BPM track | Finished-sounding music that still locks to the beat grid |
 | Final checks | **ffprobe** | Verify duration, resolution, fps |
 
 Rule of thumb: static = screenshot, changing = React. The panel's empty state can be a screenshot; its thread (bubble, step line, working, reply) is React styled to match.
@@ -23,14 +23,8 @@ Rule of thumb: static = screenshot, changing = React. The panel's empty state ca
 - Window content area at rest is ~1418 x 790 (window minus ~110px of browser chrome). Capture the app at that CSS viewport with **device scale factor 3** so 3x close-ups stay sharp (≈ 4254 x 2370 px).
 - Per chapter, in `public/screens/`: `chNN-before.png`, `chNN-after.png`, plus any static close-up state (`chNN-menu.png`, `chNN-panel-empty.png`).
 - Hide real user data, notifications and cookie banners. Use the fictional data universe from the brief.
-- Playwright sketch:
-
-```ts
-const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: 1418, height: 790 }, deviceScaleFactor: 3 });
-await page.goto(url);
-await page.screenshot({ path: "public/screens/ch01-before.png" });
-```
+- Chrome DevTools MCP: `new_page` with the URL, `emulate` with viewport `1418x790x3` (tested: 4254 x 2370 px), set up the state (`click`, `fill`, `evaluate_script` to hide banners), then `take_screenshot` with `filePath: "public/screens/ch01-before.png"` (relative to the working folder). Re-run `emulate` after a navigation if the size resets.
+- Playwright only for a big batch you'll recapture after UI changes: `newPage({ viewport: { width: 1418, height: 790 }, deviceScaleFactor: 3 })`, same file names.
 
 ## Project layout
 

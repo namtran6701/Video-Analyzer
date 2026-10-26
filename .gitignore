@@ -23,7 +23,16 @@ Desktop.ini
 *.mp4
 
 test_file
-skill-howto-video
-refs/
-episodes
-amber-lashes
+node_modules/
+references/
+deliverables/
+
+# Per-project: track code and docs, not generated media
+projects/*/public/
+projects/*/out/
+projects/*/dist/
+projects/*/docs/*.png
+projects/*/.claude/
+projects/*/.agents/
+*.wav
+*.mp3

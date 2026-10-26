@@ -1,0 +1,341 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "It's trained on our own projects, pricing patterns, and costs, then drafts a starting point. Our AI team tracks the industry and the news, then carefully designs every lesson and assignment. And we extend these capabilities to our client work, delivering a fantastic client experience. Our automations run whole workflows end-to-end. SEO content, survey media named and centralized, and new leads enriched, located, and sent weekly.",
+  "segments": [
+    {
+      "text": "It's trained on our own projects, pricing patterns, and costs, then drafts a starting point. Our AI team tracks the industry and the news, then carefully designs every lesson and assignment. And we extend these capabilities to our client work, delivering a fantastic client experience. Our automations run whole workflows end-to-end. SEO content, survey media named and centralized, and new leads enriched, located, and sent weekly.",
+      "words": [
+        {
+          "word": "It's",
+          "start_offset": "0.400s",
+          "end_offset": "0.600s"
+        },
+        {
+          "word": "trained",
+          "start_offset": "0.600s",
+          "end_offset": "1s"
+        },
+        {
+          "word": "on",
+          "start_offset": "1s",
+          "end_offset": "1.100s"
+        },
+        {
+          "word": "our",
+          "start_offset": "1.100s",
+          "end_offset": "1.200s"
+        },
+        {
+          "word": "own",
+          "start_offset": "1.200s",
+          "end_offset": "1.500s"
+        },
+        {
+          "word": "projects,",
+          "start_offset": "1.500s",
+          "end_offset": "2.300s"
+        },
+        {
+          "word": "pricing",
+          "start_offset": "2.400s",
+          "end_offset": "2.800s"
+        },
+        {
+          "word": "patterns,",
+          "start_offset": "2.800s",
+          "end_offset": "3.200s"
+        },
+        {
+          "word": "and",
+          "start_offset": "3.200s",
+          "end_offset": "3.400s"
+        },
+        {
+          "word": "costs,",
+          "start_offset": "3.400s",
+          "end_offset": "4s"
+        },
+        {
+          "word": "then",
+          "start_offset": "4.100s",
+          "end_offset": "4.300s"
+        },
+        {
+          "word": "drafts",
+          "start_offset": "4.300s",
+          "end_offset": "4.800s"
+        },
+        {
+          "word": "a",
+          "start_offset": "4.800s",
+          "end_offset": "4.800s"
+        },
+        {
+          "word": "starting",
+          "start_offset": "4.800s",
+          "end_offset": "5.200s"
+        },
+        {
+          "word": "point.",
+          "start_offset": "5.200s",
+          "end_offset": "5.400s"
+        },
+        {
+          "word": "Our",
+          "start_offset": "8.100s",
+          "end_offset": "8.300s"
+        },
+        {
+          "word": "AI",
+          "start_offset": "8.300s",
+          "end_offset": "8.600s"
+        },
+        {
+          "word": "team",
+          "start_offset": "8.600s",
+          "end_offset": "8.900s"
+        },
+        {
+          "word": "tracks",
+          "start_offset": "8.900s",
+          "end_offset": "9.400s"
+        },
+        {
+          "word": "the",
+          "start_offset": "9.400s",
+          "end_offset": "9.600s"
+        },
+        {
+          "word": "industry",
+          "start_offset": "9.600s",
+          "end_offset": "10.100s"
+        },
+        {
+          "word": "and",
+          "start_offset": "10.200s",
+          "end_offset": "10.400s"
+        },
+        {
+          "word": "the",
+          "start_offset": "10.400s",
+          "end_offset": "10.500s"
+        },
+        {
+          "word": "news,",
+          "start_offset": "10.500s",
+          "end_offset": "10.900s"
+        },
+        {
+          "word": "then",
+          "start_offset": "11s",
+          "end_offset": "11.200s"
+        },
+        {
+          "word": "carefully",
+          "start_offset": "11.200s",
+          "end_offset": "11.700s"
+        },
+        {
+          "word": "designs",
+          "start_offset": "11.700s",
+          "end_offset": "12.200s"
+        },
+        {
+          "word": "every",
+          "start_offset": "12.200s",
+          "end_offset": "12.500s"
+        },
+        {
+          "word": "lesson",
+          "start_offset": "12.500s",
+          "end_offset": "12.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "12.800s",
+          "end_offset": "13s"
+        },
+        {
+          "word": "assignment.",
+          "start_offset": "13s",
+          "end_offset": "13.400s"
+        },
+        {
+          "word": "And",
+          "start_offset": "15.900s",
+          "end_offset": "16s"
+        },
+        {
+          "word": "we",
+          "start_offset": "16s",
+          "end_offset": "16.200s"
+        },
+        {
+          "word": "extend",
+          "start_offset": "16.200s",
+          "end_offset": "16.600s"
+        },
+        {
+          "word": "these",
+          "start_offset": "16.600s",
+          "end_offset": "16.800s"
+        },
+        {
+          "word": "capabilities",
+          "start_offset": "16.800s",
+          "end_offset": "17.500s"
+        },
+        {
+          "word": "to",
+          "start_offset": "17.500s",
+          "end_offset": "17.600s"
+        },
+        {
+          "word": "our",
+          "start_offset": "17.600s",
+          "end_offset": "17.700s"
+        },
+        {
+          "word": "client",
+          "start_offset": "17.700s",
+          "end_offset": "18.100s"
+        },
+        {
+          "word": "work,",
+          "start_offset": "18.100s",
+          "end_offset": "18.500s"
+        },
+        {
+          "word": "delivering",
+          "start_offset": "18.500s",
+          "end_offset": "18.900s"
+        },
+        {
+          "word": "a",
+          "start_offset": "18.900s",
+          "end_offset": "19s"
+        },
+        {
+          "word": "fantastic",
+          "start_offset": "19s",
+          "end_offset": "19.800s"
+        },
+        {
+          "word": "client",
+          "start_offset": "19.800s",
+          "end_offset": "20.200s"
+        },
+        {
+          "word": "experience.",
+          "start_offset": "20.200s",
+          "end_offset": "20.800s"
+        },
+        {
+          "word": "Our",
+          "start_offset": "22.800s",
+          "end_offset": "23.100s"
+        },
+        {
+          "word": "automations",
+          "start_offset": "23.100s",
+          "end_offset": "23.700s"
+        },
+        {
+          "word": "run",
+          "start_offset": "23.700s",
+          "end_offset": "23.900s"
+        },
+        {
+          "word": "whole",
+          "start_offset": "23.900s",
+          "end_offset": "24.300s"
+        },
+        {
+          "word": "workflows",
+          "start_offset": "24.300s",
+          "end_offset": "25s"
+        },
+        {
+          "word": "end-to-end.",
+          "start_offset": "25.100s",
+          "end_offset": "25.800s"
+        },
+        {
+          "word": "SEO",
+          "start_offset": "26.200s",
+          "end_offset": "26.600s"
+        },
+        {
+          "word": "content,",
+          "start_offset": "26.600s",
+          "end_offset": "27.400s"
+        },
+        {
+          "word": "survey",
+          "start_offset": "27.400s",
+          "end_offset": "27.800s"
+        },
+        {
+          "word": "media",
+          "start_offset": "27.800s",
+          "end_offset": "28.200s"
+        },
+        {
+          "word": "named",
+          "start_offset": "28.200s",
+          "end_offset": "28.600s"
+        },
+        {
+          "word": "and",
+          "start_offset": "28.600s",
+          "end_offset": "28.800s"
+        },
+        {
+          "word": "centralized,",
+          "start_offset": "28.800s",
+          "end_offset": "29.600s"
+        },
+        {
+          "word": "and",
+          "start_offset": "29.700s",
+          "end_offset": "29.900s"
+        },
+        {
+          "word": "new",
+          "start_offset": "29.900s",
+          "end_offset": "30.100s"
+        },
+        {
+          "word": "leads",
+          "start_offset": "30.100s",
+          "end_offset": "30.500s"
+        },
+        {
+          "word": "enriched,",
+          "start_offset": "30.500s",
+          "end_offset": "31.200s"
+        },
+        {
+          "word": "located,",
+          "start_offset": "31.200s",
+          "end_offset": "31.800s"
+        },
+        {
+          "word": "and",
+          "start_offset": "31.800s",
+          "end_offset": "31.900s"
+        },
+        {
+          "word": "sent",
+          "start_offset": "31.900s",
+          "end_offset": "32.300s"
+        },
+        {
+          "word": "weekly.",
+          "start_offset": "32.300s",
+          "end_offset": "32.700s"
+        }
+      ]
+    }
+  ]
+}
