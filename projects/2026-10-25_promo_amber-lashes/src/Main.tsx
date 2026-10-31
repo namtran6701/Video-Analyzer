@@ -1,7 +1,7 @@
 import { loadFont } from "@remotion/fonts";
 import { Audio } from "@remotion/media";
 import React from "react";
-import { AbsoluteFill, Easing, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { spring } from "./lib/motion";
 import { color, font, FPS, photo, safe, Source, WIDTH } from "./tokens";
 
@@ -42,7 +42,9 @@ const Shot: React.FC<{
   dy?: number;
   scale?: number;
   rotate?: number;
-}> = ({ s, box, zoom = 1, border = 0, opacity = 1, dx = 0, dy = 0, scale = 1, rotate = 0 }) => {
+  clip?: number;
+  children?: React.ReactNode;
+}> = ({ s, box, zoom = 1, border = 0, opacity = 1, dx = 0, dy = 0, scale = 1, rotate = 0, clip = 1, children }) => {
   const [iw, ih] = s.nat;
   const [rx, ry, rw, rh] = s.region;
   const w = box.w - border * 2;
@@ -66,12 +68,62 @@ const Shot: React.FC<{
         opacity,
         transform: `translate(${dx}px, ${dy}px) scale(${scale}) rotate(${rotate}deg)`,
         boxShadow: border > 0 ? `0 ${border * 1.6}px ${border * 4}px rgba(43, 39, 36, ${0.1 * Math.min(border / 18, 1)})` : "none",
+        clipPath: clip < 1 ? `inset(0 ${(1 - clip) * 100}% 0 0)` : undefined,
       }}
     >
       <div style={{ position: "relative", width: w, height: h, overflow: "hidden" }}>
-        {s.video ? <OffthreadVideo src={staticFile(s.src)} muted style={media} /> : <Img src={staticFile(s.src)} style={media} />}
+        <Img src={staticFile(s.src)} style={media} />
       </div>
+      {children}
     </div>
+  );
+};
+
+const Tag: React.FC<{ side?: "left" | "right"; inset: number; children: React.ReactNode }> = ({ side = "left", inset, children }) => (
+  <div
+    style={{
+      position: "absolute",
+      top: inset + 22,
+      [side]: inset + 22,
+      padding: "9px 16px 8px",
+      background: "rgba(251, 248, 243, 0.92)",
+      color: color.charcoal,
+      ...caps(20, "0.24em"),
+    }}
+  >
+    {children}
+  </div>
+);
+
+// Before sits underneath; after wipes in from the left behind a champagne edge as p goes 0 to 1.
+const Reveal: React.FC<React.ComponentProps<typeof Shot> & { before: Source; p: number }> = ({ before, p, ...shot }) => {
+  const inset = shot.border ?? 0;
+  return (
+    <>
+      {p < 1 && (
+        <Shot {...shot} s={before}>
+          <Tag side="right" inset={inset}>
+            Before
+          </Tag>
+        </Shot>
+      )}
+      {p > 0 && (
+        <Shot {...shot} clip={p}>
+          <Tag inset={inset}>After</Tag>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              left: `calc(${p * 100}% - 4px)`,
+              width: 4,
+              background: color.champagne,
+              opacity: 1 - ramp(p, 0.9, 1),
+            }}
+          />
+        </Shot>
+      )}
+    </>
   );
 };
 
@@ -136,6 +188,15 @@ const caps = (size: number, spacing = "0.22em"): React.CSSProperties => ({
   textTransform: "uppercase",
 });
 
+// Instagram glyph, drawn in the text color so it sits with the handle.
+const Ig: React.FC = () => (
+  <svg viewBox="0 0 24 24" width="1.05em" height="1.05em" fill="none" stroke="currentColor" strokeWidth={2} style={{ verticalAlign: "-0.17em", marginRight: "0.32em" }}>
+    <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" />
+    <circle cx="12" cy="12" r="4.4" />
+    <circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none" />
+  </svg>
+);
+
 const FULL: Box = { x: 0, y: 0, w: 1080, h: 1920 };
 
 const HookIntro: React.FC<{ t: number }> = ({ t }) => {
@@ -182,14 +243,33 @@ const Looks: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {t < 12 && (
-        <Shot s={photo.natural} box={CARD} border={18} dy={160 * (1 - inN)} dx={-1100 * push} opacity={ramp(t, 8.0, 8.5)} />
+        <Reveal
+          s={photo.natural}
+          before={photo.naturalBefore}
+          p={ramp(t, 9.0, 9.8, inOut)}
+          box={CARD}
+          border={18}
+          dy={160 * (1 - inN)}
+          dx={-1100 * push}
+          opacity={ramp(t, 8.0, 8.5)}
+        />
       )}
       {t >= 11 && t < 15 && (
-        <Shot s={photo.wispy} box={CARD} border={18} dx={1100 * (1 - push)} opacity={1 - ramp(t, 13.9, 14.3, inOut)} />
+        <Reveal
+          s={photo.wispy}
+          before={photo.wispyBefore}
+          p={ramp(t, 12.0, 12.8, inOut)}
+          box={CARD}
+          border={18}
+          dx={1100 * (1 - push)}
+          opacity={1 - ramp(t, 13.9, 14.3, inOut)}
+        />
       )}
       {t >= 14 && (
-        <Shot
+        <Reveal
           s={photo.bold}
+          before={photo.boldBefore}
+          p={ramp(t, 15.0, 15.8, inOut)}
           box={CARD}
           border={18}
           scale={mix(0.9, 1, bold) - 0.03 * leave}
@@ -225,7 +305,9 @@ const Details: React.FC<{ t: number }> = ({ t }) => {
         dy={90 * (1 - a)}
         dx={-520 * grow}
         opacity={ramp(t, 17.0, 17.5) * (1 - ramp(t, 19.0, 19.7))}
-      />
+      >
+        <Tag inset={14}>Before</Tag>
+      </Shot>
       <Shot
         s={photo.detailB}
         box={boxB}
@@ -233,7 +315,9 @@ const Details: React.FC<{ t: number }> = ({ t }) => {
         dy={90 * (1 - b)}
         zoom={1 + 0.1 * ramp(t, 19.0, 23.0, Easing.bezier(0.33, 0, 0.67, 1))}
         opacity={ramp(t, 17.12, 17.6) * (1 - leave)}
-      />
+      >
+        <Tag inset={14}>After</Tag>
+      </Shot>
       <Line t={t} at={18.0} until={22.6} y={1180} style={headline}>
         Find your kind
       </Line>
@@ -256,9 +340,7 @@ const Collage: React.FC<{ t: number }> = ({ t }) => {
     <>
       <Shot s={photo.sideL} box={{ x: 60, y: 440, w: 220, h: 520 }} {...tile(23.25)} />
       <Shot s={photo.sideR} box={{ x: 800, y: 380, w: 220, h: 520 }} {...tile(23.4)} />
-      <Sequence from={23 * FPS} durationInFrames={5.3 * FPS} layout="none">
-        <Shot s={photo.clip} box={{ x: 300, y: 300, w: 480, h: 800 }} {...tile(23.0)} />
-      </Sequence>
+      <Shot s={photo.center} box={{ x: 300, y: 300, w: 480, h: 800 }} zoom={1 + 0.06 * ramp(t, 23.0, 28.0, inOut)} {...tile(23.0)} />
       <Line t={t} at={24.5} until={27.7} y={1200} style={{ ...headline, fontSize: 84 }}>
         Your style. Your lashes.
       </Line>
@@ -271,31 +353,31 @@ const Collage: React.FC<{ t: number }> = ({ t }) => {
 
 const Booking: React.FC<{ t: number }> = ({ t }) => {
   const reveal = ramp(t, 28.0, 28.9, inOut);
-  const h = 520 * reveal;
+  const h = 660 * reveal;
   const center = { align: "center" as const, t };
   return (
     <>
       {h > 0 && <Shot s={photo.strip} box={{ x: 0, y: 0, w: 1080, h }} zoom={mix(1.06, 1, ramp(t, 28, 30.5))} />}
-      <Line {...center} at={28.4} y={620} style={{ ...headline, fontSize: 74, letterSpacing: "0.08em" }}>
+      <Line {...center} at={28.4} y={760} style={{ ...headline, fontSize: 74, letterSpacing: "0.08em" }}>
         BOOK YOUR LASHES
       </Line>
-      <Line {...center} at={28.6} y={712} style={{ ...headline, fontSize: 74, letterSpacing: "0.08em" }}>
+      <Line {...center} at={28.6} y={852} style={{ ...headline, fontSize: 74, letterSpacing: "0.08em" }}>
         WITH AMBER
       </Line>
-      <Rule t={t} at={29.2} y={842} w={160} />
-      <Line {...center} at={30.0} y={890} style={{ fontFamily: font.body, fontWeight: 500, fontSize: 66, letterSpacing: "0.01em" }}>
+      <Rule t={t} at={29.2} y={982} w={160} />
+      <Line {...center} at={30.0} y={1030} style={{ fontFamily: font.body, fontWeight: 500, fontSize: 66, letterSpacing: "0.01em" }}>
         magiclashesstudio.com
       </Line>
-      <Line {...center} at={30.4} y={990} style={{ fontFamily: font.body, fontWeight: 400, fontSize: 48 }}>
+      <Line {...center} at={30.4} y={1130} style={{ fontFamily: font.body, fontWeight: 400, fontSize: 48 }}>
         Tap Booking • Choose Amber
       </Line>
-      <Line {...center} at={32.0} y={1140} style={{ fontFamily: font.body, fontWeight: 400, fontSize: 42 }}>
-        Questions? DM @amberlashes.nc
+      <Line {...center} at={32.0} y={1280} style={{ fontFamily: font.body, fontWeight: 400, fontSize: 42 }}>
+        Questions? DM <Ig />@amberlashes.nc
       </Line>
-      <Line {...center} at={32.15} y={1244} style={{ ...accent, fontSize: 62 }}>
+      <Line {...center} at={32.15} y={1384} style={{ ...accent, fontSize: 62 }}>
         At Magic Lash Studio
       </Line>
-      <Line {...center} at={32.3} y={1330} style={{ ...caps(30), color: color.soft }}>
+      <Line {...center} at={32.3} y={1470} style={{ ...caps(30), color: color.soft }}>
         Winston-Salem, NC
       </Line>
     </>
@@ -312,6 +394,7 @@ export const Main: React.FC = () => {
       {t >= 22.9 && t < 28.3 && <Collage t={t} />}
       {t >= 28 && <Booking t={t} />}
       <Line t={t} at={6.2} until={27.6} y={196} align="center" style={{ ...caps(32, "0.06em"), textTransform: "none", color: "rgba(43, 39, 36, 0.8)" }}>
+        <Ig />
         @amberlashes.nc
       </Line>
       <Audio src={staticFile("mix.wav")} />
