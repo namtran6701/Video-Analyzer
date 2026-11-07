@@ -1,0 +1,52 @@
+{
+ "transcript": "docs/vo_transcript.json",
+ "take": "public/vo_take.wav",
+ "maxGap": 1.6,
+ "tail": 3.6,
+ "captionChars": 54,
+ "fix": {},
+ "stageFrom": { "at": "open", "d": -0.6 },
+ "taglineFrom": { "at": "pocket", "d": -1.4 },
+ "logoFrom": { "at": "pocket", "end": true, "d": 0.9 },
+ "opener": [
+  { "text": "Staff Scheduling", "at": "tour", "d": -0.25 },
+  { "text": "A quick tour for employees", "at": "this", "d": -0.15 }
+ ],
+ "chapters": [
+  { "at": "open", "d": -0.6, "n": "01", "title": "Get set up" },
+  { "at": "time#1", "d": -0.7, "n": "02", "title": "Time off" }
+ ],
+ "screens": [
+  { "at": "open", "d": -0.6, "src": "01-home", "fx": "cut" },
+  { "at": "time#1", "d": -0.2, "src": "02-requests", "fx": "fade" },
+  { "at": "off#2", "d": -0.1, "src": "03-timeoff-form", "fx": "slide" },
+  { "at": "confirm", "d": 0.35, "src": "04-requests-pending", "fx": "wipe" }
+ ],
+ "taps": [
+  { "at": "enable", "d": 0.1, "x": 195, "y": 248 },
+  { "at": "time#1", "d": -0.45, "x": 345, "y": 82 },
+  { "at": "request#1", "d": 0.2, "x": 195, "y": 321 },
+  { "at": "confirm", "d": 0.05, "x": 251, "y": 780, "accent": true },
+  { "at": "withdraw", "d": 0, "x": 299, "y": 390, "hint": true }
+ ],
+ "scroll": {
+  "04-requests-pending": [
+   { "at": "confirm", "end": true, "d": 0.5, "v": 0 },
+   { "at": "confirm", "end": true, "d": 1.5, "v": 175 }
+  ]
+ },
+ "camera": [
+  { "at": "open", "d": -0.6, "x": 195, "y": 422, "s": 1.06 },
+  { "at": "open", "d": -0.25, "x": 195, "y": 422, "s": 1 },
+  { "at": "tap#1", "d": -1.0, "x": 195, "y": 422, "s": 1 },
+  { "at": "tap#1", "d": 0.1, "x": 195, "y": 345, "s": 1.5 },
+  { "at": "update#1", "end": true, "d": 0.3, "x": 195, "y": 345, "s": 1.5 },
+  { "at": "update#1", "end": true, "d": 1.3, "x": 195, "y": 422, "s": 1 }
+ ],
+ "notification": {
+  "from": { "at": "reminders", "d": -0.4 },
+  "to": { "at": "20th#2", "end": true, "d": 0.6 },
+  "title": "Set your December availability",
+  "body": "Availability for December closes Friday, Nov 20 at 6pm."
+ }
+}

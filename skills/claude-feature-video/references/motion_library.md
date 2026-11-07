@@ -2,7 +2,7 @@
 
 Reusable moves for this style, each a component or a camera pattern to build once and reuse. Frame counts are at 24fps. All in Remotion, 2D lane.
 
-Helpers: the camera uses `camera.ts` (eased cubic keys with geometric zoom, deliberately calm, not springs). UI elements that move as objects (panel, cursor, chips, bubble) use `motion.ts` from motion-studio with the `default` or `heavy` preset only: both are critically damped, so nothing overshoots. Never `snappy`, `title` or `playful` here. Seeded noise via Remotion `random(seed)`; no CSS transitions.
+Helpers: the camera uses motion-studio's `camera.ts` with its default `cubic` ease (eased keys with geometric zoom, deliberately calm, not springs). UI elements that move as objects (panel, cursor, chips, bubble) use `motion.ts` from motion-studio with the `default` or `heavy` preset only: both are critically damped, so nothing overshoots. Never `snappy`, `title` or `playful` here. Seeded noise via Remotion `random(seed)`; no CSS transitions.
 
 | # | Move | Used in |
 |---|---|---|

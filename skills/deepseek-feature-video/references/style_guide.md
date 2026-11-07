@@ -59,7 +59,7 @@ Average cut after 42s: 2.7s. Speed up toward the end; never slow down until the 
 - A virtual 3D camera over flat UI. Two modes:
   - **Tilted close-up** (D06, D09): `rotateX ≈ 10°`, `rotateZ ≈ -6° to -8°`, scale 2.5-3.5x, slow drift. Used on the composer, dropdowns and the send button.
   - **Flat wide** (D11, D12): UI at 1x, square to camera, while the result plays.
-- Move between them with eased swings of 10-20 frames (`Easing.inOut(Easing.cubic)`, via `camera.ts`). No whip pans, no shake.
+- Move between them with eased swings of 10-20 frames (`Easing.inOut(Easing.cubic)`: motion-studio's `camera.ts` default). No whip pans, no shake.
 - **Easing rule** (this overrides motion-studio's "springs for camera"): the camera and push-throughs use the cubic ease above; the reference camera has no overshoot. Everything physical inside the UI uses motion-studio's `motion.ts` springs: `snappy` for the cursor path, button presses, dropdown open, dot-to-pill stretch and orbit-card pops; `default` for floating windows landing. No overshoot on type. Multi-target values use `track()`.
 - Floated windows (D13) sit on animated navy smoke at ~80% frame width with ~8° Y tilt and a slow push (scale +4% over the shot).
 - The frame is never static. Even holds drift 1-2%.

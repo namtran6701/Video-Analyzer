@@ -1,4 +1,5 @@
 // Starter tokens. Swap accent, serif and logo per brand; keep the structure.
+import type { Pose } from './lib/camera';
 export const FPS = 24;
 export const WIDTH = 1920;
 export const HEIGHT = 1080;
@@ -47,3 +48,7 @@ export const motion = {
   glowOut: 12,
   typeCharsPerFrame: 2,
 } as const;
+
+// Camera poses for motion-studio's lib/camera.ts (cubic ease, the default: this style never overshoots).
+export const wide = (i: number): Pose => ({ x: i * (win.w + win.gap) + win.w / 2, y: win.h / 2, s: 1 });
+export const closeUp = (i: number, px: number, py: number, s = 3): Pose => ({ x: i * (win.w + win.gap) + px, y: py, s });

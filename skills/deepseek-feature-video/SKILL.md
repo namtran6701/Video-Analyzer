@@ -19,7 +19,7 @@ The style in one paragraph: make a claim, then prove it. Black logo open on navy
 | `references/motion_library.md` + `assets/look/` | Gate 3 (motion IDs) and the build (component specs; each ID has a look frame to match) |
 | `references/toolchain.md` | Gate 1, lane plan and build: what's React vs screenshot vs recording, capture specifics, the hero-demo camera |
 | `assets/templates/shotlist.md` | Gate 3: motion-studio's shotlist with this style's columns filled in |
-| `assets/remotion/tokens.ts`, `camera.ts` | Build: copy next to motion-studio's `motion.ts` |
+| `assets/remotion/tokens.ts` | Build: copy to `src/`; holds the palette, beat grid and the `flat`/`tilted` camera poses for motion-studio's `camera.ts` |
 
 ## What to add at each motion-studio stage
 
@@ -35,7 +35,7 @@ The style in one paragraph: make a claim, then prove it. Black logo open on navy
 
 **Gate 5, generation list.** Typically: 2 Lyria takes, and 4 "Everywhere" scene illustrations if the user has none. Nothing else in this style is generated.
 
-**Build.** Copy `tokens.ts` and `camera.ts` beside `motion.ts`. Build one act at a time; after each act render stills at its key frames and compare them side by side with the matching `assets/look/` frames (type size and position, tilt, accent coverage, shadow).
+**Build.** Copy motion-studio's `motion.ts` and `camera.ts` to `src/lib/` and this skill's `tokens.ts` to `src/`. Build one act at a time; after each act render stills at its key frames and compare them side by side with the matching `assets/look/` frames (type size and position, tilt, accent coverage, shadow).
 
 **Sound.** motion-studio's sound section, with this style's palette, BPM and energy arc from `style_guide.md`. SFX limited to key ticks, the send click and push-through whooshes, plus the riser/impact cues motion-studio adds on energy steps.
 
@@ -56,7 +56,7 @@ The style in one paragraph: make a claim, then prove it. Black logo open on navy
 |---|---|---|
 | BPM 100-124 for promos | 150 | Reference measures 146.7; the short cards and fast typing need it |
 | Hook in the first 2s | 3-6s logo open on smoke | It's the style's signature open; keep it to 3-4s at 60s and under |
-| Springs for camera | Cubic ease-in-out camera (`camera.ts`); springs stay for UI, cursor and cards | The reference camera never overshoots |
+| Springs for camera | Cubic camera (`cameraAt(keys, frame)`, the default `cubic` ease); springs stay for UI, cursor and cards | The reference camera never overshoots |
 | Voiceover asked, open either way | Music only by default | The cards carry the story; the sound-off test passes by design |
 | All formats laid out | 16:9 native; 9:16 only as a stated adaptation | The tilted-window camera doesn't survive vertical |
 

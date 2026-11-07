@@ -4,7 +4,7 @@ Everything here is 2D, so **Remotion is the whole pipeline**, all in motion-stud
 
 ## Setup
 
-Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` → `src/lib/motion.ts`, and this skill's `tokens.ts` and `camera.ts` → `src/`. GSAP isn't needed: nothing in this style is per-character type animation.
+Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` and `scripts/camera.ts` → `src/lib/`, and this skill's `tokens.ts` → `src/`. GSAP isn't needed: nothing in this style is per-character type animation.
 
 ## Who does what
 
@@ -43,7 +43,7 @@ The project root is the Remotion project; everything loaded with `staticFile` li
     score.wav  mix.wav        # or the user's track
   src/
     tokens.ts                 # palette, type, beat helpers
-    camera.ts                 # world camera (keys, cuts, eased moves)
+    lib/camera.ts             # from motion-studio: world camera (keys, cuts, eased moves)
     lib/motion.ts             # from motion-studio
     stage/                    # Stage (ivory bg + camera world), Window (chrome, screenshot, shadow)
     ui/                       # Cursor, Menu, Toggle, FileDrag, Panel, Prompt, Working, Stream
@@ -63,7 +63,7 @@ All chapter windows live in one world container; the camera transforms that cont
 - Punch-in (M4): a key with `cut: true`. Pull-back (M5): a normal key back to the wide pose.
 - The tagline can sit in the world below the last window so M19 is just a camera move down; the opener and logo are separate `<Sequence>`s.
 
-`assets/remotion/camera.ts` implements this: `cameraAt(keys, frame)` returns the pose, `cameraTransform(pose)` returns the CSS transform for the world container.
+motion-studio's `camera.ts` implements this: `cameraAt(keys, frame)` returns the pose (default `cubic` ease), `cameraTransform(pose, WIDTH, HEIGHT)` returns the CSS transform for the world container. `wide` and `closeUp` in `tokens.ts` build the poses.
 
 ## Beat grid
 

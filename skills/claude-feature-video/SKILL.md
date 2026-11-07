@@ -18,7 +18,7 @@ The style in one paragraph: no voiceover by default (ask; see the brief) and alm
 | `references/style_guide.md` | Step 3: palette roles, type, stage and window geometry, camera rules, audio |
 | `references/motion_library.md` | Step 4 (motion IDs M1 to M20) and step 7 (component specs) |
 | `references/toolchain.md` | Steps 5 and 6: screen capture, Remotion layout, camera world, render commands |
-| `assets/remotion/tokens.ts`, `assets/remotion/camera.ts` | Step 6, copy into the project |
+| `assets/remotion/tokens.ts` | Step 6, copy into the project (palette, beat grid, `wide`/`closeUp` poses for motion-studio's `camera.ts`) |
 
 ## Workflow
 
@@ -44,7 +44,7 @@ Show the user the chapters, style mapping and shotlist, then **stop and wait for
 Read `references/toolchain.md`. Get a "before" and "after" screenshot per chapter into `public/screens/`, plus anything static the close-ups show (menus, empty panel), and the logo and fonts into `public/brand/`. If the app runs, capture them with the Chrome DevTools MCP at device scale factor 3 (per motion-studio gate 1); otherwise ask the user for them at the sizes in the toolchain. Never redraw UI from memory and never use screen recordings, they go soft in close-ups and can't be beat-timed. List what you have and what's missing, and **wait for the OK**.
 
 ### 6. Scaffold
-Set up per `references/toolchain.md` (motion-studio setup, `motion.ts`, this skill's `tokens.ts` and `camera.ts`). Check current Remotion APIs with context7 before writing framework code. Set palette and fonts from step 3, load brand fonts locally via `staticFile`.
+Set up per `references/toolchain.md` (motion-studio setup, its `motion.ts` and `camera.ts`, this skill's `tokens.ts`). Check current Remotion APIs with context7 before writing framework code. Set palette and fonts from step 3, load brand fonts locally via `staticFile`.
 
 ### 7. Build, one chapter at a time
 Build only the motion components the shotlist uses, then the opener, each chapter, and the close. After each section, render stills (`npx remotion still ... --frame=<f>`) at the wide shot, the close-up and mid-wipe, and check them against the geometry in the style guide: window size and position, close-up scale, card type size, accent coverage. Fix gaps before moving on and report progress per section.

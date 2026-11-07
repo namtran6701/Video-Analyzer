@@ -7,7 +7,7 @@ Setup, fonts, determinism, the 2D lane, sound, critique loop and render all foll
 - Project location and install follow the repo's CLAUDE.md (`projects/YYYY-MM-DD_promo_<slug>/`, workspace install from the root).
 - Lanes: 2D only. Install motion-studio's 2D lane (`@remotion/gsap gsap`) plus `@remotion/media` (recordings, audio) and `@remotion/motion-blur` (D08, D19).
 - Font: Montserrat as local files loaded per motion-studio (`@remotion/fonts` `loadFont` + `staticFile`), weights 300 and 400. Use the brand's font files instead if it has its own.
-- Copy this skill's `tokens.ts` and `camera.ts` into `src/` next to motion-studio's `motion.ts`.
+- Copy motion-studio's `motion.ts` and `camera.ts` into `src/lib/`, and this skill's `tokens.ts` into `src/` (it holds the `flat`/`tilted` poses).
 
 ## What's built how
 
@@ -30,7 +30,7 @@ Rule of thumb: anything the camera gets close to is React; anything shown at 1x 
 
 ```
 src/
-  tokens.ts  camera.ts  lib/motion.ts
+  tokens.ts  lib/motion.ts  lib/camera.ts
   cards/   Typewriter, LeadPunch, SlotRoll, WaveLetters, BlurPunch, CaretGlow, GlowWipe
   stage/   Smoke, FloatWindow, UIPlane (perspective wrapper + cameraTransform)
   ui/      Cursor, Composer, Dropdown, SendButton, DotPill, AgentLog
@@ -41,4 +41,4 @@ public/ui/  public/clips/  public/scenes/  public/brand/
 
 ## Hero-demo camera
 
-The hero demo is one `<Sequence>` with one key list from `camera.ts`, so there are no hard cuts inside it. Lay the composer, log and result out on one UI plane inside a `perspective: 1800` wrapper. Push-throughs (D08) and the dot collapse (D10) are opacity/scale effects on that plane, not cuts. Write every key with `at()` so a BPM change re-times the camera too. No `will-change` on the plane (motion-studio: it blurs scaled text).
+The hero demo is one `<Sequence>` with one key list for `cameraAt` (motion-studio's `camera.ts`, default `cubic` ease), so there are no hard cuts inside it. Lay the composer, log and result out on one UI plane inside a `perspective: 1800` wrapper. Push-throughs (D08) and the dot collapse (D10) are opacity/scale effects on that plane, not cuts. Write every key with `at()` so a BPM change re-times the camera too. No `will-change` on the plane (motion-studio: it blurs scaled text).

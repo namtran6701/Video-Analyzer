@@ -1,4 +1,5 @@
 // Starter tokens from the reference. Swap accent, font and logo per brand; keep the structure.
+import type { Pose } from './lib/camera';
 export const FPS = 30;
 export const WIDTH = 1920;
 export const HEIGHT = 1080;
@@ -50,3 +51,7 @@ export const motion = {
   waveSettle: 15,
   click: 3,
 } as const;
+
+// Camera poses for motion-studio's lib/camera.ts (cubic ease, the default: the reference camera never overshoots).
+export const flat = (x: number, y: number, s = 1): Pose => ({ x, y, s, rx: 0, rz: 0 });
+export const tilted = (x: number, y: number, s: number, rx = 10, rz = -6): Pose => ({ x, y, s, rx, rz });
