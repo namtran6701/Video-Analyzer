@@ -24,7 +24,7 @@ Desktop.ini
 
 test_file
 node_modules/
-references/
+/references/
 deliverables/
 
 # Per-project: track code and docs, not generated media

@@ -1,67 +1,64 @@
 ---
 name: deepseek-feature-video
-description: Produce a DeepSeek-Harness-style feature launch video in one fixed "claim, then proof" style (white stage, one-line Montserrat cards typed with a caret and one blue payoff word, a cursor-driven hero demo under a tilting virtual camera with no hard cuts, prompt to send-button close-up to agent log to working result, then an escalation ladder "What about something more ADVANCED?" / "Like A ... Or A ... Even A ...", a fast montage with "Everything / Everywhere / All At Once", black caret-glow tagline and logo scatter, music only) from the user's product, screens, recordings and brand. Ships the measured style spec, a 22-move motion library with look frames, a 6-act story template, brief/shotlist templates and Remotion tokens plus a 3D-tilt camera helper; produces it on the motion-studio pipeline (Remotion, Lyria at 150 BPM conformed to the grid, synthesized drafts, SFX, scored critique loop) and renders an MP4. Use whenever the user wants a "DeepSeek-style" or "Creator Mode-style" launch video, an AI agent/builder feature video that shows prompts turning into working apps, or a video "like the DeepSeek Harness one", even if they don't name this skill. Not for calm ivory walkthroughs with an AI side panel (claude-feature-video), dark kinetic-typography launch films (product-demo-video), or studying a new reference video (video-study).
+description: Style direction for a DeepSeek-Harness-style feature launch video, produced on the motion-studio pipeline. One fixed "claim, then proof" style (white stage, one-line Montserrat cards typed with a caret and one blue payoff word, a cursor-driven hero demo under a tilting virtual camera with no hard cuts, prompt to send-button close-up to agent log to working result, then an escalation ladder "What about something more ADVANCED?" / "Like A ... Or A ... Even A ...", a fast montage with "Everything / Everywhere / All At Once", black caret-glow tagline and logo scatter, music only). Ships the measured style spec, a 22-move motion library with look frames, a 6-act story template, brief/shotlist templates and Remotion tokens plus a 3D-tilt camera helper; motion-studio does the production (gates, build, score, SFX, critique loop, delivery). Use whenever the user wants a "DeepSeek-style" or "Creator Mode-style" launch video, an AI agent/builder feature video that shows prompts turning into working apps, or a video "like the DeepSeek Harness one", even if they don't name this skill. Not for calm ivory walkthroughs with an AI side panel (claude-feature-video), dark kinetic-typography launch films (product-demo-video), or studying a new reference video (video-study).
 ---
 
 # DeepSeek Feature Video
 
-Turn a feature, one hero use case, a ladder of bigger builds and the user's screens/recordings into a 45 to 100s launch film in one fixed style, ending in a rendered MP4. The style is fully specified in this skill's references (measured from the reference kept in `references/deepseek-harness/` at the repo root), so there is nothing to analyze. This skill owns the **style**; **`motion-studio`** owns production. Load motion-studio before step 6 and follow it wherever this file doesn't say otherwise.
+**motion-studio is the production skill. This skill is the style direction.** Load motion-studio first and run its pipeline end to end (gates, lane plan, build, sound, critique loop, deliverables). This skill only says what to feed into each of its stages so the film comes out in this style. Wherever this skill is silent, motion-studio's rules apply. Where they conflict, the overrides listed below win, and only those.
 
 The style in one paragraph: make a claim, then prove it. Black logo open on navy smoke, "Introducing" typed by a glowing caret, the feature name stacks into a wall and scrolls away to reveal the app. A cursor and a tilting camera run one use case end to end with no hard cuts: card ("Create Plugin, **Instantly**"), push-through into the composer, prompt typed, extreme close-up on the send click, the button collapses into a dot and a progress pill, an agent log streams, the result works and flips state. Then the ladder: "What about something more **ADVANCED?**", three rungs, each card followed by the thing working. Then "Ultimately, **Your Own ...**", a montage that speeds up through "Everything / Everywhere / All At Once", a tagline typed on black and wiped by the caret, logo scatter on white. White stage, one blue word per card, Montserrat, music only.
 
-## Files and when to read them
+## Files
 
-| File | Read when |
+| File | Feeds |
 |---|---|
-| `assets/templates/brief.md` | Step 1 |
-| `references/story_template.md` | Step 2: act budgets per runtime, hero beats, ladder, copy rules |
-| `references/style_guide.md` | Step 3: palette, type tiers, rhythm, camera, transitions, audio |
-| `references/motion_library.md` + `assets/look/` | Step 4 (IDs D01-D22) and step 7 (component specs; match the look frame) |
-| `references/toolchain.md` | Steps 5 and 6 |
-| `assets/remotion/tokens.ts`, `assets/remotion/camera.ts` | Step 6, copy into the project |
+| `assets/templates/brief.md` | Before motion-studio's gates: what to collect from the user |
+| `references/story_template.md` | Gate 3 (shotlist): acts, budgets, hero beats, ladder, copy rules |
+| `references/style_guide.md` | Gate 2 (style guide) and the build: palette, type, rhythm, camera, easing, transitions, audio and energy arc |
+| `references/motion_library.md` + `assets/look/` | Gate 3 (motion IDs) and the build (component specs; each ID has a look frame to match) |
+| `references/toolchain.md` | Gate 1, lane plan and build: what's React vs screenshot vs recording, capture specifics, the hero-demo camera |
+| `assets/templates/shotlist.md` | Gate 3: motion-studio's shotlist with this style's columns filled in |
+| `assets/remotion/tokens.ts`, `camera.ts` | Build: copy next to motion-studio's `motion.ts` |
 
-## Workflow
+## What to add at each motion-studio stage
 
-Steps 1-4 are cheap planning. Step 5 onward costs real tokens and time, so there are approval gates.
+**Before the gates: brief.** Fill `brief.md` from what the user gave you. If runtime, feature name, the hero use case, the ladder rungs or brand basics are missing, ask once for all of them together. Defaults: 60s, 1920x1080, 30fps, Montserrat, accent `#1d64db`. When motion-studio asks about a voiceover, the style answer is no; if the user wants one anyway, say once that it breaks the style, then follow motion-studio's voiceover section. The user's copy wins; flag every line you wrote.
 
-### 1. Brief
-Copy `brief.md` into the project and fill it from what the user gave you. If runtime, feature name, the hero use case, the ladder rungs, or brand basics are missing, ask once for all of them together. Defaults: 60s, 1920x1080, 30fps, Montserrat, accent `#1d64db`, music only. The style has no voiceover; if the user asks for one, say it breaks the style once, then do it (Gemini voice per the repo's CLAUDE.md, captions low and small).
+**Gate 1, brand.** Capture per motion-studio, plus this style's needs from `toolchain.md`: hero-demo screens at 3x, screen recordings for each ladder rung and the montage, 12-16 crops for the orbit cloud, logo lockup parts (mark, wordmark, pill).
 
-The user's copy wins. Use their lines verbatim; write only what's missing and flag it.
+**Gate 2, style guide.** Write `docs/style_guide.md` from `references/style_guide.md`, mapping brand accent, font, logo and smoke tint onto its roles. Keep every structural rule.
 
-### 2. Story
-Read `story_template.md`. Pick the act budgets for the runtime, write every card (Title Case, payoff word last), the composer prompt, the agent log lines and the ladder rungs smallest to wildest.
+**Gate 3, shotlist.** Use `story_template.md` for the acts and copy, `assets/templates/shotlist.md` for the table (it already has motion-studio's Energy and Lane columns, pre-filled with this style's energy arc). BPM 150, palette `analog`.
 
-### 3. Style
-Read `style_guide.md`. Write `docs/style_guide.md` by mapping brand values onto the roles (accent, font, logo, smoke tint). Keep every structural rule: white middle, black bookends, one accent word per card, no cuts in the hero demo, cuts accelerate after it.
+**Gate 4, lane plan.** Everything is 2D. Montage and ladder results are screen recordings inside the 2D comp.
 
-### 4. Shotlist, then stop
-Fill `shotlist.md` into `docs/shotlist.md`. Times in beats and seconds; durations sum exactly to the runtime. Each row cites motion IDs. List every screen and recording needed. Show the user the story, style mapping and shotlist, then **stop and wait for approval**.
+**Gate 5, generation list.** Typically: 2 Lyria takes, and 4 "Everywhere" scene illustrations if the user has none. Nothing else in this style is generated.
 
-### 5. Assets (gate)
-Read `toolchain.md`. Gather hero-demo screens at 3x (or plan React rebuilds of those components), screen recordings for each ladder rung and the montage, orbit-cloud crops, logo and fonts. List what you have and what's missing and **wait for the OK**. Never fake a recording with a still pan; never redraw UI from memory.
+**Build.** Copy `tokens.ts` and `camera.ts` beside `motion.ts`. Build one act at a time; after each act render stills at its key frames and compare them side by side with the matching `assets/look/` frames (type size and position, tilt, accent coverage, shadow).
 
-### 6. Scaffold
-Per `toolchain.md`: project in `projects/`, workspace install, `motion.ts`, this skill's `tokens.ts` and `camera.ts`. Load fonts locally or via `@remotion/google-fonts`.
+**Sound.** motion-studio's sound section, with this style's palette, BPM and energy arc from `style_guide.md`. SFX limited to key ticks, the send click and push-through whooshes, plus the riser/impact cues motion-studio adds on energy steps.
 
-### 7. Build, one act at a time
-Build only the components the shotlist uses, then each act in order. After each act, render stills at its key frames (`npx remotion still ... --frame=<f>`) and compare them side by side with the matching `assets/look/` frames: type size and position, tilt angle, accent coverage, shadow. Fix gaps before moving on and report progress per act.
-
-### 8. Sound
-Drafts: synthesized bed via motion-studio's `score.mjs` at 150 BPM. Final: 2 Lyria takes (confirm the generation first; the user picks one), bright driving electronic, conformed to 150 BPM with motion-studio's conform steps. SFX per the style guide (key ticks, send click, push-through whoosh). Mix to `public/mix.wav`. With a licensed track, measure its BPM and re-time.
-
-### 9. Critique loop
-Run motion-studio's critique loop (minimum 3 rounds, every score 8+, log in `docs/review_log.md`). Add these to its hunt list:
+**Critique loop.** motion-studio's loop, plus this hunt list:
 - a hard cut inside the hero demo, or a frame that sits dead still
 - more than one accent word on a card, or accent on idle UI
 - text that re-centers while typing, or bold/pure-black type
 - a claim card whose proof doesn't appear within 2s
 - cuts that slow down after the ladder instead of speeding up
-- soft UI in a close-up (captured below 3x or a recording used in a close-up)
-- any voiceover, caption, arrow or highlight box (unless the user asked)
+- soft UI in a close-up (captured below 3x, or a recording used in a close-up)
+- any voiceover, caption, arrow or highlight box the user didn't ask for
 
-### 10. Render and deliver
-`npx remotion render Main out/final.mp4 --codec=h264 --crf=16`, verify with ffprobe (duration, resolution, fps match the brief exactly) and loudness at about -14 LUFS. Copy to `deliverables/YYYY-MM-DD_<slug>.mp4`, plus `out/poster.png` (the first accent-flip card) and `out/contact.png`. Report the final scores, then send the file to the user.
+**Deliverables.** motion-studio's, plus the repo convention: copy the final to `deliverables/YYYY-MM-DD_<slug>.mp4`. Poster frame = the first accent-flip card.
+
+## Overrides of motion-studio defaults (only these)
+
+| motion-studio default | This style | Why |
+|---|---|---|
+| BPM 100-124 for promos | 150 | Reference measures 146.7; the short cards and fast typing need it |
+| Hook in the first 2s | 3-6s logo open on smoke | It's the style's signature open; keep it to 3-4s at 60s and under |
+| Springs for camera | Cubic ease-in-out camera (`camera.ts`); springs stay for UI, cursor and cards | The reference camera never overshoots |
+| Voiceover asked, open either way | Music only by default | The cards carry the story; the sound-off test passes by design |
+| All formats laid out | 16:9 native; 9:16 only as a stated adaptation | The tilted-window camera doesn't survive vertical |
 
 ## Rules that make it feel right
 
