@@ -19,7 +19,7 @@ Four local MCP servers backed by Vertex AI (project `sf-internal-495418`). Every
 
 ## Images: `nanobanana_image_generation`
 
-**Check Adobe Stock first** when the Adobe MCP is connected and the image is a generic photo (objects, places, people, textures): `asset_search`, and use a result only if it fits and licenses free. Generate here when Stock has nothing good or free (don't stop to ask about paid Stock unless it's clearly better), or the image must be specific (the product, a brand scene, an edit of a reference).
+**Check Getty and Adobe Stock first** (see the Stock sourcing section in `motion-studio`, and the `getty-images` skill) when the image is a generic photo (objects, places, people, textures): Getty comps and free Adobe Stock only (never paid Adobe), and the user picks. Generate here when neither has a fit, or the image must be specific (the product, a brand scene, an edit of a reference).
 
 **Always use the newest top model**, drafts included: `gemini-nano-banana-2.1` (Oct 2026; leads `gemini-3-pro-image` on Google's preference benchmarks). Use `gemini-3-pro-image` only when the user asks for it or a 2.1 result falls short on a hard edit. Never use the lite or older flash tiers. Model lineups change fast: check the current docs before trusting this list.
 
