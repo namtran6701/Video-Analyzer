@@ -17,7 +17,7 @@ Sampled from frames with ffmpeg rawvideo + Python, not eyeballed.
 | UI surface 3 / hairlines | `#1c1c1c` to `#242424` | Borders, dividers, inactive controls |
 | Hero button top | `#b9bdc1` | Brushed silver gradient, top |
 | Hero button bottom | `#707778` | Gradient bottom; soft white glow around the button |
-| Secondary label | about `#949494` | "EARNED" label, placeholder text |
+| Secondary label | about `#949494` | Caps label beside the rolling number, placeholder text |
 | B&W footage mids | `#3c3c3c` to `#545454` | Desaturated portraits sit in this range |
 
 There is no brand accent color. Color exists only inside the full-color archival clips of acts 1 and 2 (sky `#84a4fc`, skin `#bca48c` to `#dcc4ac`, launch orange). From act 3 on the film is strictly monochrome.
@@ -78,7 +78,7 @@ Rhythm rule: every burst of sub-0.2s cuts is paid off by a hold of 0.8s or more.
 
 ## Text in and out
 
-- **Counter**: types on one character at a time, `0` then `0.` then `0.0` then `0.01` then `0.01%`, each new character landing on or just after a picture cut. It stays centered and never moves. It leaves with a hard cut.
+- **Counter**: types on one character at a time (a five-character stat takes five steps), each new character landing on or just after a picture cut. It stays centered and never moves. It leaves with a hard cut.
 - **Captions**: 2 to 3 words at a time, phrase replaced by a hard swap with no animation. Phrases follow the voice, not the cuts, so a caption often spans several shots. A sentence ends with its period. A sentence left hanging ends in `...`.
 - **End cards**: appear by cut, hold 1.4s, leave by cut.
 - **Logo**: two corner brackets start apart and rotated, spin about 90 degrees and close into the mark over about 20 frames with ease-out, then hold about 0.8s. Mark size is 16.5% of band height.
@@ -110,3 +110,4 @@ Sound design to plan for: a hit on each counter character, a riser into each str
 4. No logo before the last 2 seconds.
 5. No more than 3 words in a caption, and never two caption lines.
 6. Never reuse the reference's footage, people, numbers, UI, URL, tagline or mark.
+7. Never reuse or paraphrase the reference's script or captions. The reference is a template for style only.

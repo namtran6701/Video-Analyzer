@@ -1,7 +1,7 @@
 ---
 disable-model-invocation: true
-name: manifesto-teaser-video
-description: Produce a short, dark, cinematic manifesto teaser in one fixed style (a stat counter typed over fast archival clips, a narrated one-sentence-at-a-time argument in small bottom captions, strobe montages paid off by long holds, a drain from color to black and white, the product shown only as dark drifting UI fragments, one hero button on black, then URL, audience line and logo cards) from the user's stat, script, footage and product screenshots. Ships the measured style guide, a 7-act story template and look stills; builds and renders an MP4. Use whenever the user wants a brand manifesto, launch teaser, "for the builders" style hype film, or a video "like the Behind the Scenes one", even if they don't name this skill. Not for kinetic-typography product demos (that's product-demo-video), calm feature walkthroughs (that's claude-feature-video) or studying a new reference video (that's video-study).
+name: motivation-insta-video
+description: Produce a short, dark, cinematic manifesto teaser in one fixed style (a stat counter typed over fast archival clips, a narrated one-sentence-at-a-time argument in small bottom captions, strobe montages paid off by long holds, a drain from color to black and white, the product shown only as dark drifting UI fragments, one hero button on black, then URL, audience line and logo cards) from the user's stat, script, footage and product screenshots. Ships the measured style guide, a 7-act story template and look stills; builds and renders an MP4. Use whenever the user wants a brand manifesto, launch teaser, motivational Instagram video, dark cinematic hype film, or a video "like the motivation insta one", even if they don't name this skill. Not for kinetic-typography product demos (that's product-demo-video), calm feature walkthroughs (that's claude-feature-video) or studying a new reference video (that's video-study).
 ---
 
 # Manifesto Teaser Video
@@ -26,7 +26,7 @@ Ask once, together, for anything missing: runtime (default 30s), aspect ratio (d
 The user's copy wins. Only write lines they left empty, and flag which ones you wrote.
 
 ### 2. Script
-Read `references/story_template.md`. Fill the five-sentence skeleton and the two end cards in the user's words, split the narration into captions of 3 words or fewer, and scale the 7 acts to the runtime.
+Read `references/story_template.md`. Write the five beats and the two end cards fresh from the brief, in the user's words, split the narration into captions of 3 words or fewer, and scale the 7 acts to the runtime.
 
 ### 3. Style
 Read `references/style_guide.md`. Write the project's `docs/style_guide.md` from it. Keep the palette as is (it has no accent, so brand color does not map in). Swap in the brand font only for the end cards and UI. Keep every structural rule: near-black ground, hard cuts only, burst then hold, color then monochrome, caption size and position.
@@ -49,7 +49,8 @@ Checks specific to this style:
 
 ## Rules
 
-- Borrow the grammar, never the content. Nothing from the reference film is reused: not its footage, people, numbers, UI, URL, tagline or mark.
+- The reference is a style template only. Borrow the grammar, never the content. Nothing from the reference film is reused: not its footage, people, numbers, UI, URL, tagline or mark.
+- No verbatim or paraphrased text from the reference: not its narration, captions, sentence patterns, stat, UI strings or end-card lines. All copy is written new for each film. The `assets/look/` stills still show the reference's text; use them for scale and spacing only and never read copy off them.
 - No real people unless the user supplies the footage and has the rights to it. Never generate a real person's likeness.
 - Keep the user's requested duration and aspect ratio exactly.
 - Detect the toolchain from the environment before running anything.

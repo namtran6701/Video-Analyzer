@@ -2,28 +2,28 @@
 
 Seven acts. Scale the shares to the requested runtime, then round every cut to whole frames. The reference runs 28.87s; the style holds from about 20s to 45s. Past that, lengthen acts 4 and 6, never the holds.
 
-The script is one argument in five sentences:
+The script is one argument in five beats. Each beat is a job, not a sentence to fill in:
 
-1. **A number** that names a tiny group. (`<stat>`)
-2. **Who they are.** "That is the fraction of `<population>` who will `<big verb>`."
-3. **Their name.** "More commonly known as... `<the audience's name for itself>`."
-4. **Why they're different.** "Because inside `<their> <thing>`, something is `<different>`..."
-5. **The turn.** "But even the greatest `<name>` could never `<big verb>`... without the right tool."
+1. **A number.** One stat that surprises, shown alone with no words.
+2. **What the number means.** One sentence that says who or what the stat is about and why it matters.
+3. **The name.** One short sentence that pauses, then names the audience the way they name themselves.
+4. **The reason.** One sentence about what sets them apart, with its last word held back.
+5. **The turn.** One sentence that says what they still lack. The product is the answer, and it is not named.
 
-Then the product answers without a word of narration: URL, "For `<audience>`.", mark.
+Then the product answers without a word of narration: the URL, one short line saying who it's for, the mark.
 
-Write the user's own version of these lines. Do not reuse the reference's wording.
+All wording is new every time. Write it from the user's brief, in their voice. The reference's script, sentence patterns, stat, tagline and names are never reused or paraphrased, and this file deliberately does not quote them.
 
 ## Acts
 
 | # | Act | Share | Picture | Text on screen | Cut pattern |
 |---|---|---|---|---|---|
 | 1 | Stat hook | 12% | 5 unrelated, iconic, full-color or raw clips of people at the peak of what they do | Counter types on, one character per cut, centered | 5 shots, about 0.5 to 0.8s each, last one 1.1s and dimming to black under the counter |
-| 2 | Claim | 15% | A 0.9s strobe of high-contrast B&W images, then 5 escalating shots that go from human scale to planet scale (a face detail, ignition, launch, the planet small, the planet close) | Captions for sentence 2, in 2 to 3 word phrases | Strobe at 1 to 4 frames, then 0.5 to 0.8s shots |
-| 3 | Naming | 8% | 8 B&W portraits of the audience's heroes at 3 frames each, one portrait held, a white flash, one hero image | "More commonly", "known as...", then the name | 3-frame cuts, 0.8s hold, 0.23s flash, 0.53s reveal |
-| 4 | Mechanism | 14% | A "look inside" sequence in B&W: scan slices swapping every 2 to 3 frames, a macro texture, a HUD wireframe with a glitch in, an organic glow shot with jump cuts every 5 frames | Captions for sentence 4, stopping before its last word | Fast flicker inside shots, 0.6 to 1.7s per setup |
-| 5 | Breath | 7% | Nothing. Black | The last word of sentence 4, ending in `...`, as a caption | One hold, 2.1s. Sound drops out |
-| 6 | Product | 27% | The real product UI, dark theme, monochrome: 4 UI fragments, one B&W macro of a hand on a mouse, 2 number moments (a balance, a rolling total), a whip zoom, then the hero button alone on black with a pointer cursor | Captions for sentence 5. Its last phrase lands on the button hold | 0.5 to 1.4s shots, ending on a 2.1s static hold |
+| 2 | Claim | 15% | A 0.9s strobe of high-contrast B&W images, then 5 escalating shots that go from human scale to planet scale (a face detail, ignition, launch, the planet small, the planet close) | Captions for beat 2, in 2 to 3 word phrases | Strobe at 1 to 4 frames, then 0.5 to 0.8s shots |
+| 3 | Naming | 8% | 8 B&W portraits of the audience's heroes at 3 frames each, one portrait held, a white flash, one hero image | Captions for beat 3: the lead-in over the fast portraits, the pause on the held portrait, the name on the reveal | 3-frame cuts, 0.8s hold, 0.23s flash, 0.53s reveal |
+| 4 | Mechanism | 14% | A "look inside" sequence in B&W: scan slices swapping every 2 to 3 frames, a macro texture, a HUD wireframe with a glitch in, an organic glow shot with jump cuts every 5 frames | Captions for beat 4, stopping before its last word | Fast flicker inside shots, 0.6 to 1.7s per setup |
+| 5 | Breath | 7% | Nothing. Black | The last word of beat 4, ending in `...`, as a caption | One hold, 2.1s. Sound drops out |
+| 6 | Product | 27% | The real product UI, dark theme, monochrome: 4 UI fragments, one B&W macro of a hand on a mouse, 2 number moments (a balance, a rolling total), a whip zoom, then the hero button alone on black with a pointer cursor | Captions for beat 5. Its last phrase lands on the button hold | 0.5 to 1.4s shots, ending on a 2.1s static hold |
 | 7 | Close | 16% | Black | URL card, audience card, logo assemble, 0.5s of black | 1.4s, 1.4s, 1.3s, by hard cut |
 
 ## Footage rules
@@ -38,4 +38,5 @@ Write the user's own version of these lines. Do not reuse the reference's wordin
 - Captions: 3 words max, one line, punctuation kept.
 - Two ellipses in the whole film: before the name, and before the breath.
 - The product name is never spoken or captioned. It appears once, as the URL.
-- The audience card is "For `<audience>`." and nothing else.
+- The audience card is one short line of the user's own, 4 words or fewer.
+- UI text shown in act 6 (typed messages, names, amounts, button labels) comes from the user's product, never from the reference stills.
