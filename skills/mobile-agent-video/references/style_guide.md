@@ -103,7 +103,13 @@ No dissolves between scenes, no zoom-through cuts, no camera shake. The only har
 - **No voiceover.** The reference bed sits very low (≈ -42 dB RMS) because its testimonial voices set the level. Without them, master to motion-studio's -14 LUFS and keep the arrangement sparse instead.
 - **SFX** (inferred from onsets that line up with UI moments): soft pops on banner and bubble arrivals, a light chime on the payoff. All well under the music.
 
-### Synthesizing it (motion-studio `score.mjs` + `sfx.mjs`)
+### Lyria final
+
+- Prompt: `soft, airy instrumental, 120 BPM, light pulse, FM bells, gentle pads, sparse arrangement, calm and upbeat`, a major key, plus the energy table below as a story with times in seconds: pad-only open, the pulse comes in with the title, thins under the claims run, gentle ending. `negative_prompt: vocals, singing, lyrics, big drops, risers`.
+- Conform to exactly 120 BPM (12 frames per beat at 24fps) with motion-studio's conform steps (Sound section), then `afade` out so the logo hold is silent.
+- The SFX below stay the same; the score's one riser and impact become SFX cues on the Ping → Title step, kept as low as the rest.
+
+### Synthesizing it (motion-studio `score.mjs` + `sfx.mjs`, drafts)
 
 - `score.json`: `bpm` 120, palette `glass` (airy FM bells, light kit; closest to the reference) or `lofi` if the brand is casual. `major` key: the film is calm and upbeat. Fresh seed every film.
 - Energy per bar (4 beats = 2s):
@@ -121,7 +127,7 @@ No dissolves between scenes, no zoom-through cuts, no camera shake. The only har
 
 - Never energy 3: there is no drop in this style.
 - `sfx.json` with the score's seed and key, every cue low: `pop` (pitch -5) on banner arrivals and the first bubble of each UI act (not every bubble), `tick` every 3 to 4 frames during the live edit, `swish` on phone whips and the whip scroll, `chime` + `pop` on the payoff punch. No impact or riser cues: the score's energy steps play those.
-- Mix to `public/mix.wav` with motion-studio's ffmpeg line: -14 LUFS integrated, true peak under -1.
+- Mix to `public/mix.wav` with motion-studio's `mix.mjs`: -14 LUFS integrated, true peak under -1.
 
 ## Do / Don't
 

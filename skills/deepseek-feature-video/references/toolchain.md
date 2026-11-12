@@ -7,7 +7,7 @@ Setup, fonts, determinism, the 2D lane, sound, critique loop and render all foll
 - Project location and install follow the repo's CLAUDE.md (`projects/YYYY-MM-DD_promo_<slug>/`, workspace install from the root).
 - Lanes: 2D only. Install motion-studio's 2D lane (`@remotion/gsap gsap`) plus `@remotion/media` (recordings, audio) and `@remotion/motion-blur` (D08, D19).
 - Font: Montserrat as local files loaded per motion-studio (`@remotion/fonts` `loadFont` + `staticFile`), weights 300 and 400. Use the brand's font files instead if it has its own.
-- Copy motion-studio's `motion.ts` and `camera.ts` into `src/lib/`, and this skill's `tokens.ts` into `src/` (it holds the `flat`/`tilted` poses).
+- Copy motion-studio's `motion.ts`, `camera.ts`, `kit.tsx`, `frames.tsx` and `finish.tsx` into `src/lib/`, and this skill's `tokens.ts` into `src/` (it holds the `flat`/`tilted` poses). Typed cards use `typed` + `<Caret>`, the demo cursor is `cursorAt` + `<Cursor>`, the app window is `<BrowserWindow>`.
 
 ## What's built how
 

@@ -1,0 +1,21 @@
+# Voiceover and captions
+
+Only when the user said yes to a voiceover for this film; skip this whole section otherwise.
+- Voice is Gemini TTS through `genmedia-assets` (model, voice and prompt rules live there). One voice per project; pick it with the user from `list_gemini_voices`. Lock the script before generating, one take for the whole script, and regenerate only lines the user flags.
+- A recorded human voiceover gets Adobe `media_enhance_speech` before the mix.
+- Transcribe the take with `gemini_transcribe` (word timestamps, brand names in `custom_vocabulary`) into `docs/vo_raw.json`, and keep the take as `public/vo_take.wav`. The transcript is for timing only: it rewrites words (`$4.10` came back as `$4 ten`, `single-origin` as two words), times in 100 ms steps, and has returned a word ending before it starts. Caption text always comes from the script.
+- Timing wins here too: the TTS take runs at its own pace and the shotlist doesn't move. Cut the script at the take's pauses into phrases, one per shot or act in the VO column, and give each the beat its first word lands on. That is `docs/vo.json`:
+  `{ "bpm": 116, "dur": 60, "chars": 64, "takes": [{ "audio": "public/vo_take.wav", "words": "docs/vo_raw.json" }], "phrases": [{ "text": "So we built our own tools.", "beat": 25 }, { "text": "...", "beat": 33, "caption": "off" }] }`
+  Per phrase: `caption` is the shotlist's caption column (`bottom` by default, `top`, `off`), `tempo` speeds it up to fit its slot, `take` picks a pickup take. `chars` is the most characters on one caption page: 64 for 16:9 and 1:1 only (2 lines of 32), 48 when the film also ships 9:16 (2 lines of 24).
+- Run `python3 vo.py docs/vo.json` from the project root (toolbox). It aligns the script to the transcript word by word (re-joining split tokens, forcing times to increase), trims each phrase (40 ms before its first word, 120 ms after its last), lands it on its beat, and writes `public/vo.wav` (padded to the film's length), `src/vo_words.json` (film time of every spoken word, to key an action to the word that names it), `src/captions.json` and `out/captions.srt`. Never index transcript tokens by hand.
+- Act on what it prints before going on:
+  - `check ... script "X", heard "Y"`: the transcript heard a different word, so it was likely mispronounced or dropped (numbers and hyphenation rewrites are already ignored). Regenerate only that line (confirmed like any generation), add it as another entry in `takes` with `"take": n` on its phrase, and run again.
+  - A phrase ending past the next phrase's beat: speed it up with `tempo`, 1.05 at most; past that, shorten the line and regenerate only it.
+  - Then check by eye that no phrase crosses a hard cut mid-word.
+- Captions are burned in whenever there's a voiceover: `<Captions pages={pages} fontFamily={...} />` from `captions.tsx`, once, over every scene (inside `<Finish>`). Pages break at punctuation and never pass `chars`; each shows from its first word to its last word plus 150 ms, clipped to the next page's start. Display face or UI face, never a third font. Pass `backing` as about 60% of the film's dark neutral so it reads on any frame. Word-by-word highlight (accent on the active word, from `vo_words.json`) only when the brief wants a social, energetic feel; otherwise plain.
+- Deliver `out/captions.srt` next to each MP4: platforms take it as an uploaded caption track viewers can toggle. It holds every spoken line, including those whose caption is `off` (only the burn-in skips them).
+- Caption bands, reserved per format before layout (`captionBand(width, height, 'bottom' | 'top')` from `captions.tsx`):
+  - 16:9 and 1:1: bottom band 80 to 92% of height, top band 6 to 18%.
+  - 9:16: bottom band 62 to 78% (above the platform overlay zone), top band 11 to 24%.
+- Nothing important goes in the active band: product UI, key type, logos, faces, the cursor, demo moments. Lay scenes out around it from the start. When a shot needs the bottom of the frame, its phrase's caption is `top`. When the same words are on screen as type, it's `off`.
+- news-explainer-video and app-tutorial-video time the picture to the voice instead of the voice to a beat grid; they keep their own alignment steps and don't use `vo.py`.

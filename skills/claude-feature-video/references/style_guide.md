@@ -107,7 +107,7 @@ Cuts happen only into a close-up (4 to 5 per 60s). Never cut between two wide sh
 
 - Energy steps sit on bars, cuts in this style don't have to. Put each step on the bar nearest its section start; if the opener → first window cut is within one beat of that bar, move the cut onto the downbeat and take the beat back from the logo hold.
 - `sfx.json` with the score's seed and key, every cue low (gain well under the music): `click` on cursor clicks, `tick` every 3 to 4 frames while typing (never per character), `swish` on each wipe or bloom, `pop` (soft, pitched down) on file chips landing. No impact or riser cues: the score's single step handles it.
-- Mix to `public/mix.wav` with motion-studio's ffmpeg line: -14 LUFS integrated, true peak under -1.
+- Mix to `public/mix.wav` with motion-studio's `mix.mjs`: -14 LUFS integrated, true peak under -1.
 
 ## Do / Don't
 

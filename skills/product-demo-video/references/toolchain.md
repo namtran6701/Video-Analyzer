@@ -26,7 +26,7 @@ npm i -E @remotion/gsap gsap @remotion/motion-blur @remotion/media lucide-react
 npm i -E @remotion/three three @react-three/fiber @react-three/drei && npm i -E -D @types/three   # only if M17 is in 3D
 ```
 
-Copy from motion-studio's `scripts/`: `motion.ts` → `src/lib/motion.ts`. Copy this skill's `assets/remotion/tokens.ts` → `src/tokens.ts`. Check current Remotion / GSAP / R3F APIs with context7 before writing framework code.
+Copy from motion-studio's `scripts/`: `motion.ts`, `kit.tsx`, `frames.tsx` and `finish.tsx` → `src/lib/`. Word-by-word lines are `<Words>` (`enter="rise"`, or `"light"` for word lighting; inline icons through its `icons` prop), the demo cursor is `cursorAt` + `<Cursor>`. Copy this skill's `assets/remotion/tokens.ts` → `src/tokens.ts`. Check current Remotion / GSAP / R3F APIs with context7 before writing framework code.
 
 ## Project layout
 

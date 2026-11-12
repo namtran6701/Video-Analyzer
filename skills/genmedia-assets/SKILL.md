@@ -59,7 +59,7 @@ Four local MCP servers backed by Vertex AI (project `sf-internal-495418`). Every
 
 ## Audio mixing: avtool (free, local ffmpeg)
 
-For motion-studio films, skip this section: its sidechain-ducked ffmpeg mix replaces it. This is for quick one-off mixes outside motion-studio.
+For motion-studio films, skip this section: its `mix.mjs` (static gain, limiter, sidechain duck) replaces it. This is for quick one-off mixes outside motion-studio.
 
 `ffmpeg_layer_audio_files` mixes at **full volume**, so music drowns the voice. Duck the music first:
 1. `ffmpeg_adjust_volume` the music by `-12` dB (tested: voice stays clear).

@@ -4,7 +4,7 @@ Everything here is 2D, so **Remotion is the whole pipeline**, all in motion-stud
 
 ## Setup
 
-Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` → `src/lib/motion.ts`, and this skill's `tokens.ts` and `line.ts` → `src/`. GSAP isn't needed: word builds are plain opacity per word and the line is a dashed SVG stroke.
+Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts`, `kit.tsx`, `frames.tsx` and `finish.tsx` → `src/lib/`, and this skill's `tokens.ts` and `line.ts` → `src/`. Claims are `<Words enter="fade">` (step = `motion.wordStagger` frames). The phone is `<PhoneFrame bezel={phone.bezel / UI_SCALE} radius={phone.radius / UI_SCALE} color={color.bezel}>` inside the `<Phone pose>` wrapper below. GSAP isn't needed: word builds are plain opacity per word and the line is a dashed SVG stroke.
 
 ## Who does what
 

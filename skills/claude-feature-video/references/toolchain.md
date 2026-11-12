@@ -4,7 +4,7 @@ Everything here is 2D, so **Remotion is the whole pipeline**, all in motion-stud
 
 ## Setup
 
-Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` and `scripts/camera.ts` → `src/lib/`, and this skill's `tokens.ts` → `src/`. GSAP isn't needed: nothing in this style is per-character type animation.
+Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (versions pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts`, `camera.ts`, `kit.tsx`, `frames.tsx` and `finish.tsx` → `src/lib/`, and this skill's `tokens.ts` → `src/`. The window is `<BrowserWindow>` with `win` from tokens, the cursor is `cursorAt` + `<Cursor>`, the typed prompt is `typed` + `<Caret>`. GSAP isn't needed: nothing in this style is per-character type animation.
 
 ## Who does what
 

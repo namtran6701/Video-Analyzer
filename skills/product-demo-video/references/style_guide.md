@@ -91,7 +91,7 @@ Final cut: a Lyria track, conformed to the film's BPM (motion-studio's conform s
 | CTA | 1, then 0 under the URL hold | |
 
 - SFX via `sfx.mjs` with the score's seed and key. Cues: `click` on cursor clicks, `swish` on morphs (M4, M18), `pop` on icon rows (M5), `thump` on trash impact (M7), `tick` on agent steps and slot moves (sparingly, not every row), `glitch` on scramble lock (M15), `chime` when the progress dot hits 100% and on the URL land. No SFX on word lands. No riser or impact cues where the score already steps up.
-- Mix: score + SFX → `public/mix.wav` at -14 LUFS, true peak under -1 (motion-studio's ffmpeg line).
+- Mix: score + SFX → `public/mix.wav` at -14 LUFS, true peak under -1 (motion-studio's `mix.mjs`).
 - Voiceover only if the user said yes (default no). Text carries the story either way, so the film must read fully with sound off. With a voiceover, follow motion-studio's Voiceover and captions section; most VO lines duplicate on-screen type here, so their caption column is `off`, and captions show only where the voice says something the type doesn't.
 - Sync: every word land and every hard cut sits on a beat.
 

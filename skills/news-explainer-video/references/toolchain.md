@@ -4,7 +4,7 @@ All 2D, so **Remotion is the whole pipeline**, in motion-studio's 2D lane. Produ
 
 ## Setup
 
-Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts` → `src/lib/motion.ts` and this skill's `tokens.ts` → `src/`. No GSAP, R3F or Blender needed.
+Per motion-studio: Node 22+, ffmpeg, `npx create-video@latest` (blank), `npx skills add remotion-dev/skills`, then `npm i -E @remotion/media` (pinned to the project's Remotion). Copy motion-studio's `scripts/motion.ts`, `kit.tsx` and `finish.tsx` → `src/lib/` and this skill's `tokens.ts` → `src/`. No GSAP, R3F or Blender needed.
 
 ## Who does what
 
