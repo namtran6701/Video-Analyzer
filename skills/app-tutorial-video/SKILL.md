@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: app-tutorial-video
 description: Make or update a narrated phone-app tutorial or "what's new" video (real app screens in a phone frame on a warm stage, a calm camera, voiceover with captions in a side column, one chapter per task, serif opener and tagline, logo close) where every screen change, tap, camera move and chapter is anchored to a spoken word, so re-voicing re-times the whole film. Covers new videos and patching an existing one (new lines spliced into the old take, music extended by whole bars, SFX re-timed) without regenerating everything, plus publishing through the app's own announcement channel. Built on claude-feature-video (style), motion-studio (pipeline) and genmedia-assets (voice, transcript, music). Use when the user wants an app tutorial, onboarding video, training video, app update or release-notes video for staff, or asks to change, re-voice, add a line to, or fix the camera in an existing tutorial video. Not for desktop feature launches with an AI panel (claude-feature-video) or kinetic-type promos (product-demo-video).
 ---

@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: product-demo-video
 description: Produce a polished product launch / demo video in one fixed, proven kinetic-typography style (dark problem acts, light solution acts, word-by-word type on a beat grid, inline icons in sentences, real product UI demo, benchmark proof, privacy beats, URL close) from the user's brand assets, fonts, colors and copy. Ships the full style spec, an 18-move motion library, a 7-act story template, brief/shotlist templates and format-aware Remotion tokens; produces it on the motion-studio pipeline (Remotion with 2D GSAP, an R3F laptop and a Blender light-shaft plate, Lyria score conformed to the beat grid (synthesized for drafts) and SFX, scored critique loop) and renders MP4s in 16:9, 1:1 and 9:16. Use whenever the user wants a product demo video, launch video, SaaS/AI product promo, feature announcement film, or a text-driven promo "in our usual style" / "like the last demo video", even if they don't name this skill. Not for analyzing or copying the style of a new reference video (that's video-study).
 ---

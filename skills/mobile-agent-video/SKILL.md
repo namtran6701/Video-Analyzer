@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: mobile-agent-video
 description: Produce a calm launch film for an AI agent that lives in a phone app, in one fixed style (flat lavender stage, the app's chat UI in an oversized phone cropped by the frame, a notification cold open where the agent moves first, short serif claims built word by word between UI beats, reaction chips and result cards, a word swapped for a UI chip, a hand-drawn line that draws the logo in, a confetti payoff) from the user's brand and app UI. Ships the style spec, a 21-move motion library, an 8-act story template, brief/shotlist templates and Remotion helpers; produces it on the motion-studio pipeline (Remotion, Lyria 120 BPM bed conformed to the grid (synthesized for drafts), scored critique loop) and renders an MP4. Use when the user wants a mobile app launch video, an AI agent or assistant app promo, a chat-app feature film, or a video "like the Claude Duet one", even if they don't name this skill. Not for desktop or browser walkthroughs (claude-feature-video), kinetic-typography films (product-demo-video) or studying a reference video (video-study).
 ---

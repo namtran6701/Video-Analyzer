@@ -1,4 +1,5 @@
 ---
+disable-model-invocation: true
 name: video-study
 description: Study a reference video and turn its visual grammar into a style guide, then a shotlist for a new video, then build and render it. Use when the user provides a reference video (file path) and wants a new video "in that style", a style breakdown, a shotlist, or says "study this video", "match this motion style", "make a video like this".
 ---
