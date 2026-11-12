@@ -60,7 +60,7 @@ export const TOTAL = SECTION.outro[1];
 export const footage = [w.keys];
 
 export const footageAt = (keys: FKey[], frame: number) => {
-  let i = keys.findIndex((k) => k.f > frame);
+  const i = keys.findIndex((k) => k.f > frame);
   if (i === -1) return keys[keys.length - 1];
   if (i === 0) return keys[0];
   // Several keys can share a frame (jumps); use the latest one at or before `frame`.

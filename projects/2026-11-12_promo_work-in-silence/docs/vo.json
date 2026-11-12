@@ -1,0 +1,67 @@
+{
+ "bpm": 100,
+ "dur": 30,
+ "chars": 48,
+ "takes": [
+  {
+   "audio": "public/vo_take.wav",
+   "words": "docs/vo_raw.json"
+  }
+ ],
+ "phrases": [
+  {
+   "text": "A thousand mornings.",
+   "beat": 2.5
+  },
+  {
+   "text": "Nobody saw them.",
+   "beat": 6
+  },
+  {
+   "text": "No posts,",
+   "beat": 8
+  },
+  {
+   "text": "no updates,",
+   "beat": 10
+  },
+  {
+   "text": "no applause.",
+   "beat": 12
+  },
+  {
+   "text": "They'll call it...",
+   "beat": 14
+  },
+  {
+   "text": "overnight success.",
+   "beat": 16.7,
+   "tempo": 1.05
+  },
+  {
+   "text": "But the quiet work never stops.",
+   "beat": 19,
+   "tempo": 1.03
+  },
+  {
+   "text": "It keeps...",
+   "beat": 23
+  },
+  {
+   "text": "compounding...",
+   "beat": 25
+  },
+  {
+   "text": "Don't announce it.",
+   "beat": 28
+  },
+  {
+   "text": "Don't explain it.",
+   "beat": 31
+  },
+  {
+   "text": "Finish it.",
+   "beat": 38
+  }
+ ]
+}

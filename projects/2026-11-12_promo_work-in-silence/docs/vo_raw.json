@@ -1,0 +1,181 @@
+{
+  "model": "gemini-3.5-transcribe-preview",
+  "transcript": "A thousand mornings. Nobody saw them. No posts, no updates, no applause. They'll call it overnight success. But the quiet work never stops. It keeps compounding. Don't announce it. Don't explain it. Finish it.",
+  "segments": [
+    {
+      "text": "A thousand mornings. Nobody saw them. No posts, no updates, no applause. They'll call it overnight success. But the quiet work never stops. It keeps compounding. Don't announce it. Don't explain it. Finish it.",
+      "words": [
+        {
+          "word": "A",
+          "start_offset": "0.300s",
+          "end_offset": "0.300s"
+        },
+        {
+          "word": "thousand",
+          "start_offset": "0.300s",
+          "end_offset": "1.200s"
+        },
+        {
+          "word": "mornings.",
+          "start_offset": "1.200s",
+          "end_offset": "2.100s"
+        },
+        {
+          "word": "Nobody",
+          "start_offset": "2.800s",
+          "end_offset": "3.200s"
+        },
+        {
+          "word": "saw",
+          "start_offset": "3.200s",
+          "end_offset": "3.500s"
+        },
+        {
+          "word": "them.",
+          "start_offset": "3.500s",
+          "end_offset": "3.700s"
+        },
+        {
+          "word": "No",
+          "start_offset": "4.300s",
+          "end_offset": "4.400s"
+        },
+        {
+          "word": "posts,",
+          "start_offset": "4.400s",
+          "end_offset": "5.200s"
+        },
+        {
+          "word": "no",
+          "start_offset": "5.600s",
+          "end_offset": "5.800s"
+        },
+        {
+          "word": "updates,",
+          "start_offset": "5.800s",
+          "end_offset": "6.500s"
+        },
+        {
+          "word": "no",
+          "start_offset": "7.100s",
+          "end_offset": "7.300s"
+        },
+        {
+          "word": "applause.",
+          "start_offset": "7.300s",
+          "end_offset": "8s"
+        },
+        {
+          "word": "They'll",
+          "start_offset": "9s",
+          "end_offset": "9.200s"
+        },
+        {
+          "word": "call",
+          "start_offset": "9.200s",
+          "end_offset": "9.500s"
+        },
+        {
+          "word": "it",
+          "start_offset": "9.500s",
+          "end_offset": "9.600s"
+        },
+        {
+          "word": "overnight",
+          "start_offset": "10.300s",
+          "end_offset": "10.800s"
+        },
+        {
+          "word": "success.",
+          "start_offset": "10.800s",
+          "end_offset": "11.600s"
+        },
+        {
+          "word": "But",
+          "start_offset": "12.600s",
+          "end_offset": "12.700s"
+        },
+        {
+          "word": "the",
+          "start_offset": "12.700s",
+          "end_offset": "12.800s"
+        },
+        {
+          "word": "quiet",
+          "start_offset": "12.800s",
+          "end_offset": "13.300s"
+        },
+        {
+          "word": "work",
+          "start_offset": "13.300s",
+          "end_offset": "13.800s"
+        },
+        {
+          "word": "never",
+          "start_offset": "14s",
+          "end_offset": "14.300s"
+        },
+        {
+          "word": "stops.",
+          "start_offset": "14.300s",
+          "end_offset": "14.900s"
+        },
+        {
+          "word": "It",
+          "start_offset": "15.800s",
+          "end_offset": "15.900s"
+        },
+        {
+          "word": "keeps",
+          "start_offset": "15.900s",
+          "end_offset": "16.400s"
+        },
+        {
+          "word": "compounding.",
+          "start_offset": "17s",
+          "end_offset": "17.900s"
+        },
+        {
+          "word": "Don't",
+          "start_offset": "18.900s",
+          "end_offset": "19s"
+        },
+        {
+          "word": "announce",
+          "start_offset": "19s",
+          "end_offset": "19.500s"
+        },
+        {
+          "word": "it.",
+          "start_offset": "19.500s",
+          "end_offset": "19.600s"
+        },
+        {
+          "word": "Don't",
+          "start_offset": "20.400s",
+          "end_offset": "20.500s"
+        },
+        {
+          "word": "explain",
+          "start_offset": "20.500s",
+          "end_offset": "21s"
+        },
+        {
+          "word": "it.",
+          "start_offset": "21s",
+          "end_offset": "21.200s"
+        },
+        {
+          "word": "Finish",
+          "start_offset": "22.300s",
+          "end_offset": "22.700s"
+        },
+        {
+          "word": "it.",
+          "start_offset": "22.700s",
+          "end_offset": "22.800s"
+        }
+      ]
+    }
+  ]
+}

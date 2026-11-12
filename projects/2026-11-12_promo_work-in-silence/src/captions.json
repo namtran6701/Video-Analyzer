@@ -1,0 +1,80 @@
+[
+ {
+  "text": "A thousand mornings.",
+  "startMs": 1500,
+  "endMs": 3450,
+  "band": "bottom"
+ },
+ {
+  "text": "Nobody saw them.",
+  "startMs": 3600,
+  "endMs": 4650,
+  "band": "bottom"
+ },
+ {
+  "text": "No posts,",
+  "startMs": 4800,
+  "endMs": 5850,
+  "band": "bottom"
+ },
+ {
+  "text": "no updates,",
+  "startMs": 6000,
+  "endMs": 7050,
+  "band": "bottom"
+ },
+ {
+  "text": "no applause.",
+  "startMs": 7200,
+  "endMs": 8250,
+  "band": "bottom"
+ },
+ {
+  "text": "They'll call it...",
+  "startMs": 8400,
+  "endMs": 9150,
+  "band": "bottom"
+ },
+ {
+  "text": "overnight success.",
+  "startMs": 10020,
+  "endMs": 11400,
+  "band": "bottom"
+ },
+ {
+  "text": "But the quiet work never stops.",
+  "startMs": 11400,
+  "endMs": 13783,
+  "band": "bottom"
+ },
+ {
+  "text": "It keeps...",
+  "startMs": 13800,
+  "endMs": 14550,
+  "band": "bottom"
+ },
+ {
+  "text": "compounding...",
+  "startMs": 15000,
+  "endMs": 16050,
+  "band": "bottom"
+ },
+ {
+  "text": "Don't announce it.",
+  "startMs": 16800,
+  "endMs": 17650,
+  "band": "bottom"
+ },
+ {
+  "text": "Don't explain it.",
+  "startMs": 18600,
+  "endMs": 19550,
+  "band": "bottom"
+ },
+ {
+  "text": "Finish it.",
+  "startMs": 22800,
+  "endMs": 23450,
+  "band": "bottom"
+ }
+]

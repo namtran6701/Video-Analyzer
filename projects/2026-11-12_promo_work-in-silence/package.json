@@ -1,0 +1,24 @@
+{
+  "name": "work-in-silence",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.538",
+    "@types/react": "19.2.7",
+    "eslint": "10.12.0",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "lint": "eslint src && tsc"
+  }
+}
