@@ -44,6 +44,7 @@ Underneath all three: clarity without clutter. Never add text to explain what th
 - Keyboard only works end to end, focus is visible, Escape dismisses overlays.
 - Touch targets are at least 44 × 44px.
 - Light mode only unless the user asks for dark. Text contrast is 4.5:1 (3:1 for large text) in each mode built.
+- Hero and section copy emphasizes its 1–3 key words, not whole sentences.
 - Any widely recognizable brand or company shows its logo, not text.
 - Colors come from role tokens; status color always pairs with text or an icon.
 - Text uses named type styles in rem, spacing uses the scale.

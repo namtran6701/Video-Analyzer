@@ -67,6 +67,20 @@ Font stack: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-se
 - Keep weights between 400 and 650. Hierarchy comes from size and weight, not color alone.
 - Sentence case everywhere. Let text wrap; never truncate content people need.
 
+### Key phrase emphasis
+
+In high-impact copy (hero headline and subhead, section titles, key stats), emphasize the words that carry the meaning so a skim still gets the point.
+
+- Emphasize 1–3 words or one short phrase per sentence: the outcome, number, or differentiator. Never whole sentences.
+- Use bold, or bold with an underline. Don't use status colors or italics.
+- Underline only the emphasized phrase, and never on text that sits next to links or is clickable, so it isn't mistaken for a link.
+- At most one emphasized phrase per heading. If everything is emphasized, nothing is.
+- Body text stays plain; emphasize there only for a critical warning or term.
+- Use `<strong>` for the emphasis so assistive technology gets it too.
+
+✅ Do: "Cut reporting time by **70%**".
+❌ Don't: "**Cut reporting time** by **70%** with **our platform**".
+
 ## Layout and spacing
 
 - Spacing scale: 4, 8, 12, 16, 24, 32, 48, 64px. Nothing off the scale.
