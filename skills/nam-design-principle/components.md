@@ -55,6 +55,7 @@ Each component lists when to use it, when not to, its required states, and acces
 
 - **Use:** grouping a self-contained item with a title and at most one or two actions.
 - **Avoid:** cards inside cards; dense data that belongs in a table.
+- **Don't:** add a colored accent stripe (thick `border-left` or `border-top` in a brand or segment color) to cards, banners, callouts, or stat tiles. It's decoration that reads as AI-generated boilerplate. Separate cards with surface color, a 1px `separator` border, or spacing. If a card needs identity (segment, status), put the color in content that carries meaning: an icon, a badge, the key number, or a chart mark.
 - **States:** default, hover (if interactive), focus, selected, loading skeleton.
 - **A11y:** title is a real heading; if the whole card is clickable, make it one link and don't nest other controls.
 

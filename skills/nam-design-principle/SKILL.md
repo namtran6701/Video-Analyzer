@@ -50,4 +50,5 @@ Underneath all three: clarity without clutter. Never add text to explain what th
 - Reduced transparency replaces blur with the solid surface color.
 - No horizontal scroll at phone width.
 - No copy the UI already communicates; extra context lives in tooltips.
+- No colored accent stripes (thick left or top borders) on cards, banners, or tiles.
 - No empty areas without a purpose; whitespace separates, frames, or aids reading. Side-by-side boxes balance in height.
