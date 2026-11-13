@@ -107,6 +107,16 @@ Motion communicates state, hierarchy, and relationships. It never decorates.
 
 ❌ Don't: invent metaphors, or mix filled and outlined styles in one view.
 
+### Brand logos
+
+When a dashboard or front-end UI shows any widely recognizable brand or company, in any industry, render its logo instead of the name as text. Walmart, Amazon, and Google are examples, not a limit.
+
+- Use the brand's official logo or a logo asset from the project. Don't redraw or approximate it.
+- Keep the brand name as `alt` text and as the accessible name.
+- Size logos to a consistent height within a view; keep them in their original colors.
+- Fall back to the text name only when no logo is available, or the brand isn't widely recognizable.
+- The one-icon-family rule above does not apply to brand logos.
+
 ## Accessibility
 
 - Touch targets at least 44 × 44px.
