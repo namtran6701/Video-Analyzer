@@ -43,7 +43,7 @@ Underneath all three: clarity without clutter. Never add text to explain what th
 - Tested with long text, zero items, one item, and many.
 - Keyboard only works end to end, focus is visible, Escape dismisses overlays.
 - Touch targets are at least 44 × 44px.
-- Text contrast is 4.5:1 (3:1 for large text) in light and dark modes.
+- Light mode only unless the user asks for dark. Text contrast is 4.5:1 (3:1 for large text) in each mode built.
 - Colors come from role tokens; status color always pairs with text or an icon.
 - Text uses named type styles in rem, spacing uses the scale.
 - Reduced motion shows the final state.

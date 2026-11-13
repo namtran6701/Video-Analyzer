@@ -20,12 +20,14 @@ Name colors by role, never by value. Components reference roles only, so theming
 | `info` | #2563eb | #60a5fa | Neutral notices, links when needed |
 
 - Use a status color only for that status, always paired with text or an icon. Apps get these tokens, and Tailwind classes like `text-label` and `bg-surface`, by installing the `nam-theme` registry item.
-- Verify contrast for every text and background pair in both modes.
+- Verify contrast for every text and background pair in the modes you build (light by default).
 
 ✅ Do: `color: var(--secondary-label)`.
 ❌ Don't: hardcode hex in components, or use destructive red for emphasis.
 
 ## Dark mode
+
+Build light mode only. Do not build dark mode, a theme toggle, or `prefers-color-scheme` handling unless the user explicitly asks. The Dark column above and the rules below apply only when they do.
 
 Dark mode is its own palette, not an inversion.
 
