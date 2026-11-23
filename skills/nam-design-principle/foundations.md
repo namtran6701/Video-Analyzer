@@ -48,6 +48,17 @@ Use translucent blur only for chrome that floats over content, like sticky heade
 ✅ Do: a sticky header with `color-mix(in srgb, var(--surface) 85%, transparent)` and a backdrop blur.
 ❌ Don't: stack translucent layers, or blur behind body text.
 
+## Backgrounds
+
+Flat canvas and surface colors stay the default because they never compete with content. Give hero and feature sections identity with a layered background instead.
+
+- Pull in a few images tied to the subject, tint them toward the neutral palette, and add a light texture on top.
+- Map darks to a dark gray instead of pure black and lift lights only slightly, so contrast stays low and the layer reads as atmosphere, not content.
+- Keep text on it at 4.5:1, add a solid scrim where it falls short, and keep long reading areas on a flat surface.
+
+✅ Do: a pricing-report hero over tinted scans of charts and newsprint with a faint grain.
+❌ Don't: use unrelated stock imagery, full-contrast photos behind text, or layered backgrounds on every section.
+
 ## Typography
 
 Font stack: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif`. Use named styles, never ad hoc sizes. Set sizes in rem so text follows the browser font-size setting; values below are px at the 16px default.
