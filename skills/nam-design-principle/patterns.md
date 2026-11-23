@@ -80,3 +80,13 @@ Interrupt only when the person must decide before continuing. Choose the lightes
 
 ✅ Do: "No projects yet." with a Create project button.
 ❌ Don't: a blank area, or a raw error code with no next step.
+
+## Editorial hero backgrounds
+
+- For pitch sites, landing heroes, and section openers that set context, not for app screens or dense data.
+- Comp 2 to 4 images that say the subject as one layer, then tint it once: blacks to a dark grey (never `#000`), whites to a soft off-white. Keep it low contrast so the foreground carries the frame.
+- Add a static texture (paper, newsprint) on top at low opacity. Nothing in the background animates on its own.
+- Foreground text holds contrast over the brightest spot by itself. If it doesn't, lower the tint's light end or blur the layer.
+
+✅ Do: a muted duotone collage of the client's storefront and product behind a bold headline.
+❌ Don't: a scrim or gradient box to rescue text, or a full-contrast photo fighting the headline.
