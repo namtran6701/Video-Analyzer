@@ -121,6 +121,11 @@ Motion communicates state, hierarchy, and relationships. It never decorates.
 - Avoid heavy bounce. Keep ambient animation away from reading areas.
 - Under `prefers-reduced-motion`, remove nonessential movement and show the final state. Feedback must still be understandable without animation.
 
+Tooling, one per element, never two animating the same one:
+- **CSS transitions** for hover and press feedback.
+- **Motion** (`motion/react`) for all other UI motion: `AnimatePresence` for exits, `layout`/`layoutId` to grow panels from their trigger, springs for enters. Wrap the app in `<MotionConfig reducedMotion="user">`.
+- **GSAP** only for editorial set pieces: scroll-driven hero sequences, `SplitText` headlines, SVG draw and morph. Never for dialogs, menus, or toasts.
+
 ✅ Do: grow a panel from the control that opened it.
 ❌ Don't: animate width or top, or loop motion near text.
 
