@@ -5,7 +5,7 @@ Each component lists when to use it, when not to, its required states, and acces
 ## Buttons
 
 - **Use:** primary for the single most important action, secondary for supporting actions, ghost or outline for low emphasis like Cancel.
-- **Avoid:** more than one primary per section; buttons that navigate (use a link styled as a button).
+- **Avoid:** more than one primary per section; buttons that navigate (use a link styled as a button); arrows on every button. A trailing arrow goes only on the one action that moves forward or leaves the page.
 - **States:** default, hover, pressed, focus, disabled, loading.
 - **A11y:** 44px target; icon-only buttons need `aria-label` and a tooltip; width stays stable when the label switches to loading.
 
@@ -54,7 +54,7 @@ Each component lists when to use it, when not to, its required states, and acces
 ## Cards
 
 - **Use:** grouping a self-contained item with a title and at most one or two actions.
-- **Avoid:** cards inside cards; dense data that belongs in a table.
+- **Avoid:** cards inside cards; dense data that belongs in a table; wrapping every section in a card; the default row of three icon cards.
 - **Don't:** add a colored accent stripe (thick `border-left` or `border-top` in a brand or segment color) to cards, banners, callouts, or stat tiles. It's decoration that reads as AI-generated boilerplate. Separate cards with surface color, a 1px `separator` border, or spacing. If a card needs identity (segment, status), put the color in content that carries meaning: an icon, a badge, the key number, or a chart mark.
 - **Do (identity cards):** when a card belongs to a segment or persona, tint the whole card instead: a soft wash of the identity color and a hairline border in the same hue, e.g. `background: color-mix(in srgb, var(--pc) 7%, var(--surface)); border: 1px solid color-mix(in srgb, var(--pc) 28%, var(--separator));`. Keep body text and key numbers in `label` color so contrast holds for every hue.
 - **States:** default, hover (if interactive), focus, selected, loading skeleton.

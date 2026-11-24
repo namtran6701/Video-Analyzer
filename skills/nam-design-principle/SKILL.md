@@ -37,6 +37,16 @@ Underneath all three: clarity without clutter. Never add text to explain what th
 | [patterns.md](patterns.md) | Feedback, loading, forms, actions, destructive actions, interruptions, navigation, edge states |
 | [components.md](components.md) | Buttons, text fields, dialogs, sheets, toasts, menus, navigation bars, cards, empty states |
 
+## AI slop tells
+
+Patterns that make a design read as AI-generated. Each rule lives in the section linked; this list is for review passes.
+
+- **Type:** Instrument Serif or similar trendy display serifs; one italic word in the headline; overused eyebrows; pills above the headline; numbered sections ([foundations](foundations.md#typography)).
+- **Copy:** the words "quiet" and "real"; two-word sentences; little dots between words; made-up stats ([writing](foundations.md#writing), [emphasis](foundations.md#key-phrase-emphasis)).
+- **Layout:** everything in a card; three icon cards in a row; colored left borders ([layout](foundations.md#layout-and-spacing), [cards](components.md#cards)).
+- **Surface:** cream backgrounds; blurry glows behind the hero; dithering ([backgrounds](foundations.md#backgrounds)).
+- **Icons and motion:** sparkle icons; arrows on every button; pulsing green dots; sections fading in on scroll ([icons](foundations.md#icons), [buttons](components.md#buttons), [motion](foundations.md#motion)).
+
 ## Checklist
 
 - Every relevant state exists: hover, pressed, focus, disabled, loading, empty, error, success.
@@ -53,4 +63,5 @@ Underneath all three: clarity without clutter. Never add text to explain what th
 - No horizontal scroll at phone width.
 - No copy the UI already communicates; extra context lives in tooltips.
 - No colored accent stripes (thick left or top borders) on cards, banners, or tiles. For segment or persona identity, tint the whole card (soft color wash plus same-hue hairline border).
+- None of the [AI slop tells](#ai-slop-tells).
 - No empty areas without a purpose; whitespace separates, frames, or aids reading. Side-by-side boxes balance in height.

@@ -55,13 +55,14 @@ Flat canvas and surface colors stay the default because they never compete with 
 - Pull in a few images tied to the subject, tint them toward the neutral palette, and add a light texture on top.
 - Map darks to a dark gray instead of pure black and lift lights only slightly, so contrast stays low and the layer reads as atmosphere, not content.
 - Keep text on it at 4.5:1, add a solid scrim where it falls short, and keep long reading areas on a flat surface.
+- Lights are neutral off-white, never warm cream or beige. Texture is paper or newsprint grain, never dithering or halftone gradients.
 
 ✅ Do: a pricing-report hero over tinted scans of charts and newsprint with a faint grain.
-❌ Don't: use unrelated stock imagery, full-contrast photos behind text, or layered backgrounds on every section.
+❌ Don't: use unrelated stock imagery, full-contrast photos behind text, layered backgrounds on every section, or blurry color glows and gradient blobs behind the hero.
 
 ## Typography
 
-Font stack: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif`. Use named styles, never ad hoc sizes. Set sizes in rem so text follows the browser font-size setting; values below are px at the 16px default.
+Font stack: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif`. No trendy display serifs (Instrument Serif and its look-alikes) unless the brand requires them. Use named styles, never ad hoc sizes. Set sizes in rem so text follows the browser font-size setting; values below are px at the 16px default.
 
 | Style | Size / line height | Weight | Use |
 |---|---|---|---|
@@ -77,17 +78,21 @@ Font stack: `-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-se
 
 - Keep weights between 400 and 650. Hierarchy comes from size and weight, not color alone.
 - Sentence case everywhere. Let text wrap; never truncate content people need.
+- The headline opens the section. No eyebrow labels above titles by default (one per page at most, and only when it adds information), and no pills or badges stacked above the headline.
+- Don't number sections ("01", "02") unless the content is a real sequence of steps.
 
 ### Key phrase emphasis
 
 In high-impact copy (hero headline and subhead, section titles, key stats), emphasize the words that carry the meaning so a skim still gets the point.
 
 - Emphasize 1–3 words or one short phrase per sentence: the outcome, number, or differentiator. Never whole sentences.
-- Use bold, or bold with an underline. Don't use status colors or italics.
+- Use bold, or bold with an underline. Don't use status colors or italics, including the lone italic word in a headline.
 - Underline only the emphasized phrase, and never on text that sits next to links or is clickable, so it isn't mistaken for a link.
 - At most one emphasized phrase per heading. If everything is emphasized, nothing is.
 - Body text stays plain; emphasize there only for a critical warning or term.
 - Use `<strong>` for the emphasis so assistive technology gets it too.
+
+- Numbers must be real and sourced. Never invent stats to fill a hero or stat row; mark placeholders as placeholders.
 
 ✅ Do: "Cut reporting time by **70%**".
 ❌ Don't: "**Cut reporting time** by **70%** with **our platform**".
@@ -96,7 +101,8 @@ In high-impact copy (hero headline and subhead, section titles, key stats), emph
 
 - Spacing scale: 4, 8, 12, 16, 24, 32, 48, 64px. Nothing off the scale.
 - Reading width around 60–70 characters.
-- Prefer whitespace to decorative containers. Use subtle dividers and restrained shadows.
+- Prefer whitespace to decorative containers. Use subtle dividers and restrained shadows. Not everything goes in a card: text, lists, and sections sit on the canvas.
+- Avoid the default row of three icon cards. Lay features out from their content: a list, a table, a comparison, or one feature with an image.
 - Corner radius: 8px small elements, 12px controls, 20–24px cards and dialogs.
 - Mobile gutters are 16px. Stack cramped columns, keep controls reachable, never scroll horizontally.
 
@@ -115,16 +121,18 @@ Motion communicates state, hierarchy, and relationships. It never decorates.
 |---|---|
 | Control feedback (hover, press) | 150–250ms |
 | Dialogs, sheets, popovers | 300–450ms |
-| Entrances, with small staggers | 600–900ms |
+| Entrances on load or state change, with small staggers | 600–900ms |
 
 - Animate `transform` and `opacity` only. Ease out on enter; exit faster than enter.
+- Don't fade or slide sections in as they scroll into view. Content is there when people arrive. At most one scroll-driven set piece per page.
+- Status dots are static. No pulsing "live" dots.
 - Avoid heavy bounce. Keep ambient animation away from reading areas.
 - Under `prefers-reduced-motion`, remove nonessential movement and show the final state. Feedback must still be understandable without animation.
 
 Tooling, one per element, never two animating the same one:
 - **CSS transitions** for hover and press feedback.
 - **Motion** (`motion/react`) for all other UI motion: `AnimatePresence` for exits, `layout`/`layoutId` to grow panels from their trigger, springs for enters. Wrap the app in `<MotionConfig reducedMotion="user">`.
-- **GSAP** only for editorial set pieces: scroll-driven hero sequences, `SplitText` headlines, SVG draw and morph. Never for dialogs, menus, or toasts.
+- **GSAP** only for editorial set pieces: a scroll-driven hero sequence (one per page), `SplitText` headlines, SVG draw and morph. Never for dialogs, menus, or toasts.
 
 ✅ Do: grow a panel from the control that opened it.
 ❌ Don't: animate width or top, or loop motion near text.
@@ -135,7 +143,7 @@ Tooling, one per element, never two animating the same one:
 - Pair icons with labels unless the meaning is universal: close, search, copy, add, delete, settings.
 - Icon-only controls need an accessible name and a tooltip. Decorative icons are hidden from assistive technology.
 
-❌ Don't: invent metaphors, or mix filled and outlined styles in one view.
+❌ Don't: invent metaphors, mix filled and outlined styles in one view, or use sparkle icons to signal AI or "magic".
 
 ### Brand logos
 
@@ -167,6 +175,9 @@ When a dashboard or front-end UI shows any widely recognizable brand or company,
 - Include text only when it identifies content, clarifies a choice, enables an action, or explains a necessary next step.
 - Front-load the key word in labels and headings.
 - Errors say what happened and how to fix it, without blaming the person.
+- Write full sentences. No strings of two-word fragments ("Fast. Simple. Done.").
+- Separate items with layout or commas, not middle dots ("Fast · Secure · Simple").
+- Ban the filler words "quiet" ("quiet confidence", "quietly powerful") and "real" ("real results", "real impact").
 
 ✅ Do: "Billing settings", not "Settings for billing".
 ❌ Don't: use jargon, internal names, slogans, or captions that repeat the heading.
